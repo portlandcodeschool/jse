@@ -6,7 +6,7 @@ highlighter:         true
 permalink:        pretty
 
 # Setup
-url: http://portlandcodeschool.github.io/jse
+url:              'http://portlandcodeschool.github.io/jse'
 title:            'PCS'
 tagline:          'JS Evening'
 description:      'JavaScript Evening'
