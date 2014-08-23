@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Git, TDD &amp; Abstractions Notes &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">Git, TDD &amp; Abstractions Notes</h1>
+  <span class="post-date">14 May 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <a class="slides" href="/2014/05/14/git-slides/">Git</a>
+  
+
+  
+
+  
+
+  
+    <a class="slides" href="/2014/05/14/tdd-slides/">TDD</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>TODO: Adding names worked just fine. Need a different example to cause
+conflicts.</p>
+
+<p>TODO: They need to know that <code>npm install</code> needs to be done from within the
+project directory.</p>
+
+<p>TODO: node_modules just appeared in their directory.</p>
+
+<h2>Class Flow</h2>
+
+<ul>
+<li>Run through GitHub slides.</li>
+<li>Start GitHub example of simply updating the course members (see example
+below).</li>
+<li>Run through TDD slides.</li>
+<li>Do the TDD interest rate calculator.</li>
+<li>Have them do the TDD challenge.</li>
+<li>Continue with abstractions (<em>More Fun With Functions</em>).</li>
+</ul>
+
+<h2>GitHub Example: Course Members</h2>
+
+<ul>
+<li>Have students clone and make a pull request to add a markdown file with their
+name as the file name. It can contain whatever they want in it.</li>
+<li>Have them edit and make a second pull request where they actually put their
+name and email in the file (optional to share contact info).</li>
+<li>Finally, have them edit the main Readme.md file. They should add a link to
+their file that follows with <a href="https://help.github.com/articles/relative-links-in-readmes">the relative link form</a>
+<code>[Whitney Young](whitney.md)</code>. This will cause merge conflicts.</li>
+<li>Start on one side of the room and accept that pull request.</li>
+<li>Note that the pull request is able to be merged.</li>
+<li>Move to the next student, comment on pull request that they need to update to
+include most recent changes (and merge).</li>
+<li>Continue around room.</li>
+<li>Once everyone is in, have everyone pull new changes.</li>
+<li>Have everyone add email address.</li>
+<li>Repeat process of accepting pull requests, commenting, etc. from the other
+end of the room.</li>
+</ul>
+
+<h2>Test Driven Development</h2>
+
+<h3>Interest Rate Calculator</h3>
+
+<p>The standard formula for continuous compounding interest is
+<code>A = P * e ^ (r * t)</code> where <code>A</code> is the amount owed at time <code>t</code>, <code>e</code> is the
+constant, <code>r</code> is the interest rate, and <code>P</code> is the principal. In the solution
+below, we&#39;re just calculating the interest, not the amount owed.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var calculateInterest = function(principal, rate, years) {
+  if (rate &lt; 0) { throw new Error(&#39;Cannot provide negative interest rates.&#39;); }
+  return principal * Math.exp(rate * years) - principal;
+};
+
+describe(&#39;calculateInterest()&#39;, function() {
+  it(&#39;handles negative principal&#39;, function() {
+    expect(calculateInterest(-10, 0.04, 1)).to.be.closeTo(-0.41, 0.01);
+  });
+
+  it(&#39;does not handle negative interest rates&#39;, function() {
+    expect(function() { calculateInterest(1, -0.2, 1) }).to.throw(/negative interest/);
+  });
+
+  it(&#39;calculates interest for $1000 at 4% over 3 years&#39;, function() {
+    expect(calculateInterest(1000, 0.04, 3)).to.be.closeTo(127.50, 0.01);
+  });
+});</code></pre></div>
+
+<h3>Gravity Challenge</h3>
+
+<p>Here&#39;s one solution to the gravity challenge. Their solutions should run
+through Travis, but that could take a while.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var fallingTime = function(distance) {
+  if (distance &lt; 0) { throw new Error(&#39;cannot fall negative distances&#39;); }
+  return Math.sqrt(distance * 2 / 9.81);
+};
+
+describe(&#39;fallingTime()&#39;, function() {
+  it(&#39;takes no time to fall when already on the ground&#39;, function() {
+    expect(fallingTime(0)).to.eql(0);
+  });
+
+  it(&#39;calculates time to fall 10 meters&#39;, function() {
+    expect(fallingTime(10)).to.be.closeTo(1.4278, 0.0001);
+  });
+
+  it(&#39;raises for negative distances&#39;, function() {
+    expect(function() { fallingTime(-4) }).to.throw(/negative distance/);
+  });
+});</code></pre></div>
+
+<h2>Abstractions</h2>
+
+<p>Go back to the fruits code from the previous day. Basically, we just need
+to refactor to take another argument, <code>fn</code> that replaces the calls to
+<code>indicateFruitThatNeedsPurchasing</code> and/or <code>indicateFruitPurchased</code>.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var continueIterating = function(array, n, fn) {
+  if (n &lt; array.length) {
+    fn(array[n]);
+    continueIterating(array, n+1, fn);
+  }
+};
+
+var startIterating = function(array, fn) {
+  continueIterating(array, 0, fn);
+};
+
+startIterating(fruits, indicateFruitThatNeedsPurchasing);
+startIterating(fruits, indicateFruitPurchased);</code></pre></div>
+
+<p>After that, all that needs to be done is some renaming and moving functions
+around. The function <code>startIterating</code> becomes <code>each</code> and the function
+<code>continueIterating</code> becomes <code>next</code> and gets moved into the <code>each</code> function.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var each = function(array, fn) {
+  var next = function(array, n, fn) {
+    if (n &lt; array.length) {
+      fn(array[n]);
+      next(array, n+1, fn);
+    }
+  };
+  next(array, 0, fn);
+};
+
+each(fruits, indicateFruitThatNeedsPurchasing);
+each(fruits, indicateFruitPurchased);</code></pre></div>
+
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

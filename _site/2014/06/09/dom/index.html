@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Front End &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">Front End</h1>
+  <span class="post-date">09 Jun 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>Today we&#39;re going start working with JavaScript in the browser, where it first
+became popularized as a language.</p>
+
+<p>We&#39;ll discuss:</p>
+
+<ul>
+<li>Including JavaScript on web pages</li>
+<li>Manipulating and reacting to events in the <a href="https://developer.mozilla.org/en-US/docs/DOM">DOM</a></li>
+<li><a href="https://developers.google.com/chrome-developer-tools/">Chrome Developer Tools</a></li>
+</ul>
+
+<h2>Accessing &amp; Altering the DOM</h2>
+
+<p>Frequently used methods:</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document.createElement"><code>document.createElement</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document.getElementById"><code>document.getElementById</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document.getElementsByClassName"><code>document.getElementsByClassName</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document.getElementsByTagName"><code>document.getElementsByTagName</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/document.body"><code>document.body</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.appendChild"><code>node.appendChild</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.insertBefore"><code>node.insertBefore</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.removeChild"><code>node.removeChild</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.replaceChild"><code>node.replaceChild</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.nextSibling"><code>node.nextSibling</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.parentNode"><code>node.parentNode</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.previousSibling"><code>node.previousSibling</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.childNodes"><code>node.childNodes</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node.textContent"><code>node.textContent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/element.getAttribute"><code>element.getAttribute</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/element.setAttribute"><code>element.setAttribute</code></a></li>
+</ul>
+
+<h3>Challenge</h3>
+
+<p>Using Chrome&#39;s developer tools to check your work, recreate the following HTML
+structure via JavaScript:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My JavaScript Blog&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;My JavaScript Blog&lt;/h1&gt;
+    &lt;article&gt;
+      &lt;h1&gt;My Second Blog Post&lt;/h1&gt;
+      &lt;p&gt;This is a blog post about really awesome stuff I&#39;ve done in JavaScript.&lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article&gt;
+      &lt;h1&gt;My First Blog Post&lt;/h1&gt;
+      &lt;p&gt;This is the first blog post I&#39;ve ever written.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/body&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;</code></pre></div>
+
+<p>Starting from:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;My JavaScript Blog&lt;/h1&gt;
+    &lt;article&gt;
+      &lt;p&gt;This is the first blog post I&#39;ve ever written.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/body&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;</code></pre></div>
+
+<h2>DOM Events</h2>
+
+<p>Let&#39;s actually do something when the user interacts with elements on the page.</p>
+
+<p>You can observe events on DOM objects with
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.addEventListener"><code>addEventListener</code></a>. Here are common
+<a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events">events</a> that we can handle:</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/blur"><code>blur</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/change"><code>change</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/click"><code>click</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/dblclick"><code>dblclick</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/input"><code>input</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/keydown"><code>keydown</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/keypress"><code>keypress</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/keyup"><code>keyup</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/load_(ProgressEvent)"><code>load</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/mousedown"><code>mousedown</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/mouseenter"><code>mouseenter</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/mouseleave"><code>mouseleave</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/mousemove"><code>mousemove</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/mouseout"><code>mouseout</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/mouseover"><code>mouseover</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/mouseup"><code>mouseup</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/resize"><code>resize</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/scroll"><code>scroll</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/touchcancel"><code>touchcancel</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/touchend"><code>touchend</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/touchenter"><code>touchenter</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/touchleave"><code>touchleave</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/touchmove"><code>touchmove</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/Events/touchstart"><code>touchstart</code></a></li>
+</ul>
+
+<h3>Challenge #1</h3>
+
+<p>Make it so that when you click an article title, it toggles the visibility of
+the paragraphs within the article.</p>
+
+<p><em>Hint:</em> Think about how you would normally change whether an item is visible or
+not. Try to make your JavaScript replicate the changes you would normally make.</p>
+
+<h3>Challenge #2</h3>
+
+<p>Keep the current functionality of clicking the article title. Make it so that
+if you click anywhere else on the article, it highlights the entire article.
+It shouldn&#39;t highlight the article when you click the title, though.</p>
+
+<h3>Challenge #3</h3>
+
+<p>Create a page that accepts payments. It should accept and validate:</p>
+
+<ul>
+<li>Email address</li>
+<li>Credit card number</li>
+<li>Credit card expiration</li>
+<li>Name on card</li>
+<li>Card verification code</li>
+<li>City</li>
+<li>State</li>
+</ul>
+
+<p>There should be a submit button. When the submit button is pressed, it should
+validate each field and somehow inform the user that there are problems.</p>
+
+<p>All of these fields are required. Some of them should only accept certain
+values as input. How can you use JavaScript to make a really good user
+experience here? Want to make it really pretty? Go for it!</p>
+
+<h2>Script Location</h2>
+
+<p>Generally, you&#39;ll want to
+<a href="https://developer.yahoo.com/performance/rules.html#js_bottom">put your scripts at the bottom of the body</a>. When
+you don&#39;t, you&#39;ll need to ensure you wait for the DOM to be ready. This is good
+practice regardless, and it&#39;s easy with jQuery, but for reference, here&#39;s how
+you could do it without jQuery (this won&#39;t work in all browsers).</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">(function(ready) {
+  var loaded = function() {
+    document.removeEventListener(&quot;DOMContentLoaded&quot;, loaded, false);
+    ready();
+  };
+  if (document.readyState === &quot;complete&quot;) { setTimeout(ready); }
+  else { document.addEventListener(&quot;DOMContentLoaded&quot;, loaded, false); }
+})(function() {
+
+  // insert your code here
+
+});</code></pre></div>
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

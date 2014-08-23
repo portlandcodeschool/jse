@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Git, TDD & Abstractions &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">Git, TDD & Abstractions</h1>
+  <span class="post-date">14 May 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <a class="slides" href="/2014/05/14/git-slides/">Git</a>
+  
+
+  
+
+  
+
+  
+    <a class="slides" href="/2014/05/14/tdd-slides/">TDD</a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>This lesson will expand on some of the ideas we touched on while discussing
+functions, but first we&#39;re going to add Git and Test Driven Development to our
+workflow.</p>
+
+<h2>Git &amp; GitHub</h2>
+
+<p>Here&#39;s a typical workflow with GitHub:</p>
+
+<ol>
+<li>Create a fork (GitHub)</li>
+<li>Clone the fork (<code>git</code>)</li>
+<li>Create a branch (<code>git</code>)</li>
+<li>Review changes (<code>git</code>)</li>
+<li>Commit changes (<code>git</code>)</li>
+<li>Push changes (<code>git</code>)</li>
+<li>Create pull request (GitHub)</li>
+</ol>
+
+<p>As you can see, we start and end on GitHub, but much of the time you&#39;ll be
+using <code>git</code> on your computer. Let&#39;s take a look at this workflow.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git clone git@github.com:github_username/repo_name.git
+cd repo_name
+
+git checkout -b branch-name master
+
+# do some work
+
+git status
+git diff
+
+git add .
+git commit -m &#39;My commit message.&#39;
+
+git push origin branch-name</code></pre></div>
+
+<p>Let&#39;s practice using Git and GitHub with <a href="https://github.com/portlandcodeschool/jsi-members">this repository</a>.</p>
+
+<h3>Creating your own fork</h3>
+
+<p>Fork of the GitHub, then:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git push git@github.com:my_github_username/repo_name.git branch-name
+
+git remote add mine git@github.com:my_github_username/repo_name.git
+git push mine branch-name
+
+git push --set-upstream mine branch-name</code></pre></div>
+
+<h3>Merging &amp; Conflicts</h3>
+
+<p>When collaborating, you&#39;ll sometimes end up editing the same code as someone
+else. The best way to understand this is to experience it in action.</p>
+
+<p>Assuming you still are on a branch, the following will be pretty close do what
+you&#39;ll want to do:</p>
+
+<ol>
+<li>Fetch and merge changes from upstream (<code>pull</code>)</li>
+<li>Manually merge any conflicting files</li>
+<li>Review changes</li>
+<li>Commit</li>
+<li>Push</li>
+</ol>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">git pull origin master
+
+git diff --ours
+git diff --theirs
+git add path/to/file/that/was/merged
+git commit -m &#39;Merged changes from wherever.&#39;
+git push origin branch-name</code></pre></div>
+
+<p><a href="http://stackoverflow.com/a/3407920/98069">This answer on StackOverflow</a> may also provide some guidance
+if you get stuck merging.</p>
+
+<p><aside>
+<strong>Whitespace</strong></p>
+
+<p>Whitespace, that is line breaks, spaces, and tabs, can cause headaches when
+merging changes. You should make sure that when you commit changes that you
+(or your text editor) hasn&#39;t changed whitespace in parts of the code that you
+didn&#39;t intend to edit.</p>
+
+<p>Also, it&#39;s a good idea to ensure that every file ends with a line break
+(newline). Why? Many (command line) tools don&#39;t work quite as nicely when you
+don&#39;t have that final newline. Git, for instance, will show you a weird
+representation of changes that affect the addition/removal of content at the
+end of a file if you don&#39;t have a trailing newline.
+</aside></p>
+
+<h3>Updating Course Contents</h3>
+
+<p>Now that you know the typical Git workflow, you can actually make changes to
+<a href="https://github.com/portlandcodeschool/jsi">this course</a> if you find any mistakes.</p>
+
+<h3>Always Use Version Control</h3>
+
+<p>Yes, this gets its own section. You know the basics of how to use <code>git</code>. You&#39;ll
+keep getting better as you use it, and it won&#39;t slow you down. What will slow
+you down is when you lose work you&#39;ve done or get your code into a weird state.</p>
+
+<p>Along the same lines, you should commit code frequently. How frequently? It&#39;s
+difficult to commit too frequently, but easy to not commit frequently enough.
+One line commits are okay. You&#39;ll find them all over GitHub. Your commit should
+probably change something. Once a day is too infrequently.</p>
+
+<p>Generally, you&#39;ll want to commit <em>working code</em>, but there are times when it
+may make sense to commit things that don&#39;t run. If, for instance, you want to
+share progress with someone else, you may want to commit something that&#39;s
+broken. It&#39;s generally a good idea to do this on a branch and share that branch
+with someone else.</p>
+
+<h2>Test Driven Development</h2>
+
+<p>Let&#39;s use TDD to write an interest calculator.</p>
+
+<p><aside class="objective">
+<strong>Interest Calculator Objective</strong>
+Write an continuous compounding interest calculator following the test driven
+development workflow. The function should return just the interest, not the
+amount owed.
+</aside></p>
+
+<p>Start with a test:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">describe(&#39;calculateInterest()&#39;, function() {
+  it(&#39;fill me in&#39;, function() {
+    // fill me in
+  });
+});</code></pre></div>
+
+<p>Let&#39;s come up with some more tests. Remember:</p>
+
+<ul>
+<li>Test expected usage</li>
+<li>Test corner cases</li>
+</ul>
+
+<h3>Challenge</h3>
+
+<p>Fork the repository <a href="https://github.com/portlandcodeschool/jsi-gravity">here</a>, follow the directions in the
+<a href="https://github.com/portlandcodeschool/jsi-gravity/blob/master/README.md">README</a>, use TDD to create a solution, then create
+a pull request with the solution.</p>
+
+<p>The project uses <a href="https://www.npmjs.org">npm</a> to install <a href="http://visionmedia.github.io/mocha/">Mocha</a> and <a href="http://chaijs.com">Chai</a>, so when
+you first clone it, you should run <code>npm install</code>. You should run the tests you
+write with <code>npm test</code> instead of using <code>node</code>.</p>
+
+<p><aside>
+<strong><code>npm install</code> and <code>npm test</code></strong></p>
+
+<p>We&#39;re skipping over a few details here on how things are set up. Don&#39;t worry,
+we&#39;ll be discussing this shortly when we introduce modules.
+</aside></p>
+
+<h2>More Fun With Functions</h2>
+
+<p>Let&#39;s continue from where we left of with our fruit functions.</p>
+
+<p>We were repeating ourselves quite a bit, so let&#39;s try to get rid of that
+repetition. Identifying and repeated code, and creating a singular function or
+piece of code that can be shared is called <em>abstraction</em>.</p>
+
+<h2>Challenges</h2>
+
+<ul>
+<li>Write a function that takes an array of people as an argument an updates each
+of their ages to be one year older. Make sure you write tests before you
+write the function so you&#39;re properly doing TDD.</li>
+<li>Write test for the <code>each</code> function.</li>
+<li>Create a new version of the interest rate calculator that calculates the
+amount of interest you&#39;ve paid with fluctuating interest rates. For example,
+you may call <code>calculateInterest(1000, [0.041, 0.042, 0.38, 0.41], 1)</code> to
+calculate the interest on $1000 over 1 year with 4 compounding periods. Note
+that the formula for this is different.</li>
+</ul>
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

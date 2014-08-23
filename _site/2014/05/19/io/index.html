@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Callbacks &amp; I/O &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">Callbacks &amp; I/O</h1>
+  <span class="post-date">19 May 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>Today we&#39;ll start with callbacks and then move on to working with files. This
+will allow us to start building more complex applications.</p>
+
+<h2>Callbacks</h2>
+
+<p>For now let&#39;s think of callbacks as a way of letting you know that something
+has completed. We&#39;ll get to a more technical definition momentarily.</p>
+
+<p>Let&#39;s use an example to illustrate the point. We&#39;ll try to write some
+code for baking a cake. Here&#39;s a starting place.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">// prep work
+preheatOven(&#39;350deg&#39;);
+
+// make the cake batter
+var batter = mix([&#39;flour&#39;, &#39;eggs&#39;, &#39;butter&#39;]);
+var pan = {
+  type: &#39;pan&#39;,
+  diameter: &#39;9in&#39;,
+  shape: &#39;round&#39;
+};
+var cake = pour(pan, batter);
+
+// bake the cake
+ovenAddItem(cake);
+ovenSetTimer(&#39;30min&#39;);
+ovenRemoveItem(cake);
+
+// frost the cake
+var frosting = mix([&#39;sugar&#39;, &#39;butter&#39;]);
+decorate(cake, frosting);</code></pre></div>
+
+<p>As it stands, this code won&#39;t allow us to accomplish our goal of baking a cake
+the way people usually do it. Let&#39;s implement some of these functions to get
+and idea of why this is.</p>
+
+<h3>Result</h3>
+
+<p>We needed to use callbacks to properly write this code. The resulting code
+becomes:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">// prep work
+preheatOven(&#39;350deg&#39;);
+
+// make the cake batter
+var batter = mix([&#39;flour&#39;, &#39;eggs&#39;, &#39;butter&#39;]);
+var pan = {
+  type: &#39;pan&#39;,
+  diameter: &#39;9in&#39;,
+  shape: &#39;round&#39;
+};
+var cake = pour(pan, batter);
+var frosting = null;
+
+// bake the cake
+ovenAddItem(cake);
+ovenSetTimer(&#39;30min&#39;, function() {
+  ovenRemoveItem(cake);
+  decorate(cake, frosting);
+});
+
+// frost the cake
+frosting =  mix([&#39;sugar&#39;, &#39;butter&#39;, &#39;cocoa powder&#39;]);</code></pre></div>
+
+<p>A <em>callback</em> is the generic term for a function that&#39;s passed as an argument
+to another function, usually a long running operation. The callback function
+will be called once the long running operation completes.</p>
+
+<h3>Test Driven Development</h3>
+
+<p>Mocha is designed to work well out of the box with <em>asynchronous</em>, or callback
+based functions. Every time you write a test with <code>it</code>, you can provide an
+additional argument to your function, usually called <code>done</code>. <code>done</code> is a
+function that you should call once everything has been completed. That means
+you can call it from your callback.</p>
+
+<p>Let&#39;s clear out the definition of <code>ovenSetTimer</code> and write a few tests, make
+sure that they fail, and work out the definition of <code>ovenSetTimer</code> again.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">describe(&#39;ovenSetTimer()&#39;, function() {
+  it(&#39;calls the callback&#39;, function(done) {
+    ovenSetTimer(&#39;0s&#39;, done);
+  });
+});</code></pre></div>
+
+<h3>Challenges</h3>
+
+<p>Don&#39;t forget to use Git and TDD.</p>
+
+<ul>
+<li>Write a function, <code>setReminder(date, callback)</code> that will execute the
+callback at the given time. You&#39;ll need <a href="http://nodejs.org/api/timers.html#timers_settimeout_callback_delay_arg"><code>setTimeout</code></a> and
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">dates</a>. There&#39;s also an
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Window.setTimeout">MDN page on <code>setTimeout</code></a>.</li>
+<li>Create a stopwatch that counts to <code>10</code> using <code>setTimeout</code>.</li>
+<li>Create a stopwatch that counts to <code>10</code> using <code>setReminder</code>.</li>
+<li>Use <a href="http://lodash.com">Lo-Dash</a>, specifically <a href="http://lodash.com/docs#range"><code>_.range</code></a> and
+<a href="http://lodash.com/docs#forEach"><code>_.forEach</code></a> to create a stopwatch that counts to <code>10</code>.
+Try implementing this with both <code>setTimeout</code> directly and also with your
+<code>setReminder</code> function.</li>
+<li><strong>Advanced:</strong> Make <code>setReminder</code> use strings instead of a date object, so
+you can type <code>tomorrow at 3pm</code> or <code>noon</code>. This is called <em>natural language
+processing</em>. <em>Natural language processing</em> is incredibly, incredibly
+difficult to implement.</li>
+</ul>
+
+<h2>I/O</h2>
+
+<h3>Jargon</h3>
+
+<p>I/O is short for Input/output. This has meanings in both
+computer hardware and software. I/O in software generally refers to
+communication with hardware devices, mice, keyboards, monitors, hard drives,
+etc.</p>
+
+<p><aside>
+Accessing files via the <em>file system</em> is one form of I/O. Because accessing
+files is probably the most common form of I/O, you will hear the term I/O used
+when someone is just referring to work they&#39;re doing with files.
+</aside></p>
+
+<h3>Speed</h3>
+
+<p>I/O is slow. It may not feel that way to you, but to a computer it&#39;s <em>orders of
+magnitude</em> slower than the code you&#39;ve written so far. The difference is about
+the same as the difference between the speed at which a baby crawls and the
+speed of a fighter jet.</p>
+
+<p>What does this mean to you?</p>
+
+<p>It means we shouldn&#39;t wait for the I/O. We should continue doing whatever we
+can while I/O happens. We use callbacks!</p>
+
+<h3>Reading Files</h3>
+
+<p>Here&#39;s how you <a href="http://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback">read a file</a>:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var fs = require(&#39;fs&#39;);
+
+fs.readFile(&#39;./path/to/file&#39;, { encoding: &#39;utf8&#39; }, function(err, contents) {
+  console.log(contents);
+});</code></pre></div>
+
+<p><aside>
+<strong>UTF What?</strong></p>
+
+<p><em>UTF-8</em> is a string encoding. That certainly made it a lot clearer. Computers
+work with zeros and ones. You&#39;ve certainly heard that before. These are called
+<em>bits</em>. Eight bits make up a <em>byte</em>. So one byte could be something like
+<code>01100001</code>. Strings are actually just sequences characters, right? Well each
+character is backed by these zeros and ones somehow. Sometimes each character
+is represented by a single byte, and there&#39;s a one to one mapping between bytes
+and characters. The standardized mapping used to do this is called
+<a href="http://en.wikipedia.org/wiki/ASCII">ASCII</a>. The letter <code>a</code>, for instance, is represented by the byte
+<code>01100001</code>, and <code>b</code> by the byte <code>01100010</code> (if you&#39;ve never counted in binary,
+that&#39;s just <code>01100001 + 00000001</code>). It works okay, but has limitation.</p>
+
+<p>One byte is only able to represent 256 (2^8) different options. If
+you start mapping out all of the characters you need to represent all of the
+languages of the world (plus the emojis), you&#39;ll realize you run out pretty
+quickly. In fact ASCII only used 7 bits per byte (ask about parity if you&#39;re
+really into this stuff). So it could only represent 128 characters. That&#39;s not
+a lot. The Unicode standard (UTF) was introduced to address this limitation.</p>
+
+<p>There are a few versions of the Unicode. They are <a href="http://en.wikipedia.org/wiki/UTF-8">UTF-8</a>,
+<a href="http://en.wikipedia.org/wiki/UTF-16">UTF-16</a>, and <a href="http://en.wikipedia.org/wiki/UTF-32">UTF-32</a>. Each of these specifies the number of
+bits that it uses by default. UTF-8 is 8 bits (or 1 byte). UTF-16 is 16 bits
+(or 2 bytes). UTF-32 is 32 bits (or 4 bytes). You can read up on them
+independently, but the main thing to know is that UTF-8 is the dominant
+encoding that supports all of the worlds languages.</p>
+
+<p>UTF-8 is a variable length encoding that&#39;s backwards compatible with ASCII.
+What this means, is you can read ASCII encoded files by specifying UTF-8. The
+variable length encoding means that some characters are represented by more
+than one byte (up to 4 bytes). Variable length encodings are somewhat slower to
+work with in certain circumstances.</p>
+
+<p>UTF-16 is variable width as well (up to 4 bytes), but incompatible with ASCII.
+Don&#39;t use it unless you have to.</p>
+
+<p>UTF-32 is fixed width. That means every character is represented by 4 bytes.
+This results certain files being four times larger than UTF-8, but has the
+advantage that you know the 2,000th character starts at the 8,000th byte
+(<code>2000*4</code>). Unlike UTF-8 and UTF-16, you don&#39;t have to read the first 2,000
+characters to know if any of them are represented by multiple bytes. This
+<em>random access</em> to characters is only needed in specific applications.</p>
+
+<p>Unicode characters are usually represented in hex, so <code>a</code> in UTF-8 is <code>0x61</code>
+and <code>z</code> is <code>0x7a</code>.</p>
+
+<p>Why does all of this matter? When you write code, and you don&#39;t control the
+input, you either need to specify that the input must be a certain encoding
+or will need to consider the possibility that the input could be encoded
+with any encoding. These are the common encodings, but since the history of
+computers goes back pretty far, there are some older encodings, some failed
+encodings, and some platform specific encodings that exist. You&#39;ll likely never
+deal with these.</p>
+
+<p>Obviously, this is a very broad topic. This little bit of information likely
+raised a lot of questions. Ask if you&#39;d like to discuss more.
+</aside></p>
+
+<h3>Project</h3>
+
+<p>Write an app that takes two arguments, the paths to two different text files.
+The app should output all of the words that are used in both files.</p>
+
+<p><aside class="objective"></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">$ ./shared-words --help
+
+  Usage: shared-words [options] &lt;file1&gt; &lt;file2&gt;
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+    -n, --number   Report just the number of words
+    -v, --verbose  Be more verbose,
+                   report timing information
+
+$ ./shared-words file1.txt file2.txt
+programming
+code
+node
+javascript
+
+$ ./shared-words --number file1.txt file2.txt
+4 words in common
+
+$ ./shared-words -n -v words1.txt words2.txt
+[time] read the files: 3ms
+[time] word comparison: 9ms
+435 words in common.</code></pre></div>
+
+<p></aside></p>
+
+<p>We talked about speed earlier, and we know that reading files can be slow.
+Let&#39;s analyze the performance of the code that we&#39;re writing now, though.
+How can we do this?</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var time = function(name) {
+  var start = Date.now();
+  return function() {
+    console.log(&#39;[time] %s: %dms&#39;, name, Date.now() - start);
+  };
+};
+
+var done = time(&#39;reading file&#39;);
+fs.readFile(&#39;path/to/file&#39;, function(err, buffer) {
+  done();
+});</code></pre></div>
+
+<p>Analyze the performance of both reading the files as well as the code that
+figures out which words are shared. See which takes longer. Don&#39;t include the
+actual logging of shared words in how long it takes. Just the part that figures
+out which words are shared.</p>
+
+<p>How long does your program take to compare the words <a href="https://github.com/portlandcodeschool/jsi-words">here</a>?
+It will depend on the speed of your computer, but it should be less than 100ms.</p>
+
+<p>If you&#39;ve got some extra time, add an option to, write the files to a file
+instead of to the terminal.</p>
+
+<h3>Discussing Performance</h3>
+
+<p>Programmers often use <a href="http://en.wikipedia.org/wiki/Big_O_notation">Big O notation</a> to discuss the <em>running time</em> of
+algorithms. There&#39;s a bunch of complex math stuff that goes along with this,
+and it&#39;s something that you might study more deeply in a CS curriculum. In the
+interest of a shared vocabulary, you should understand the basics of Big O so
+that when someone says, <q>the running time of that algorithm is N squared, so
+we need to find a better solution,</q> you understand what they&#39;re talking
+about. There&#39;s no need to understand the math.</p>
+
+<p>There&#39;s a good <a href="http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/">beginner&#39;s guide</a> that explains the basics.</p>
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

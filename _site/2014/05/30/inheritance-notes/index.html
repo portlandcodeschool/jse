@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Inheritance Notes &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">Inheritance Notes</h1>
+  <span class="post-date">30 May 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <h2>Class Flow</h2>
+
+<ul>
+<li>Discuss types and how one thing is really just a more specific version of
+another. That&#39;s when you subclass.</li>
+<li>Show language examples.</li>
+<li>Show JS example.</li>
+<li>Show <code>Object.create</code>. Note that this is shown for historical reasons. Explain
+that the JS community came up with this, and now it&#39;s part of the language.</li>
+<li>Show final JS inheritance.</li>
+<li>Continue through challenge and additional sections.</li>
+</ul>
+
+<h2>Challenge</h2>
+
+<p>During the challenge, the students will be left to try to discover the idea
+that they can set <code>this._genus</code> (and others) in <code>Apple</code> or <code>Banana</code> and that
+will be used by the <code>Fruit.prototype.genus</code>. They&#39;ll also have the same thing
+for <code>color</code>, but that will be a default value instead of a static value.</p>
+
+<p>This will be a huge jump for some, but I think some people may just do the
+right thing without guidance. We&#39;ll see. If people are totally lost, walk
+through this together.</p>
+
+<h2>Overriding Methods &amp; Calling Super</h2>
+
+<p>At the end of this section, we give the student an opportunity to try to
+discover that there&#39;s a problem when overriding and not calling the super
+call implementation.</p>
+
+<p>They may not figure this out, but we can show how this is broken by walking
+through the code.</p>
+
+<p>The two things broken is that the base class implementation of
+<code>prepareForEating</code> is not called for <code>Banana</code> objects. Also, the
+<code>prepareForEating</code> method on <code>Banana</code> does not return <code>true</code> or <code>false</code> like
+the base class does.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">Banana.prototype.prepareForEating = function() {
+  return Fruit.prototype.prepareForEating.apply(this, arguments);
+}</code></pre></div>
+
+<p>What if we like eating rotten bananas and we don&#39;t care about what the base
+class says?</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">Banana.prototype.prepareForEating = function() {
+  this.peel();
+
+  var safe = true;
+  if (this.hasMold()) { safe = false; }
+  return safe;
+}</code></pre></div>
+
+<h3>Object Oriented Design Challenge</h3>
+
+<p>The challenge will be a bit of a stretch just because sometimes it&#39;s really
+hard to fit things into this design paradigm. That&#39;s kind of the point of
+this exercise. Encourage them, but if it&#39;s really hard, do it as a group.</p>
+
+<p>After the challenge in that section, ask the students to identify how they
+came up with what should be a method, what should be an object, and how to
+name them. Point out that objects are (usually) nouns. Methods are (usually)
+verbs.</p>
+
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

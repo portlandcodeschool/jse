@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Modules &middot; PCS &middot; Slides</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="/reveal.js/css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="/css/local.css">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="/reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+        <section>
+  <h1>Modules</h1>
+</section>
+
+<section>
+  <h2>Problem</h2>
+  <p>I want to reuse the <code>each</code> function in multiple projects I'm working on.</p>
+</section>
+
+<section>
+  <h2>Problem</h2>
+  <p>I wrote 1,000 lines of code all in one file, and now I can't find anything.</p>
+</section>
+
+<section>
+  <h2>Problem</h2>
+  <p>I want to do something that I'm pretty sure should be easy, but it's not built into JavaScript.</p>
+  <aside class="notes">
+    For instance, you may want to read a file or create a file.
+  </aside>
+</section>
+
+<section>
+  <h2>Solution</h2>
+  <h3>Modules!</h3>
+</section>
+
+<section>
+  <h2>Modules</h2>
+  <ul>
+    <li>Code reuse &amp; sharing</li>
+    <li>Separation of concerns (modularity)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Building a Home</h2>
+  <ul>
+    <li>Pour foundation</li>
+    <li>Construct frame</li>
+    <li>Add siding &amp; windows</li>
+    <li>Install pipes and plumbing</li>
+    <li>Electrical</li>
+    <li>Insulation</li>
+  </ul>
+  <aside class="notes">
+    <p>
+      Imagine building a home by yourself from start to finish. If instead you contract each
+      part of the process out to other groups, you'll very likely get something finished faster,
+      cheaper, and better than if you did it yourself.
+    </p>
+  </aside>
+</section>
+
+<section>
+  <h2>Building a Website</h2>
+  <h3>Allow users to log in</h3>
+  <ul>
+    <li>Username/password</li>
+    <li>Twitter</li>
+    <li>Facebook</li>
+    <li>Google</li>
+    <li>OpenID</li>
+  </ul>
+  <aside class="notes">
+    If comparing to the idea of building a house, you'd also probably need to create a way
+    to store users on your own as well. So you'd be implementing your own database.
+  </aside>
+</section>
+
+<section>
+  <h2>Creating Node Modules</h2>
+  <pre><code class="javascript" data-trim>
+/**
+ * @file array-functions.js
+ */
+
+module.exports.each = function(array, fn) {
+  // each function definition
+};
+  </code></pre>
+  <p>
+    <code>module.exports</code> is an object on which you can define
+    additional properties.
+  </p>
+</section>
+
+<section>
+  <h2>Using Node Modules</h2>
+  <pre><code class="javascript" data-trim>
+/**
+ * @file app.js
+ */
+
+var arrayFunctions = require('./array-functions');
+var fruits = ['kiwi', 'strawberry', 'banana'];
+
+arrayFunctions.each(fruits, function(fruit) {
+  addFruitToSmoothie(fruit);
+});
+  </code></pre>
+  <p>
+    <code>require</code> allows you to access the <code>module.exports</code>
+    object defined in the other file.
+  </p>
+</section>
+
+<section>
+  <h2>Documenting Modules</h2>
+  <p>Specifically formed comments can document code.</p>
+  <pre><code class="javascript" data-trim>
+/**
+ * Enumerate an array
+ * @function
+ * @param {array} array - The array to enumerate
+ * @param {function} fn - The function to call for each item
+          in the array. It only takes one argument.
+ */
+module.exports.each = function(array, fn) {
+};
+  </code></pre>
+  <aside class="notes">
+    Comments usually only help us understand code, but this
+    special syntax is used by JSDoc to create documentation.
+  </aside>
+</section>
+
+      </div>
+    </div>
+
+    <script src="/reveal.js/lib/js/head.min.js"></script>
+    <script src="/reveal.js/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

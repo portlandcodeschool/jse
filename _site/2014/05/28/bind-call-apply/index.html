@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Bind, Call &amp; Apply &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">Bind, Call &amp; Apply</h1>
+  <span class="post-date">28 May 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>Today we&#39;re going to revisit some of the functions we wrote while discussing
+functional programming topics. We&#39;ll make each of these functions work a little
+better.</p>
+
+<h2>Functions</h2>
+
+<h3>Arguments</h3>
+
+<p>What happens with this code?</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var fn = function() {
+  
+};
+fn(&#39;hello&#39;, &#39;world&#39;);</code></pre></div>
+
+<p>What about this code?</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var fn = function(arg1, arg2) {
+  console.log(&#39;%s %s&#39;, arg1, arg2);
+};
+fn();</code></pre></div>
+
+<p>Any function can take any number of arguments. What good is that if you can&#39;t
+access the arguments? It&#39;s not, so JavaScript provides a hidden variable
+called <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments"><code>arguments</code></a>.</p>
+
+<p>Let&#39;s take a look.</p>
+
+<h3>Functions Are Objects</h3>
+
+<p>Remember when we said JavaScript treats functions just like any other object?
+Well it treats them that way because they are objects!</p>
+
+<p>Arrays have important methods like <code>forEach</code>, <code>map</code>, and <code>reduce</code> that we use
+all the time. Strings have functions like <code>toUpperCase</code> and <code>toLowerCase</code>.
+Functions have a few methods that are extremely important as well.</p>
+
+<p>We&#39;ll see important uses for each of these methods shortly, but here are those
+that we&#39;ll discuss today with a quick example of each.</p>
+
+<h4>Call</h4>
+
+<p>Allows you to call a function specifying what the value of <code>this</code> should be.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">fn.call(obj, 1, 2, 3);</code></pre></div>
+
+<p>Also, <code>call</code> allows us to convert <code>arguments</code> to a true array:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">Array.prototype.slice.call(arguments);</code></pre></div>
+
+<p>Can you explain the above code?</p>
+
+<p><aside>
+When you understand the above use of <code>slice</code> on <code>arguments</code>, you&#39;ll realize
+that you&#39;re invoking <code>slice</code> on an object that&#39;s not an array. That&#39;s not good!
+But this is <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/arguments">documented</a> and is widely used, so it&#39;s certainly
+going to continue to work. Think about it longer, and you&#39;ll realize that you
+could implement your own version of slice that worked on real arrays as well
+as the <code>arguments</code> array-like object.
+</aside></p>
+
+<h4>Apply</h4>
+
+<p>Allows you to call a function specifying what the value of <code>this</code> should be,
+and the arguments are provided as an array.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">fn.apply(obj, [1, 2, 3]);</code></pre></div>
+
+<h4>Bind</h4>
+
+<p>Lock in a value for <code>this</code> on a function by creating and returning a new
+function.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var bound = fn.bind(obj);
+bound(1, 2, 3);</code></pre></div>
+
+<h2>Partial</h2>
+
+<p>Let&#39;s use our knowledge of <code>call</code>, and <code>apply</code> to update our <code>partial</code> function
+so that it works for any number of arguments.</p>
+
+<p>We&#39;re going to start from the code we implemented last week.</p>
+
+<h3>Challenge</h3>
+
+<p>Create another function, <code>partialRight</code> that partially applies arguments
+right to left instead of left to right.</p>
+
+<p><aside class="objective"></p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var greet = function(greeting, name) { return greeting + &#39; &#39; + name; };
+var greetFred = partialRight(greet, &#39;fred&#39;);
+greetFred(&#39;hi&#39;); //=&gt; &#39;hi fred&#39;</code></pre></div>
+
+<p></aside></p>
+
+<h2>Memoize</h2>
+
+<p>Now let&#39;s revisit <code>memoize</code> function. How can we alter this function to accept
+any number of arguments?</p>
+
+<h2>Currying</h2>
+
+<p>Here&#39;s a short implementation of a <a href="https://leanpub.com/javascript-allonge/read#leanpub-auto-currying-1"><code>curry</code> function</a> taken from
+<a href="https://leanpub.com/javascript-allonge">JavaScript Allongé</a>:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var __slice = Array.prototype.slice;
+
+function curry (fn) {
+  var arity = fn.length;
+
+  return given([]);
+
+  function given (argsSoFar) {
+    return function helper () {
+      var updatedArgsSoFar = argsSoFar.concat(__slice.call(arguments, 0));
+
+      if (updatedArgsSoFar.length &gt;= arity) {
+        return fn.apply(this, updatedArgsSoFar)
+      }
+      else return given(updatedArgsSoFar)
+    }
+  }
+
+}
+
+function sumOfFour (a, b, c, d) { return a + b + c + d }
+
+var curried = curry(sumOfFour);
+
+curried(1)(2)(3)(4) //=&gt; 10
+
+curried(1,2)(3,4) //=&gt; 10
+
+curried(1,2,3,4) //=&gt; 10</code></pre></div>
+
+<h3>Challenge</h3>
+
+<ul>
+<li>Determine how this function works.</li>
+<li>Pretend that you&#39;ve now been given ownership of this code at your job.
+Prepare to explain how it works to a co-worker.</li>
+<li>Think of questions you&#39;d ask a co-worker who wrote this code in order to
+fully understand it. Does anything stand out that&#39;s weird?</li>
+</ul>
+
+<h2>Using Bind</h2>
+
+<p>The <code>bind</code> function will allow you to write cleaner and easier to read code.
+It&#39;s also frequently used by others, so it&#39;s good to know about it and
+understand how to use it.</p>
+
+<p>Given the following:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">function AlarmClock(name) {
+  this.name = name;
+};
+
+AlarmClock.prototype.ring = function() {
+  console.log(&#39;RING RING RING!!!&#39;);
+  console.log(&#39;%s!!!&#39;, this.name.toUpperCase());
+  console.log(&#39;RING RING RING!!!&#39;);
+};
+
+var alarmClock = new AlarmClock(&#39;wake up&#39;);
+setTimeout(function() {
+  alarmClock.ring();
+}, 1000);</code></pre></div>
+
+<p>The anonymous function passed to <code>setTimeout</code> is kind of redundant, isn&#39;t it?
+We&#39;re creating a function that does one thing, calls a function. Why not just
+pass <code>alarmClock.ring</code>?</p>
+
+<p>Let&#39;s take a look.</p>
+
+<p>Remember that <em>calling</em> a method on an object via <code>.</code> or <code>[]</code> will result in
+the function being invoked with <code>this</code> set to that object. The <em>binding</em> of
+<code>this</code> to the object on which the function is defined is only automatic,
+though, when you access the function <em>and call it</em> at the same time.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">alarmClock.ring(); // automatic binding
+alarmClock[&#39;ring&#39;](); // automatic binding
+
+var ring = alarmClock.ring;
+ring(); // no automatic binding
+
+(function(ring) {
+  ring()
+})(alarmClock.ring); // no automatic binding</code></pre></div>
+
+<p>So we can lock in the value of <code>this</code> by using <code>bind</code>:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">function AlarmClock(name) {
+  this.name = name;
+};
+
+AlarmClock.prototype.ring = function() {
+  console.log(&#39;RING RING RING!!!&#39;);
+  console.log(&#39;%s!!!&#39;, this.name.toUpperCase());
+  console.log(&#39;RING RING RING!!!&#39;);
+};
+
+var alarmClock = new AlarmClock(&#39;wake up&#39;);
+setTimeout(alarmClock.ring.bind(alarmClock), 1000);</code></pre></div>
+
+<p>You&#39;ll find this used by many JavaScript programmers, and I recommend using it
+in your code as well.</p>
+
+<h3>Challenge</h3>
+
+<ul>
+<li>Implement a <code>schedule</code> method on the alarm clock class that will ring the
+clock at a certain date.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">alarmClock.schedule(new Date(Date.now() + 1000))</code></pre></div>
+
+<ul>
+<li><p>Analog clocks go off ever 12 hours when you set them. Make your alarm clock
+act like an analog clock by scheduling it again after you call <code>ring</code>.
+Constraints: don&#39;t schedule the clock from within <code>ring</code>.</p></li>
+<li><p><strong>Advanced:</strong> Understand and be able to explain this code:</p></li>
+</ul>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var slice = Function.prototype.call.bind(Array.prototype.slice);
+slice(arguments);</code></pre></div>
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

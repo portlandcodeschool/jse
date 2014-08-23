@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        AJAX &amp; REST Notes &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">AJAX &amp; REST Notes</h1>
+  <span class="post-date">11 Jun 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>TODO: Address same origin policy to allow the first AJAX example to work with
+Chrome (and future browsers). This may require putting up a service (possibly
+on Heroku) that allows requests from any origin.</p>
+
+<h2>History</h2>
+
+<p>We&#39;ll talk about Gmail and the <em>Web 2.0</em> revolution. This was the start of
+AJAX.</p>
+
+<p>AJAX is the term that&#39;s been used to describe the technology that came along
+that has allowed web pages to do things on users behalf without actually
+navigating to a new page.</p>
+
+<h3><code>$.ajax</code></h3>
+
+<p>The progression of jQuery has left many options for creating AJAX requests and
+how to handle the result. This progression should help show that.</p>
+
+<p>The last version with <code>then</code> should be preferred as it&#39;s the closest to the A+
+promises that will come to JavaScript in ES6.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var url = &#39;https://raw.githubusercontent.com/wbyoung/jsi-gamelib/master/package.json&#39;;
+
+// version 1.0
+$.ajax({
+  url: url,
+  dataType: &#39;json&#39;,
+  success: function(data, status, xhr) {
+    console.log(&#39;success (options.url): &#39; + data.name);
+  },
+  error: function(xhr, status, error) {
+    console.log(&#39;failed (options.url): &#39; + error);
+  }
+});
+
+// version 1.5
+$.ajax(url, {
+  dataType: &#39;json&#39;,
+  success: function(data, status, xhr) {
+    console.log(&#39;success (options): &#39; + data.name);
+  },
+  error: function(xhr, status, error) {
+    console.log(&#39;failed (options): &#39; + error);
+  }
+});
+
+// version 1.5
+$.ajax(url, { dataType: &#39;json&#39; })
+  .done(function(data, status, xhr) {
+      console.log(&#39;success (deferred): &#39; + data.name);
+  })
+  .fail(function(xhr, status, error) {
+      console.log(&#39;failed (deferred): &#39; + error);
+  });
+
+// version 1.8
+$.ajax(url, { dataType: &#39;json&#39; })
+  .then(function(data, status, xhr) {
+      console.log(&#39;success (promises): &#39; + data.name);
+  }, function(xhr, status, error) {
+      console.log(&#39;failed (promises): &#39; + error);
+  });</code></pre></div>
+
+<p>The reason to show each of these different ways of doing things as the students
+will find code examples with each of them. It also will allow discussion about
+the progression of libraries and backwards compatibility.</p>
+
+<h2>Flickr</h2>
+
+<ul>
+<li><a href="https://www.flickr.com/services/api/flickr.interestingness.getList.html">Flickr API interestingness</a></li>
+<li><a href="https://www.flickr.com/services/api/explore/flickr.interestingness.getList">Flickr API explorer</a></li>
+<li><a href="https://www.flickr.com/services/api/misc.urls.html">Flickr image URL format</a></li>
+</ul>
+
+<p>Example request:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://api.flickr.com/services/rest/?method=flickr.interestingness.getList&amp;api_key=yourapikey&amp;format=json
+</code></pre></div>
+<h2>REST</h2>
+
+<p>We&#39;re not actually going to hit on REST during this class&#39;s challenges, but
+hopefully one of the next classes will use a service with REST.</p>
+
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

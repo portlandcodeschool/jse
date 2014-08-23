@@ -1,0 +1,14 @@
+---
+---
+@import "pure";
+@import "grids-responsive";
+@import "variables";
+
+#active{
+  color: $base;
+  font-weight: 600;
+}
+
+body, section, footer{
+  padding: 1em;
+}

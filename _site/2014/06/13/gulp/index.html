@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        gulp &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">gulp</h1>
+  <span class="post-date">13 Jun 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>Today we&#39;re going to discuss some tools that can improve your front-end
+workflow. These can help for the back-end as well, but today we&#39;re going to
+focus on what we can do on the front-end.</p>
+
+<h2>Workflow</h2>
+
+<p>What&#39;s your workflow look like right now? It should look like this:</p>
+
+<ol>
+<li>Write test code</li>
+<li>Run JSHint</li>
+<li>Run tests, make sure they fail</li>
+<li>Write code to get tests passing</li>
+<li>Run JSHint</li>
+<li>Run tests, make sure they pass</li>
+<li>Review your changes</li>
+<li>Commit your changes</li>
+</ol>
+
+<p>That&#39;s a lot of work. It&#39;s a lot of switching from your text editor to your
+terminal and re-running commands. More likely, you&#39;ve gotten lazy. Your
+workflow probably looks like:</p>
+
+<ol>
+<li>Write test code</li>
+<li>Run tests, make sure they fail</li>
+<li>Write code to get tests passing</li>
+<li>Run tests, make sure they pass</li>
+<li>Review your changes</li>
+<li>Commit your changes</li>
+</ol>
+
+<p>You&#39;re leaving out JSHint entirely. Are you that good at JavaScript that you
+make no mistakes now? :)</p>
+
+<h3>Automation</h3>
+
+<p>Wouldn&#39;t it be great if we could make this happen automatically? Our workflow
+could be:</p>
+
+<ol>
+<li>Write test code &amp; watch tests fail (no action required)</li>
+<li>Write code to get tests passing &amp; watch tests pass (no action required)</li>
+<li>Review your changes</li>
+<li>Commit your changes</li>
+</ol>
+
+<p>Enter build tools. This is one area where things are still developing, so there
+are a lot of options available. We&#39;ll look at <a href="http://gulpjs.com">gulp</a>, but you&#39;ll also
+hear people talk about <a href="http://gruntjs.com">Grunt</a> and <a href="https://github.com/joliss/broccoli">Broccoli</a> (among others).</p>
+
+<h2>More Tools</h2>
+
+<h3>Minification</h3>
+
+<p>So you&#39;ve written a lot of JavaScript. How much? What about all the other stuff
+you&#39;re using? jQuery? Lo-dash or Underscore? Some jQuery plugins? It may not
+seem like much, but every time you type <code>myVariableName</code>, there&#39;s an
+opportunity to shorten the name.</p>
+
+<p>The de facto minification tool of today is <a href="https://github.com/mishoo/UglifyJS">UglifyJS</a>. Of course, there
+are a few others. Google&#39;s <a href="https://developers.google.com/closure/compiler/">Closure Compiler</a> and Yahoo&#39;s
+<a href="http://yui.github.io/yuicompressor/">YUI Compressor</a> have been losing popularity to UglifyJS.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">$ npm install -g uglifyjs
+$ wc -l file.js
+     314 file.js
+$ cat file.js | wc -c
+    8441
+$ uglifyjs file.js | wc -c
+    5580
+$ uglifyjs file.js -c -m | wc -c
+    4113</code></pre></div>
+
+<p>The <code>-c</code> option stands for <em>compress</em> which enables the UglifyJS compressor.
+The <code>-m</code> option stands for <em>mangle</em> which causes UglifyJS to rename variables
+that it considers safe.</p>
+
+<p>Usually web servers will also use GZip compression when it&#39;s supported by the
+browser making the request, so you&#39;ll end up with more savings. This is
+automatic, but look at the total savings (81%) on this 314 line JS file:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">$ uglifyjs file.js -c -m | gzip | wc -c
+    1595</code></pre></div>
+
+<p><aside>
+<strong>Source Maps</strong></p>
+
+<p>Minification produces JavaScript that won&#39;t allow you to diagnose problems in
+your code. Tools like CoffeeScript have the same problem. The browser is
+reading code that&#39;s an alteration of what you originally wrote.</p>
+
+<p>Source maps allow the browser to translate what it&#39;s interpreting, minified
+JavaScript, for example back to the original code. We won&#39;t touch on this much
+because you&#39;ll use minification only for deployment at this point.
+</aside></p>
+
+<h3>Browserify</h3>
+
+<p>Wouldn&#39;t it be nice if we could use <code>requrie</code> in the browser? Browserify
+allows us to do just that.</p>
+
+<h3>Sass</h3>
+
+<p>We touched on <a href="http://sass-lang.com">Sass</a> during the mini-project. Today we&#39;ll learn what
+Sass offers us over plain CSS.</p>
+
+<p>There&#39;s also a tool called <a href="http://lesscss.org">Less</a>. The two tools are very similar, and
+are both widely used.</p>
+
+<p>Here&#39;s some simple CSS:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css">.error {
+  font-weight: bold;
+  background-color: #f33;
+  color: #fff;
+}
+.error a { color: #fbb; }
+.error a:hover { color: #fff; }</code></pre></div>
+
+<p>In Sass you can nest rules:</p>
+
+<p><section class="sass"></p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css">.error {
+  font-weight: bold;
+  background-color: #f33;
+  color: #fff;
+
+  a { color: #fbb; }
+  a:hover { color: #fff; }
+}</code></pre></div>
+
+<p></section></p>
+
+<p>Even more nesting:</p>
+
+<p><section class="sass"></p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css">.error {
+  font-weight: bold;
+  background-color: #f33;
+  color: #fff;
+
+  a {
+    color: #fbb;
+    &amp;:hover { color: #fff; }
+  }
+}</code></pre></div>
+
+<p></section></p>
+
+<h3>Connect</h3>
+
+<p>Connect is a simple HTTP server that can be relatively easily configured. Using
+it will allow us a little more flexibility in the way we work.</p>
+
+<p>For instance, we can create URLs relative to the server root just like we would
+want to when deploying a application.</p>
+
+<h3>Live Reload</h3>
+
+<p>Live reload makes it so that as we change files, we can actually have the web
+browser automatically refresh so that we don&#39;t need to do it manually. This
+won&#39;t help you with everything, but it will help a lot when you&#39;re styling
+things.</p>
+
+<h2>Gulp</h2>
+
+<p>Gulp has plugins to handle almost all of these tasks. Since everyone&#39;s build
+will look slightly different, the community recommends sharing <em>recipes</em> for
+how to configure certain pieces.</p>
+
+<p>It&#39;s all just JavaScript, but it can become pretty large quickly. We&#39;ll work
+from an existing example and really just start to learn what it&#39;s like to use
+this type of tool.</p>
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

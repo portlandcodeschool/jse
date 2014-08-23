@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Bind, Call &amp; Apply Notes &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">Bind, Call &amp; Apply Notes</h1>
+  <span class="post-date">28 May 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <p>This class may not feel appropriate at this time. You&#39;ll have to gauge how well
+they understood objects and the functional stuff. Don&#39;t push it. If it doesn&#39;t
+feel right, try coming back to this in week four. Try not to delay it too much,
+though because the functions being built here were recently introduced. We
+don&#39;t want them to forget what those functions were or how they worked.</p>
+
+<h2>Class Flow</h2>
+
+<ol>
+<li>Start by looking at the two code examples. Students may guess that the
+code produces errors. If they don&#39;t, you can try to outline possible
+scenarios for them and have them vote on what they think will happen:
+
+<ul>
+<li>Won&#39;t compile (syntax error)</li>
+<li>Won&#39;t run (runtime error)</li>
+<li>Runs fine without problems (for the second, what would it log?)</li>
+</ul></li>
+<li>Discuss <code>arguments</code>. Log out the <code>arguments</code> in the first example. Ask them
+what type of object this result is. Note that it&#39;s not an array, it&#39;s an
+object that has <code>length</code> and the other properties happen to be indexes. Also
+note that we&#39;ll soon learn how to convert it to a true array.</li>
+<li>Jump into each of the sub-points.</li>
+</ol>
+
+<h2>Functions</h2>
+
+<h3>Call</h3>
+
+<p>It will be best to show this off with an example function:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var fn = function() {
+  &#39;use strict&#39;;
+  console.log(&#39;fn called with this: %j, arguments: %j&#39;, this, arguments);
+};
+fn(1, 2, 3);
+fn.call(&#39;hello&#39;, 1, 2, 3);
+fn.call({ message: &#39;hello&#39; }, 1, 2, 3);</code></pre></div>
+
+<h2>Partials</h2>
+
+<p>We&#39;re starting from this:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var partial = function(fn, arg1) {
+  return function(arg2, arg3) {
+    return fn(arg1, arg2, arg3);
+  };
+};
+
+var greet = function(greeting, firstName, lastName) {
+  return greeting + &#39; &#39; + firstName + &#39; &#39; + lastName;
+};
+
+var hi = partial(greet, &#39;hi&#39;);
+
+console.log(hi(&#39;Whitney&#39;, &#39;Young&#39;));</code></pre></div>
+
+<p>Next step:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var partial = function(fn, arg1) {
+  return function() {
+    var args = Array.prototype.slice.call(arguments);
+    var all = [arg1].concat(args)
+    return fn.apply(null, all);
+  };
+};</code></pre></div>
+
+<p>Finally:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var partial = function(fn) {
+  var slice = Array.prototype.slice;
+  var args = slice.call(arguments, 1);
+  return function() {
+    return fn.apply(null, args.concat(slice.call(arguments)));
+  };
+};</code></pre></div>
+
+<h2>Memoize</h2>
+
+<p>The <code>memoize</code> function they implemented previously should have been this:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var memoize = function(fn) {
+  var cache = {};
+  return function(arg) {
+    return cache[arg] || (cache[arg] = fn(arg));
+  };
+};</code></pre></div>
+
+<p>We can re-iterate the test driven development process by writing some tests
+for <code>memoize</code> before we proceed. Depending on how things feel at this point,
+either the students can do this on their own, or we can do it together. A test
+would need to ensure that a function was called the first time it received an
+argument, then ensure it&#39;s not called the next time it receives that same
+argument. The same would be true for multiple arguments.</p>
+
+<p>There are only two changes that need to happen to get this to work with
+multiple arguments. First, they need to create a key from all of the
+arguments.</p>
+
+<p>Second, they need to use <code>apply</code> to call the original function with multiple
+arguments.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var memoize = function(fn) {
+  var cache = {};
+  var slice = Array.prototype.slice;
+  return function () {
+    var args = slice.call(arguments, 0);
+    var key = JSON.stringify(args);
+    return cache[key] ||
+      (cache[key] = fn.apply(this, args));
+  };
+};</code></pre></div>
+
+<h2>Curry Code Reading Challenge</h2>
+
+<p>Have one group of students present their explanation of the <code>curry</code> function.
+The other groups should ask questions as if they&#39;re co-workers.</p>
+
+<p>Remind the students that it&#39;s important to understand the question being asked
+before they answer. No one should try to trick anyone. It&#39;s a discussion, not
+a boxing match.</p>
+
+<p>Here are some questions to throw in the mix:</p>
+
+<ul>
+<li>Why did you name the function <code>helper</code> (instead of leaving it anonymous)?</li>
+<li>What is the point of creating a variable called <code>__slice</code>?</li>
+<li>Why two underscores on <code>__slice</code>?<br>
+<em>Answer: probably just convention to indicate a constant.</em></li>
+<li>What does <code>arity</code> mean? I&#39;ve never heard that word before.<br>
+<em>Answer: number of arguments of a function. Math term used in programming
+sometimes.</em></li>
+</ul>
+
+<h2>Bind</h2>
+
+<p>I found these interesting:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">(alarmClock[&#39;ring&#39;])(); // automatic binding
+(1 &amp;&amp; alarmClock[&#39;ring&#39;])() // not automatically bound</code></pre></div>
+
+<p>This is the solution to the alarm clock challenge:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">AlarmClock.prototype.schedule = function(date) {
+  var delay = date.getTime() - Date.now();
+  console.log(&#39;schedule for %d sec from now&#39;, delay);
+  setTimeout(function() {
+    this.ring();
+    this.schedule(new Date(Date.now() + 1000 * 86400 / 2));
+  }.bind(this), delay);
+};</code></pre></div>
+
+<p>Students who come up with a solution similar to the one below should be
+encouraged to form a solution without an extra method (this still shows good
+understanding, though).</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">AlarmClock.prototype.ringAndReschedule = function() {
+  this.ring();
+  this.schedule(new Date(Date.now() + 1000 * 86400 / 2));
+};
+
+AlarmClock.prototype.schedule = function(date) {
+  var delay = date.getTime() - Date.now();
+  setTimeout(this.ringAndReschedule.bind(this), delay);
+};</code></pre></div>
+
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

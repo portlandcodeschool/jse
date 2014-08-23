@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        AJAX &amp; REST &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">AJAX &amp; REST</h1>
+  <span class="post-date">11 Jun 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <h2>AJAX</h2>
+
+<p>In order to understand AJAX, it&#39;s best to understand a little history about
+where it came from.</p>
+
+<h3>History</h3>
+
+<p>Let&#39;s talk about the history of the web.</p>
+
+<ul>
+<li>What companies have changed the web?</li>
+<li>What have been the turning points of the web?</li>
+<li>What specific products have had an influence?</li>
+<li>How did websites used to work?</li>
+</ul>
+
+<h3>Definition</h3>
+
+<p>AJAX stands for Asynchronous JavaScript and XML.</p>
+
+<p>Let&#39;s break that down:</p>
+
+<ul>
+<li><em>JavaScript</em><br>
+Well this one&#39;s obvious. We&#39;re working in JavaScript.</li>
+<li><em>XML</em><br>
+This refers to retrieving XML from somewhere. So at this point, we&#39;re
+retrieving XML with JavaScript. In fact, this is a lie. We&#39;ll be using AJAX
+to retrieve JSON. No one says AJAJ, though.</li>
+<li><em>Asynchronous</em><br>
+We learned about asynchronous coding before when we discussed I/O in Node.
+This is the exact same idea. We know that we need to use asynchronous
+techniques when doing things that could take a long time.</li>
+</ul>
+
+<p>As you can probably tell, the definition doesn&#39;t paint the whole picture.
+This happens pretty frequently with <em>buzzwords</em> in technology.</p>
+
+<p>AJAX is a buzzword that arose during the <em>web 2.0</em> revolution describing
+techniques used to allow web pages to interact with a server, doing work on the
+user&#39;s behalf without the web browser navigating to a new page.</p>
+
+<p>AJAX incorporates:</p>
+
+<ul>
+<li>Avoiding page reloads and favoring dynamic content changes</li>
+<li>Asynchronous HTTP requests created in web browsers via JavaScript</li>
+<li>Applications remaining usable during asynchronous network operations</li>
+<li>Processing of data, usually XML, JSON, HTML, or plain text to update content</li>
+</ul>
+
+<h3>Usage</h3>
+
+<p>How do you do this? Well you can use the built in <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest"><code>XMLHttpRequest</code></a> or
+jQuery&#39;s <a href="http://api.jquery.com/jQuery.ajax/"><code>$.ajax</code></a>. Guess which one most people choose?</p>
+
+<p><aside>
+<strong>Asynchronous</strong></p>
+
+<p>Actually, <code>XMLHttpRequest</code> supports synchronous requests. So the term AJAX is
+pretty much a complete lie. But you should never ever ever ever ever make
+synchronous requests. Ever. Got it? Good.</p>
+
+<p><strong>Internet Explorer</strong></p>
+
+<p>Old versions of IE didn&#39;t support <code>XMLHttpRequest</code>, so another feature,
+<code>ActiveXObject</code>, was used to provide AJAX support.
+</aside></p>
+
+<h3>Challenge</h3>
+
+<ul>
+<li>Choose a JSON file on the internet (<a href="https://raw.githubusercontent.com/wbyoung/jsi-gamelib/master/package.json">any file is fine</a>)</li>
+<li>Make an AJAX request for that file</li>
+<li>Log the result</li>
+<li>Log a more specific property from the result</li>
+</ul>
+
+<p><em>Hint:</em> jQuery will not be able to automatically determine the data type for
+certain files, so it may not change the JSON into an object automatically.</p>
+
+<p><aside>
+<strong>Content Types</strong></p>
+
+<p>HTTP requests and responses have the ability to define a content type. jQuery
+uses that content type to determine how to process the response. Sometimes the
+content type will something you can control, sometimes it won&#39;t. We can discuss
+<em>HTTP Content-Type header</em> and <em>MIME types</em> more if you&#39;d like.
+</aside></p>
+
+<h3><code>$.ajax</code></h3>
+
+<p>Let&#39;s look at a few different ways that you can handle the result of this
+method.</p>
+
+<h2>REST</h2>
+
+<p>Reading a definition of what Representation State Transfer (REST) is will make
+your head spin. It&#39;s wordy and technical and all that jazz. In fact, you&#39;ll
+probably find multiple definitions.</p>
+
+<p>REST was originally meant something slightly different. Some programmers
+started using it to describe APIs they were creating, and it caught on. Now we
+have many RESTful services, and the differences are overlooked. Not that it
+matters. You just won&#39;t really understand the definition of REST.</p>
+
+<ul>
+<li>URIs represent resources/objects/nouns</li>
+<li>Multiple data formats available: JSON, XML</li>
+<li>HTTP verbs to interact with resources
+
+<ul>
+<li>POST - Create</li>
+<li>GET - Read</li>
+<li>PUT - Update</li>
+<li>DELETE - Delete</li>
+</ul></li>
+</ul>
+
+<p>Here are a few examples of RESTful requests:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">POST   /api/photos
+GET    /api/photos/23
+PUT    /api/photos/23
+DELETE /api/photos/23
+</code></pre></div>
+<p>For now the important thing to realize is that you may need to change the verb
+you&#39;re using to get an API to work.</p>
+
+<p>Eventually, you&#39;ll build your own APIs and you&#39;ll need to distinguish different
+requests as you define how users will interact with your API.</p>
+
+<p><aside>
+<strong>HTTP Verbs</strong></p>
+
+<p>The HTTP specification actually states how POST, GET, PUT, and DELETE should
+interact with resources. There&#39;s little consequence to not using the verbs
+correctly. In fact, it&#39;s been difficult to build services that use them in the
+past. So we&#39;ve seen the verbs ignored and/or abused. To some extent REST is
+simply a buzzword that&#39;s gotten us to re-focus on these definitions. Proposals
+for additions to the HTTP spec are still being worked out, so things are still
+being explored and changing.</p>
+
+<p><strong>CRUD</strong></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> is a term used to discuss actions that can be taken when working
+with data that is persisted. We&#39;ll come back to this when discussing databases
+and persistence.
+</aside></p>
+
+<h3>APIs</h3>
+
+<p>Many services these days are offering REST APIs. The quality of documentation
+will vary. Also, there will be certain APIs that require API keys in order to
+use them. API keys just allow the service to track/limit your usage of the API
+according to their rules.</p>
+
+<h3>Challenge</h3>
+
+<p>Create a grid that displays the most interesting photos on Flickr.</p>
+
+<p><em>Hint:</em> You&#39;ll have to use JSONP instead of JSON.</p>
+
+<p><strong>Advanced:</strong> When the user scrolls to the bottom of the page, automatically
+load more images from Flickr.</p>
+
+<p><aside>
+<strong>JSONP</strong></p>
+
+<p>JSONP allows web applications to make requests to other servers without running
+into cross-domain security issues that arise with JSON.
+</aside></p>
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>

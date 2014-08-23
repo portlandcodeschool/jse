@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        User Input & Serialization Notes &middot; PCS
+      
+    </title>
+
+    <script type="text/javascript" src="../scripts/jquery-2.1.0.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  </head>
+
+  <body class="pure-g">
+    <header class="pure-u-1">
+      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+        <ul>
+          <li>
+            <a href="/">JavaScript Evening</a>
+          </li>
+          <li>
+            <a id="" href="/">About</a>
+          </li>
+          
+
+          
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/syllabus/">Syllabus</a>
+                </li>
+              
+            
+          
+            
+              
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/curriculum/">Curriculum</a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li>
+                  <a id="" href="/resources/">Resources</a>
+                </li>
+              
+            
+          
+          <li>
+            <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
+          </li>
+        </ul>
+      </nav>      
+    </header>
+
+    <section class="pure-u-1">
+      <div class="post">
+  <h1 class="post-title">User Input & Serialization Notes</h1>
+  <span class="post-date">20 May 2014</span>
+  <span class="post-slides">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</span>
+
+  <h2>Class Flow</h2>
+
+<ul>
+<li>Run through the user input example</li>
+<li>Discuss <code>stdin</code> and <code>stdout</code>. You can mention that they&#39;re streams which
+we&#39;ll come back to, but don&#39;t actually discuss streams.</li>
+<li>We&#39;re somewhat deliberately providing just the example code from Node and
+requesting that the students ask questions. Some example questions would be:
+
+<ul>
+<li>Can we see the documentation for <code>createInterface</code>, <code>question</code> and
+<code>close</code>?</li>
+<li>What does <code>close</code> do? Or what happens if you don&#39;t use it?</li>
+<li>Why is <code>createInterface</code> taking an object as its argument rather than
+just two parameters?</li>
+<li>What other options can <code>createInterface</code> take?</li>
+<li>Do <code>input</code> and <code>output</code> of <code>createInterface</code> default to <code>stdin</code> and
+<code>stdout</code>?
+They should ask something. Try to engage them. If not, go ahead and ask
+them some questions that might get them thinking of more.</li>
+</ul></li>
+<li>Discuss serialization briefly</li>
+<li>Start them making a game (note the info below)</li>
+</ul>
+
+<h2>The Game</h2>
+
+<p>Note that the game library is intentionally broken. Hint at this, but don&#39;t
+tell them. The point is to teach them a lesson - not all libraries work, so
+approach them with caution.</p>
+
+<h3>Fixing JSI Game Library</h3>
+
+<p>The iteration over <code>y</code> should be in reverse order to get the rows coming out
+correctly. The first line below is the current value, the second is the
+correct value.<br>
+<code>for (var y = grid.min.y; y &lt;= grid.max.y; y += 1) {</code><br>
+<code>for (var y = grid.max.y; y &gt;= grid.min.y; y -= 1) {</code>  </p>
+
+<p>Making it so that order doesn&#39;t matter means doing a better job connecting
+rooms. You can do this by continuing to resolve rooms while rooms are
+receiving locations:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript">var resolving = true;
+  while (resolving) {
+    resolving = false;
+    game.rooms.forEach(function(room) {
+
+      /* code removed for brevity */
+
+      if (north &amp;&amp; north.location) {
+        room.location = copyPoint(north.location);
+        room.location.y -= 1;
+        resolving = true; // set to true for north/south/east/west branches
+      }
+
+      /* code removed for brevity */
+    });
+  }</code></pre></div>
+
+<p>The above fix is also required to make it work without an <code>&quot;A&quot;</code> room. Just set
+the starting point to <code>0, 0</code> for the first item in the rooms list before
+kicking off the process of resolving locations.</p>
+
+<p>Supporting longer names and displaying the entrance means better handling the
+room generation. This should be straight forward.</p>
+
+
+</div>
+
+
+
+    </section>
+
+    <footer class="pure-u-1">
+      &copy; 2014. All rights reserved.
+      <span>v0.0.1</span>
+    </footer>
+  </body>
+</html>
