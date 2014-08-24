@@ -1,0 +1,56 @@
+#layout, #menu{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu{
+  position: relative;
+  left: -150px;
+  border: none;
+  margin-top: 2em;
+}
+a#menuLink{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1em;
+  color: $base;
+  &:link, &:visited, &:active{
+    color: $base;
+  }
+  i {
+    //font-awesome icon
+  }
+}
+
+#page-active{
+  color: $base;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  a#menuLink{
+    left: -200px;
+  }
+  #menu{
+    left: 0;
+  }
+}
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+    #layout.active {
+        position: relative;
+        left: 150px;
+    }
+        #layout.active #menu.menu-active {
+            left: 150px;
+        }
+
+        #layout.active .menu-link {
+            left: -150px;
+        }

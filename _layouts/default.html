@@ -23,15 +23,19 @@
 
   </head>
 
-  <body class="pure-g">
-    <header class="pure-u-1">
-      <nav class="pure-menu pure-menu-open pure-menu-horizontal">
+  <body class="pure-g" id="layout">
+    <header class="pure-u-1-5 pure-u-sm-1-8 pure-u-md-1-10">
+      <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <i class="fa fa-navicon fa-2x"></i>
+      </a>
+      <nav id="menu" class="pure-menu pure-menu-open">
         <ul>
-          <li>
-            <a href="{{ site.baseurl }}/">JavaScript Evening</a>
+          <li class="">
+            <a href="{{ site.baseurl }}/">JS Evening</a>
           </li>
-          <li>
-            <a id="{% if page.url == "/" %}active{% endif %}" href="{{ site.baseurl }}/">About</a>
+          <li class="">
+            <a id="{% if page.url == "/" %}page-active{% endif %}" href="{{ site.baseurl }}/">About</a>
           </li>
           {% comment %}
             The code below dynamically generates a nav of pages with
@@ -42,26 +46,32 @@
           {% for node in pages_list %}
             {% if node.title != null %}
               {% if node.layout == "page" and node.url != "/" %}
-                <li>
-                  <a id="{% if page.url == node.url %}active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+                <li class="">
+                  <a id="{% if page.url == node.url %}page-active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
                 </li>
               {% endif %}
             {% endif %}
           {% endfor %}
-          <li>
+          <li class="">
             <a href="http://portlandcodeschool.com/" class="nav-item">PCS Home</a>
           </li>
         </ul>
-      </nav>      
+        <div id="logo-side-bar" class="img-wrap">
+          <img class="pure-img" src="{{ site.baseurl}}/img/jse-color-logo-2.png">
+        </div>
+
+      </nav>
+   
     </header>
 
-    <section class="pure-u-1">
+    <section id="main-content" class="pure-u-4-5 pure-u-sm-3-4 pure-u-md-2-3 pure-u-lg-3-5">
       {{ content }}
     </section>
-
     <footer class="pure-u-1">
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.
       <span>v{{ site.version }}</span>
     </footer>
+
+    <script type="text/javascript" src="{{ site.baseurl }}/scripts/ui-minor-utils.js"></script>
   </body>
 </html>

@@ -2,13 +2,27 @@
 ---
 @import "pure";
 @import "grids-responsive";
+@import "font-awesome/font-awesome";
 @import "variables";
 
-#active{
-  color: $base;
-  font-weight: 600;
-}
+@import "menu";
 
+*{ 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body, section, footer{
   padding: 1em;
+}
+.img-wrap{
+  padding: 1em;
+}
+#logo-side-bar{
+  margin-top: 2em;
+  width: 8em;
+}
+#main-content{
+  margin-top: .8em;
+  padding-left: 3em;
 }
