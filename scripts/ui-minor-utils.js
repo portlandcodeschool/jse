@@ -2,7 +2,8 @@
 
     var layout   = document.getElementById('layout'),
         menu     = document.getElementById('menu'),
-        menuLink = document.getElementById('menuLink');
+        menuLink = document.getElementById('menuLink'),
+        mainContent = document.getElementById('main-content');
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
@@ -30,6 +31,16 @@
         toggleClass(layout, active);
         toggleClass(menu, active);
         toggleClass(menuLink, active);
+        toggleClass(mainContent, active);
     };
+    $(window).scroll(function() {    
+        console.log('scrolled');
+        var scroll = $(window).scrollTop();
+        if (scroll <= 100) {
+            $("#main-title").removeClass("lighter-smaller-font");
+        } else {
+            $("#main-title").addClass("lighter-smaller-font");
+        }
+});
 
 }(this, this.document));

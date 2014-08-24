@@ -54,3 +54,7 @@ a#menuLink{
         #layout.active .menu-link {
             left: -150px;
         }
+    #main-content.active{
+      padding-left: 0em;
+      margin-left: -5em;
+    }

@@ -24,11 +24,17 @@
   </head>
 
   <body class="pure-g" id="layout">
+    <div class="pure-u-1">
+      <h1 class="">Currently Under Construction</h1>
+
+    </div>
+
     <header class="pure-u-1-5 pure-u-sm-1-8 pure-u-md-1-10">
       <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
         <i class="fa fa-navicon fa-2x"></i>
       </a>
+      <h1 id="main-title" class="main-title">JS Evening</h1>
       <nav id="menu" class="pure-menu pure-menu-open">
         <ul>
           <li class="">
@@ -67,7 +73,7 @@
     <section id="main-content" class="pure-u-4-5 pure-u-sm-3-4 pure-u-md-2-3 pure-u-lg-3-5">
       {{ content }}
     </section>
-    <footer class="pure-u-1">
+    <footer id="info-footer" class="pure-u-1">
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.
       <span>v{{ site.version }}</span>
     </footer>
