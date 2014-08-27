@@ -24,12 +24,7 @@
   </head>
 
   <body class="pure-g" id="layout">
-    <div class="pure-u-1">
-      <h1 class="">Currently Under Construction</h1>
-
-    </div>
-
-    <header class="pure-u-1-5 pure-u-sm-1-8 pure-u-md-1-10">
+    <header class="pure-u-1-4 pure-u-sm-1-8 pure-u-md-1-10">
       <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
         <i class="fa fa-navicon fa-2x"></i>
@@ -63,19 +58,26 @@
           </li>
         </ul>
         <div id="logo-side-bar" class="img-wrap">
-          <img class="pure-img" src="{{ site.baseurl}}/img/jse-color-logo-2.png">
+          <img class="pure-img" src="{{ site.baseurl}}/img/pcs-orange.svg">
         </div>
 
       </nav>
    
     </header>
 
-    <section id="main-content" class="pure-u-4-5 pure-u-sm-3-4 pure-u-md-2-3 pure-u-lg-3-5">
+    <section id="main-content" class="pure-u-3-4 pure-u-sm-3-4 pure-u-md-2-3 pure-u-lg-3-5">
       {{ content }}
     </section>
     <footer id="info-footer" class="pure-u-1">
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-      <span>v{{ site.version }}</span>
+      <div>
+        &copy; {{ site.time | date: '%Y' }}
+      </div>
+      <div>
+        All rights reserved.
+      </div>
+      <div>
+        v{{ site.version }}
+      </div>
     </footer>
 
     <script type="text/javascript" src="{{ site.baseurl }}/scripts/ui-minor-utils.js"></script>

@@ -12,6 +12,15 @@
   border: none;
   margin-top: 2em;
 }
+#menu li {
+  width: 130%;
+ 
+}
+@media screen and (min-width: 568px) {
+  #menu li{
+    width: 115%;
+  }
+}
 a#menuLink{
   position: absolute;
   left: 0;
