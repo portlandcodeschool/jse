@@ -6,7 +6,7 @@ title: "Syllabus"
 # Week 1
 
 - Wed 9/3
-    -Topics:
+    - Topics:
         - Git: Overview, Installation, Homework workflow
         - JS Console; Expressions, Operators;
         - Variables, Assignment; Equality; Boolean expressions;

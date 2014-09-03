@@ -1,6 +1,5 @@
 ---
-layout: page
-title: "Syllabus"
+
 ---
 
 # Week 1
