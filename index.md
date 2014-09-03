@@ -6,7 +6,7 @@ title: "About the JS Evening Class"
 - [description on PCS site](http://www.portlandcodeschool.com/javascript/)
 
 ### Weekly Flow: 
-- Most assignments will be assigned on a Wednesday and finished by the following Monday.
+- Most assignments will be assigned on a Monday and finished by the following Monday.
 - Reading is listed on the day it is due, with the exception of the first day of class. 
 
 ### Recommendations for a Good Experience
