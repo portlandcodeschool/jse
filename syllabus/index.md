@@ -15,10 +15,10 @@ title: "Syllabus"
    - [Homework 1: Expressions and Types](https://github.com/portlandcodeschool/jse-fall14-1) 
 
    - Reading: [Eloquent Javascript](http://eloquentjavascript.net/index.html)
-    - Introduction
-    - Chapter 1
-    - Chapter 2
-    - Chapter 3 (up through ["Nested Scope"](http://eloquentjavascript.net/03_functions.html#p_uliI/PmHtG))
+        - Introduction
+        - Chapter 1
+        - Chapter 2
+        - Chapter 3 start (up through ["Nested Scope"](http://eloquentjavascript.net/03_functions.html#p_uliI/PmHtG))
 
 
 # Week 2
