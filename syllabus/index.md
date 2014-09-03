@@ -10,7 +10,6 @@ title: "Syllabus"
     -   JS Console; Expressions, Operators;
     -   Variables, Assignment; Equality; Boolean expressions;
     -   Primitive types; String concatenation; Auto-conversion
-	<!-- Exercise: draw parse tree for complex expression -->
 
    - Homework 1: Expressions and Types
 
@@ -18,22 +17,12 @@ title: "Syllabus"
 
 - Mon 9/8
     -   Array basics, indexing
-	<!--  Exercise: simulate an array -->
     -   Conditionals & Branching; Truthiness; Ternary Conditional Operator; Boolean/Branching Operators (`&&`, `||`);
     -   ScratchPad; Blocks; Loops (`while`, `for`); `console.log`;
     -   Function basics: parameters, local variables, scope; return values, definition vs. call;
-    	<!-- Exercise: trace execution of expression w. function-->
 
-	<!-- Exercise: prime numbers (or Eudlid's GCD algorithm)-->
 
     - Homework 2: Arrays, Functions, and Loops
-	<!--
-	More expressions
-	Days of Xmas
-	and-simulator
-	Cards 1
-	Grid geometry
-	-->
 
 - Wed 9/10
     -   Defensive Programming; Basic Testing with Assertions
@@ -41,8 +30,6 @@ title: "Syllabus"
     -   Objects: incremental creation, literal notation, nesting; Properties, membership operators (`[]` and `.`), reference chains;
     -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
     -   Basic JSON
-
-    <-- Exercise: Bug finding -->
 
 
 # Week 3
@@ -55,11 +42,6 @@ title: "Syllabus"
     -   Custom methods, `this` keyword; example roles of objects
 
     - Homework 3: Objects
-	<!--
-	Sets
-	Social network
-	Basic Deque
-	-->
 
 -  Wed 9/17
     -   Functions as Objects; Functions as Arguments, Callbacks;
@@ -79,10 +61,6 @@ title: "Syllabus"
     -   Access Control via Closures; Private variables and functions; Closure Modules (IIFEs);
 
     - Homework 4: Object Patterns and Closures
-	<!--
-	Secure Deque
-	User logs
-	-->
 
 -   Wed 9/24:
     -   Constructors, `new`; Wrapper Objects and Converters;
@@ -97,9 +75,6 @@ title: "Syllabus"
    - Underscore.js, __.extend
 
    - Homework 5:  TBD
-	<!--
-	tictactoe engine
-	-->
 
 -   Wed 10/1:
 	- Core JS Review, Overflow
@@ -114,10 +89,6 @@ title: "Syllabus"
     -   Simple event handlers in JQuery
 
 	- Homework 6:  Basic GUIs
-	<!--
-	tictactoe gui
-	jQuery misc
-	-->
 
 -   Wed 10/8:
    - More JQuery examples;
@@ -146,7 +117,7 @@ title: "Syllabus"
 
 # Week 9
 
-Midterm conferences...
+- Midterm conferences
 
 -   Mon 10/27:
 	- Mini-project due

@@ -10,7 +10,7 @@ title: "Syllabus"
     -   JS Console; Expressions, Operators;
     -   Variables, Assignment; Equality; Boolean expressions;
     -   Primitive types; String concatenation; Auto-conversion
-	<!-- Exercise: draw parse tree for complex expression -->
+	<!--- Exercise: draw parse tree for complex expression --->
 
    - Homework 1: Expressions and Types
 
