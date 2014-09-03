@@ -12,7 +12,14 @@ title: "Syllabus"
         - Variables, Assignment; Equality; Boolean expressions;
         - Primitive types; String concatenation; Auto-conversion
 
-   - Homework 1: Expressions and Types
+   - [Homework 1: Expressions and Types](https://github.com/portlandcodeschool/jse-fall14-1) 
+
+   - Reading: [Eloquent Javascript](http://eloquentjavascript.net/index.html)
+    - Introduction
+    - Chapter 1
+    - Chapter 2
+    - Chapter 3 (up through ["Nested Scope"](http://eloquentjavascript.net/03_functions.html#p_uliI/PmHtG))
+
 
 # Week 2
 
