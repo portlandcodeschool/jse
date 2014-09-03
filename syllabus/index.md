@@ -15,6 +15,7 @@ title: "Syllabus"
     - [Homework 1: Expressions and Types](https://github.com/portlandcodeschool/jse-fall14-1) 
 
     - Reading: [Eloquent Javascript](http://eloquentjavascript.net/index.html)
+    
         - Introduction
         - Chapter 1
         - Chapter 2
