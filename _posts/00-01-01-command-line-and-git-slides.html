@@ -107,8 +107,7 @@ date: 2014-05-12 00:00:00
 <section>
   <h3>Class Workflow</h3>
   <p>Clone the repository from github (the one in which you clicked the little button)</p>
-  <em><code>git clone
-  git@github.com:portlandcodeschool/jse-fall14-1.git</code></em>
+  <em><code>git clone git@github.com:portlandcodeschool/jse-fall14-1.git</code></em>
 </section>
 
 <section data-background="{{ site.baseurl }}/img/git/3-workflow.jpg" data-background-size="960px"></section>
@@ -125,9 +124,26 @@ date: 2014-05-12 00:00:00
 
 <section data-background="{{ site.baseurl }}/img/git/4-workflow.jpg" data-background-size="960px"></section>
 
+
 <section>
   <h3>Class Workflow</h3>
-  <p>You can create files with the touch command, like this: </p>
+  <p><em>Before you do anything else: make a new repo branch with your name!</em></p>
+  <p><em><code>git checkout -b yourNameHere</code></em></p>
+  <p>This keeps any changes you make out of the master branch until it's time to merge them.</p>
+</section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>In addition, so we're protected by both belt and suspenders, put all of your changes in a subdirectory with your name:</p>
+  <p><em><code>mkdir yourNameHere</code></em></p>
+  <p>Then move to that directory:</p>
+  <p><em><code>cd yourNameHere</code></em></p>
+</section>
+
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>Now you can safely create and edit files.  You can create files with the touch command, like this: </p>
   <p><em><code>touch file-1.js</code></em></p>
   <p><em><code>touch index.html</code></em></p>
   <p><em><code>touch instructions.md</code></em></p>
