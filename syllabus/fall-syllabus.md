@@ -1,17 +1,20 @@
-<!-- Still under development; update pending 9/2 -->
+---
+layout: page
+title: "Syllabus"
+---
 
-=== Week 1
+# Week 1
 
 - Wed 9/3
     - Git: Overview, Installation, Homework workflow
     -   JS Console; Expressions, Operators;
-    -   Variables, Assignment; Side-effects
+    -   Variables, Assignment; Equality; Boolean expressions;
     -   Primitive types; String concatenation; Auto-conversion
 	<!-- Exercise: draw parse tree for complex expression -->
 
    - Homework 1: Expressions and Types
 
-=== Week2
+# Week 2
 
 - Mon 9/8
     -   Array basics, indexing
@@ -42,7 +45,7 @@
     <-- Exercise: Bug finding -->
 
 
-=== Week 3
+# Week 3
 
 - Mon 9/15
     -   Review: Object creation, membership operators
@@ -70,7 +73,7 @@
     -   Factory Functions; Duplicate vs. Shared Methods
     -   Programming exercises
 
-=== Week 4
+# Week 4
 
 -   Mon 9/22:
     -   Access Control via Closures; Private variables and functions; Closure Modules (IIFEs);
@@ -87,7 +90,7 @@
     -   Subclassing
 
 
-=== Week 5
+# Week 5
 
 -   Mon 9/29:
    - Class methods; Inheritance and Subclassing;
@@ -101,7 +104,7 @@
 -   Wed 10/1:
 	- Core JS Review, Overflow
 
-=== Week 6
+# Week 6
 
 -   Mon 10/6:
   _ Intro to JQuery and the DOM
@@ -123,7 +126,7 @@
 
 
 
-=== Week 7
+# Week 7
 
 -   Mon 10/13:
 	- Nested Views in Backbone, Backbone Collections
@@ -135,13 +138,13 @@
 
 -   Sat 10/18: Job readiness practices; TBD
 
-=== Week 8
+# Week 8
 
 -   Mon 10/20: mini-project
 
 -   Wed 10/22: mini-project
 
-=== Week 9
+# Week 9
 
 Midterm conferences...
 
@@ -163,7 +166,7 @@ Midterm conferences...
     -   Routing in Express
     -   Serving up Backbone app as static web page
 
-=== Week 10
+# Week 10
 
 -   Mon 11/3: 
     -   Integrating Backbone with servers
@@ -180,7 +183,7 @@ Midterm conferences...
     -   Orchestrate.io
     -   Integrating Orchestrate into applications
 
-=== Week 11
+# Week 11
 
 -   Mon 11/10:
     -   Introduction to testing
@@ -202,15 +205,16 @@ Midterm conferences...
 
 - Sat 11/15: Job readiness activities
 
-=== Week 12
+# Week 12
 
 -   Mon 11/17:
 	- Advanced Topics (Node, Backbone, and programming skills), group projects underway
 	- Capstone begins; group formation; brainstorming
 
--   Wed 11/19: Advanced Topics (Node, Backbone, and programming skills), group projects underway
+-   Wed 11/19:
+    - Advanced Topics (Node, Backbone, and programming skills), group projects underway
 
-=== Week 13
+# Week 13
 
 -   Mon 11/24:
 	- Advanced Topics
@@ -222,7 +226,7 @@ Midterm conferences...
 
 -   Thanksgiving Weekend!
 
-=== Week 14
+# Week 14
 
 -   Mon 12/1:
 	- Advanced Topics
@@ -233,7 +237,7 @@ Midterm conferences...
 -   Wed 12/3:
 	- Advanced Topics
 
-=== Week 15
+# Week 15
 
 -   Mon 12/8:
 	- Advanced Topics
@@ -245,7 +249,7 @@ Midterm conferences...
 
 -   Sat 12/13: Capstone group tech talks; Job readiness supplement
 
-=== Week 16
+# Week 16
 
 -   Mon 12/15:
 	Prep and practice for Capstone, other bonus topics
