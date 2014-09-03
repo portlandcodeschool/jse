@@ -191,7 +191,7 @@ Midterm conferences...
     -   Mocha library
     -   Adding tests to prior examples
 
-	_ Homework 11: Testing and TBD
+	- Homework 11: Testing and TBD
 
 -   Wed 11/12: 
     -   Introduction to using APIs
