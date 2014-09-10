@@ -30,7 +30,7 @@ title: "Syllabus"
         - ScratchPad; Blocks; Loops (`while`, `for`); `console.log`;
         - Function basics: parameters, local variables, scope; return values, definition vs. call;
 
-    - Homework 2: Arrays, Functions, and Loops
+    - [Homework 2: Arrays, Functions, and Loops](https://github.com/portlandcodeschool/jse-fall14-2)
 
 - Wed 9/10
     - Topics:
@@ -39,6 +39,9 @@ title: "Syllabus"
         -   Objects: incremental creation, literal notation, nesting; Properties, membership operators (`[]` and `.`), reference chains;
         -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
         -   Basic JSON
+
+    - Reading: [Eloquent Javascript](http://eloquentjavascript.net/index.html)
+        - Chapter 3 (finish)
 
 # Week 3
 
