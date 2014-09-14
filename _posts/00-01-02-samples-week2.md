@@ -6,11 +6,11 @@ date: 2014-09-10 00:00:00
 ---
 ### Sketches
 
-![sample sample image]({{ site.baseurl }}/img/core-js/2014-09-10_0001.jpg)
+![sample sample image]({{ site.baseurl }}/img/core-js/2014-09-08_0001.jpg)
 
-![sample sample image]({{ site.baseurl }}/img/core-js/2014-09-10_0002.jpg)
+![sample sample image]({{ site.baseurl }}/img/core-js/2014-09-08_0002.jpg)
 
-![sample sample image]({{ site.baseurl }}/img/core-js/2014-09-10_0003.jpg)
+![sample sample image]({{ site.baseurl }}/img/core-js/2014-09-08_0003.jpg)
 
 ![sample sample image]({{ site.baseurl }}/img/core-js/2014-09-10_0001.jpg)
 
