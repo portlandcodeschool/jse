@@ -4,11 +4,10 @@ title: JavaScript Week 3 Samples
 class: JavaScript Week 3 Samples
 date: 2014-09-15 00:00:00
 ---
-### Sketches
 
-Mon. 9/15
-
+##Mon. 9/15
 
 
-Wed. 9/17
+
+##Wed. 9/17
 
