@@ -7,7 +7,7 @@ date: 2014-09-10 00:00:00
 
 ##Mon. 9/8
 
-[console]({{ site.baseurl }}/curriculum/samples/Sept8-console)
+[console]({{ site.baseurl }}/curriculum/samples/Sept8-console.md)
 
 [scratchpad]({{ site.baseurl }}/curriculum/samples/Sept8-scratchpad.js)
 
@@ -21,7 +21,7 @@ date: 2014-09-10 00:00:00
 
 ##Wed. 9/10
 
-[console]({{ site.baseurl }}/curriculum/samples/Sept10-console)
+[console]({{ site.baseurl }}/curriculum/samples/Sept10-console.md)
 
 [scratchpad1]({{ site.baseurl }}/curriculum/samples/Sept10-scratchpad1.js)
 
