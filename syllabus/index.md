@@ -27,33 +27,33 @@ title: "Syllabus"
     - Topics:
         - Array basics, indexing
         - Conditionals & Branching; Truthiness; Ternary Conditional Operator; Boolean/Branching Operators (`&&`, `||`);
-        - ScratchPad; Blocks; Loops (`while`, `for`); `console.log`;
-        - Function basics: parameters, local variables, scope; return values, definition vs. call;
+        - ScratchPad; Blocks; Loops (`while`, `for`); Debugging with `console.log`
 
     - [Homework 2: Arrays, Functions, and Loops](https://github.com/portlandcodeschool/jse-fall14-2)
 
 - Wed 9/10
     - Topics:
+        - Function basics: parameters, local variables, scope, shadowing; return values, definition vs. call;
         -   Defensive Programming; Basic Testing with Assertions
-        -   JS within HTML
-        -   Objects: incremental creation, literal notation, nesting; Properties, membership operators (`[]` and `.`), reference chains;
-        -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
-        -   Basic JSON
 
     - Reading: [Eloquent Javascript](http://eloquentjavascript.net/index.html)
-        - Chapter 3 (finish)
+        - [Chapter 3 (finish)](http://eloquentjavascript.net/03_functions.html)
 
 # Week 3
 
 - Mon 9/15
     - Topics:
-        -   Review: Object creation, membership operators
+        -   JS within HTML
+        -   Objects: incremental creation, literal notation, nesting; Properties, membership operators (`[]` and `.`), reference chains;
+        -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
         -   References; Object linking and sharing, shallow copy and compare, `null`, reference arguments
         -   Arrays as Objects; Array methods
         -   String methods; String wrapper objects
         -   Custom methods, `this` keyword; example roles of objects
 
-    - Homework 3: Objects
+    - [Homework 3: Objects](https://github.com/portlandcodeschool/jse-fall14-3)
+
+    - Reading: [E-JS Chapter 4](http://eloquentjavascript.net/04_data.html) through [mutability](http://eloquentjavascript.net/04_data.html#p_S6PAaKQoFH)
 
 -  Wed 9/17
     - Topics:
@@ -65,6 +65,7 @@ title: "Syllabus"
 
 -   Sat 9/20
     - Topics:
+        -   Basic JSON
         -   Object Patterns; Helper Functions, Delegates
         -   Factory Functions; Duplicate vs. Shared Methods
         -   Programming exercises
