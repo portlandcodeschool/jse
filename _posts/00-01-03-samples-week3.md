@@ -24,3 +24,4 @@ date: 2014-09-15 23:00:00
 
 ##Wed. 9/17
 
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Sept17/Sept17-scratchpad-initial.js)
