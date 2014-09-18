@@ -28,7 +28,7 @@ date: 2014-09-15 23:00:00
 
 [final scratchpad]({{ site.baseurl }}/curriculum/samples/Sept17/Sept17-scratchpad.js)
 
-[console]({{ site.baseurl }}/curriculum/samples/Sept17/Sept17-console.js)
+[console]({{ site.baseurl }}/curriculum/samples/Sept17/Sept17-console.md)
 
 ###Diagrams
 
