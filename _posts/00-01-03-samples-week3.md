@@ -25,3 +25,21 @@ date: 2014-09-15 23:00:00
 ##Wed. 9/17
 
 [initial scratchpad]({{ site.baseurl }}/curriculum/samples/Sept17/Sept17-scratchpad-initial.js)
+
+[final scratchpad]({{ site.baseurl }}/curriculum/samples/Sept17/Sept17-scratchpad.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Sept17/Sept17-console.js)
+
+###Diagrams
+
+![for..in  vs in]({{ site.baseurl }}/img/core-js/2014-09-17_0001.jpg)
+
+![References Puzzzle]({{ site.baseurl }}/img/core-js/2014-09-17_0002.jpg)
+
+![Arrays as Objects]({{ site.baseurl }}/img/core-js/2014-09-17_0003.jpg)
+
+![References and null]({{ site.baseurl }}/img/core-js/2014-09-17_0004.jpg)
+
+![Linked objects]({{ site.baseurl }}/img/core-js/2014-09-17_0005.jpg)
+
+![Shared methods, 'this']({{ site.baseurl }}/img/core-js/2014-09-17_0006.jpg)
