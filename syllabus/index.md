@@ -46,34 +46,34 @@ title: "Syllabus"
         -   JS within HTML
         -   Objects: incremental creation, literal notation, nesting; Properties, membership operators (`[]` and `.`), reference chains;
         -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
-        -   References; Object linking and sharing, shallow copy and compare, `null`, reference arguments
-        -   Arrays as Objects; Array methods
-        -   String methods; String wrapper objects
-        -   Custom methods, `this` keyword; example roles of objects
-
+        
     - [Homework 3: Objects](https://github.com/portlandcodeschool/jse-fall14-3)
 
     - Reading: [E-JS Chapter 4](http://eloquentjavascript.net/04_data.html) through [mutability](http://eloquentjavascript.net/04_data.html#p_S6PAaKQoFH)
 
 -  Wed 9/17
     - Topics:
+        -   References; Object linking and sharing, shallow copy and compare, `null`, reference arguments
+        -   Arrays as Objects; Array methods
+        -   _String methods; String wrapper objects_
+        -   Custom methods, `this` keyword; example roles of objects
+
+
+-   Sat 9/20
+    - Topics:
         -   Functions as Objects; Functions as Arguments, Callbacks;
         -   Call operator, parentheses types; Self-Executing Anonymous Functions;
         -   Function details: Evaluation Phases, Call Objects, Arguments Object; Call Chain, Scopes, Closures; `this`
         -   Global Object; Global variables vs. properties
 
+# Week 4
 
--   Sat 9/20
+-   Mon 9/22
     - Topics:
         -   Basic JSON
         -   Object Patterns; Helper Functions, Delegates
         -   Factory Functions; Duplicate vs. Shared Methods
         -   Programming exercises
-
-# Week 4
-
--   Mon 9/22
-    - Topics:
         -   Access Control via Closures; Private variables and functions; Closure Modules (IIFEs);
 
     - Homework 4: Object Patterns and Closures
