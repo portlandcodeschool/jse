@@ -43,3 +43,8 @@ date: 2014-09-15 23:00:00
 ![Linked objects]({{ site.baseurl }}/img/core-js/2014-09-17_0005.jpg)
 
 ![Shared methods, 'this']({{ site.baseurl }}/img/core-js/2014-09-17_0006.jpg)
+
+##Sat. 9/20
+
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Sept20/Sept20-scratchpad-initial.js)
+
