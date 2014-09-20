@@ -46,5 +46,7 @@ date: 2014-09-15 23:00:00
 
 ##Sat. 9/20
 
+[spellcheck scratchpad]({{ site.baseurl }}/curriculum/samples/Sept20/Sept20-spellcheck-scratchpad.js)
+
 [initial scratchpad]({{ site.baseurl }}/curriculum/samples/Sept20/Sept20-scratchpad-initial.js)
 
