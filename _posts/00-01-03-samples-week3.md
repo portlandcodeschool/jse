@@ -48,5 +48,22 @@ date: 2014-09-15 23:00:00
 
 [spellcheck scratchpad]({{ site.baseurl }}/curriculum/samples/Sept20/Sept20-spellcheck-scratchpad.js)
 
+
 [initial scratchpad]({{ site.baseurl }}/curriculum/samples/Sept20/Sept20-scratchpad-initial.js)
+
+[final scratchpad]({{ site.baseurl }}/curriculum/samples/Sept20/Sept20-scratchpad.js)
+
+###Diagrams
+
+![spellcheck pseudocode]({{ site.baseurl }}/img/core-js/2014-09-20_0001.jpg)
+
+![Fig.1]({{ site.baseurl }}/img/core-js/2014-09-20_0002.jpg)
+
+![Fig.3]({{ site.baseurl }}/img/core-js/2014-09-20_0003.jpg)
+
+![Fig.4,5]({{ site.baseurl }}/img/core-js/2014-09-20_0004.jpg)
+
+![Fig.6,7]({{ site.baseurl }}/img/core-js/2014-09-20_0005.jpg)
+
+![Fig.8,9]({{ site.baseurl }}/img/core-js/2014-09-20_0006.jpg)
 
