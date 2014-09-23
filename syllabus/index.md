@@ -61,36 +61,40 @@ title: "Syllabus"
 
 -   Sat 9/20
     - Topics:
-        -   Functions as Objects; Functions as Arguments, Callbacks;
-        -   Call operator, parentheses types; Self-Executing Anonymous Functions;
-        -   Function details: Evaluation Phases, Call Objects, Arguments Object; Call Chain, Scopes, Closures; `this`
-        -   Global Object; Global variables vs. properties
+        -   Pseudo-coding practice
+        -   Functions as Objects; aliasing methods
+        -   Function details: Evaluation Phases, Call Objects/Scopes, Lexical Scoping, Closures; 
 
+ 
 # Week 4
 
 -   Mon 9/22
     - Topics:
-        -   Basic JSON
-        -   Object Patterns; Helper Functions, Delegates
-        -   Factory Functions; Duplicate vs. Shared Methods
-        -   Programming exercises
-        -   Access Control via Closures; Private variables and functions; Closure Modules (IIFEs);
+        -   Functions as Arguments, Callbacks;
+        -   Call operator, parentheses types; Self-Executing Anonymous Functions;
+        -   `this`; Global Object; Global variables vs. properties
 
-    - Homework 4: Object Patterns and Closures
+    - Homework 4: Callbacks and Factories
 
 -   Wed 9/24
     - Topics:
-        -   Constructors, `new`; Wrapper Objects and Converters;
-        -   Prototypes, Instance Methods, Class Methods
-        -   Subclassing
+        -   Basic JSON
+        -   Object Patterns; Helper Functions, Delegates
+        -   Factory Functions; Duplicate vs. Shared Methods
+        -   Access Control via Closures; Private variables and functions; Closure Modules (IIFEs);
 
+
+    - Reading: [E-JS Chapter 5](http://eloquentjavascript.net/04_data.html) through ["Transforming with Map"](http://http://eloquentjavascript.net/05_higher_order.html#p_kz8fxQbtBm)
 
 # Week 5
 
 -   Mon 9/29
     - Topics:
-       - Class methods; Inheritance and Subclassing;
-       - Underscore.js, __.extend
+        -   Constructors, `new`; Wrapper Objects and Converters;
+        -   Prototypes, Instance Methods, Class Methods
+        -   Subclassing
+        -   Class methods; Inheritance and Subclassing;
+        -   Underscore.js, __.extend
 
    - Homework 5:  TBD
 
