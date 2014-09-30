@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 5 Samples
 class: JavaScript Week 5 Samples
-date: 2014-09-29 22:01:00
+date: 2014-09-29 22:02:00
 ---
 
 ##Mon. 9/29
@@ -11,7 +11,7 @@ date: 2014-09-29 22:01:00
 
 [final scratchpad]({{ site.baseurl }}/curriculum/samples/Sept29/Sept29-scratchpad-final.js)
 
-[final scratchpad]({{ site.baseurl }}/curriculum/samples/Sept29/Sept29-console.md)
+[console]({{ site.baseurl }}/curriculum/samples/Sept29/Sept29-console.md)
 
 ###Diagrams
 
