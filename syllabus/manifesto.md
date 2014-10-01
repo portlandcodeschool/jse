@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Syllabus"
+title: "Objectives and Expectations"
 ---
 version 1.0
 
