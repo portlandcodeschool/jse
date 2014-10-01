@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Objectives and Expectations"
+title: "Expectations"
 ---
 version 1.0
 
@@ -198,7 +198,16 @@ You should never let the latter interfere with the former.  For example, if you 
 
 ## Mutual Respect
 
-Steal this section
+This class depends upon an atmosphere of mutual respect among students and staff. Together, we create a safe place to listen, learn, speak candidly, and fail safely. This is not a typical college class, it's a team effort producing a final product: jobs for everyone. You have the opportunity to make deep connections here that you will enjoy the rest of your career.
+
+Students are expected to act at their highest capacity and with mutual respect for each other regardless of age, race, gender identity and expression, sexual orientation, or prior experience. Instructors are expected to lead in this regard by example.
+
+In a related vein, this class requires work in close proximity to others as we code and debug in pairs and small groups. Good hygiene is mandatory and an additional sign of respect for your colleagues.
+
+### Grievances Procedure
+
+Students who observe or experience any behavior on the part of instructors, staff, or students at Portland Code School that does not meet the school's Code of Conduct should take action. If you experience or perceive a problem, attempt to work it out on your own, if possible, but do not hesitate to bring it privately to the attention of your instructor. If this is unsatisfactory, bring it to the attention of the school Director (Cris Kelly) or Assistant Director (Shawna Scott).
+
 
 # Curriculum Overview
 
