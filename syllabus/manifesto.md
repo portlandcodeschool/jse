@@ -4,7 +4,7 @@ title: "Syllabus"
 ---
 version 1.0
 
-## Course Description
+# Course Description
 
 This fast-paced 16-week evening course offers a solid foundation in Javascript programming and a sample of experience developing every layer of a web application. 
 
@@ -32,9 +32,10 @@ PCS Classroom, 1771 NW Pettygrove Street, Suite 140
 # Prerequisites
 
 Before starting this course, you should be:
-- comfortable building simple, static web pages by writing raw HTML and CSS in a text editor;
-- familiar with the LINUX/OSX command line and able to navigate and manipulate your file system strictly through the terminal;
-- acquainted with the basics of version-control through git and github.
+
+  - comfortable building simple, static web pages by writing raw HTML and CSS in a text editor;
+  - familiar with the LINUX/OSX command line and able to navigate and manipulate your file system strictly through the terminal;
+  - acquainted with the basics of version-control through git and github.
 
 You don't need prior programming experience, but it helps.
 This course is oriented to beginning programmers, but the less experience you come in with, the more time you'll need to commit to keep up.
@@ -166,31 +167,28 @@ At the end of each term, employers ask us for recommendations -- the names of pa
 
 All of these sources contribute to our evaluation of your progress and readiness:
 
-  1. Homework: 
+  1. **Homework:**
 The code and work products you submit will be evaluated by at least two people: you yourself and at least one TA or instructor.  Each problem section will receive a score from 0-4, following a rubric which will be shared openly and re-negotiated as needed.  The weekly details of your scores will have little significance, except for two worrisome patterns:
 * consistent differences (in either direction) between your self-evaluations and your mentor's evaluation are a sign that you don't recognize what constitutes code quality;
 * low scores (0 or 1) are a sign that either you're not managing your time or you're not connecting with others to get yourself unstuck.
 
-  1. Weekly Invoices:
-Life is busy, and you can have some distracted weeks, but if you have consistently low hours per week (or consistently fail to submit data!), your confusions will be met with less sympathy.  And if your reported time spent is higher than your apparent progress, we'll wonder how efficiently your using your time.
+  1. **Weekly Invoices:**
+  Life is busy, and you can have some distracted weeks, but if you have consistently low hours per week (or consistently fail to submit data!), your confusions will be met with less sympathy.  And if your reported time spent is higher than your apparent progress, we'll wonder how efficiently your using your time.
 
-  1. Midterm Conferences: 
-In Week 9 or 10 you'll need to schedule a time for a 30 minute conversation with your instructor about your progress and concerns.  It will not be a technical interview, but you will be expected to offer a realistic and candid summary of your progress and proposals to redress any trends of failure.
+  1. **Midterm Conferences:**
+  In Week 9 or 10 you'll need to schedule a time for a 30 minute conversation with your instructor about your progress and concerns.  It will not be a technical interview, but you will be expected to offer a realistic and candid summary of your progress and proposals to redress any trends of failure.
 
-  1. Participation in Class and Office Hours:
-The ability to formulate questions even in the fog of confusion is a critical skill.  No one is counting the number of questions you ask in class or scoring your success on in-class exercises, but a pattern of passivity will raise concerns and stunt your growth.  
+  1. **Participation in Class and Office Hours:**
+  The ability to formulate questions even in the fog of confusion is a critical skill.  No one is counting the number of questions you ask in class or scoring your success on in-class exercises, but a pattern of passivity will raise concerns and stunt your growth.  
  
-  1. Practice talks, whiteboarding, and mock interviews: in later weeks especially, these activites can be a chance to show some skill which other measures have missed.
+  1. **Practice talks, whiteboarding, and mock interviews:**
+  In later weeks especially, these activites can be a chance to show some skill which other measures have missed.
 
+  1. **Capstone Groups:**
+  Starting in week 12, your instructor will organize you (with your input) into groups of 3-4 for your Capstone projects.  Most of your activity in weeks 12-16 will be with your group, and you will succeed or flail together.  Each week, your group will have a "stand-up" meeting with the instructor to report on your progress, obstacles, and individual roles.  In this phase, teamwork is as important as individual skill, and people who might have been struggling in isolation will be re-evaluated in regard to their collaborative skills.
 
-  1. Community Participation:
-  	 -  Slack
-	 -  Meetups
-
- 1. Capstone Groups:  Starting in week 12, your instructor will organize you (with your input) into groups of 3-4 for your Capstone projects.  Most of your activity in weeks 12-16 will be with your group, and you will succeed or flail together.  Each week, your group will have a "stand-up" meeting with the instructor to report on your progress, obstacles, and individual roles.  In this phase, teamwork is as important as individual skill, and people who might have been struggling in isolation will be re-evaluated in regard to their collaborative skills.
-
-1. Capstone Presentations:
-The last evening of the class will be a public open-house in which Capstone groups show off their work to visitors including potential employers.  That event is a chance to impress peers and future colleagues without regard to any bumps in the road beforehand.
+  1. **Capstone Presentations:**
+  The last evening of the class will be a public open-house in which Capstone groups show off their work to visitors including potential employers.  That event is a chance to impress peers and future colleagues without regard to any bumps in the road beforehand.
 
 <!--
 The primary purpose of each component is to help you.
