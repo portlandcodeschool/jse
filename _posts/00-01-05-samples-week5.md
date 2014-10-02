@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 5 Samples
 class: JavaScript Week 5 Samples
-date: 2014-10-1 18:00:00
+date: 2014-10-1 23:00:00
 ---
 
 ##Mon. 9/29
@@ -26,4 +26,10 @@ date: 2014-10-1 18:00:00
 
 [initial scratchpad]({{ site.baseurl }}/curriculum/samples/Oct1/Oct1-scratchpad-initial.js)
 
+[final scratchpad]({{ site.baseurl }}/curriculum/samples/Oct1/Oct1-scratchpad-final.js)
+
 ###Diagrams
+
+![AppNexus flyer]({{ site.baseurl }}/img/core-js/2014-10-01_0005.jpg)
+
+![Watcher with callbacks]({{ site.baseurl }}/img/core-js/2014-10-01_0004.jpg)
