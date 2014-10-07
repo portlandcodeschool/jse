@@ -63,7 +63,7 @@ title: "Syllabus"
     - Topics:
         -   Pseudo-coding practice
         -   Functions as Objects; aliasing methods
-        -   Function details: Evaluation Phases, Call Objects/Scopes, Lexical Scoping, Closures; 
+        -   Function details: Evaluation Phases, Call Objects/Scopes, Lexical Scoping, preview of closures; 
 
  
 # Week 4
@@ -74,15 +74,11 @@ title: "Syllabus"
         -   Call operator, parentheses types; Self-Executing Anonymous Functions;
         -   `this`; Global Object; Global variables vs. properties
 
-    - Homework 4: Callbacks and Factories
+    - [Homework 4: Callbacks and Factories](https://github.com/portlandcodeschool/jse-fall14-4)
 
 -   Wed 9/24
     - Topics:
-        -   Basic JSON
-        -   Object Patterns; Helper Functions, Delegates
         -   Factory Functions; Duplicate vs. Shared Methods
-        -   Access Control via Closures; Private variables and functions; Closure Modules (IIFEs);
-
 
     - Reading: [E-JS Chapter 5](http://eloquentjavascript.net/04_data.html) through ["Transforming with Map"](http://http://eloquentjavascript.net/05_higher_order.html#p_kz8fxQbtBm)
 
@@ -90,21 +86,34 @@ title: "Syllabus"
 
 -   Mon 9/29
     - Topics:
-        -   Constructors, `new`; Wrapper Objects and Converters;
-        -   Prototypes, Instance Methods, Class Methods
-        -   Subclassing
-        -   Class methods; Inheritance and Subclassing;
-        -   Underscore.js, __.extend
+        - Access control with Closures; Private variables and functions
 
-   - Homework 5:  TBD
+    - [Homework 5: Closures and modules](https://github.com/portlandcodeschool/jse-fall14-5)
 
 -   Wed 10/1
     - Topics:
-    	- Core JS Review, Overflow
+        - Closure Modules (IIFEs); More closure examples
+    - Retrospective
 
 # Week 6
 
 -   Mon 10/6
+    - Topics:
+        -   Constructors, `new`; Wrapper Objects and Converters;
+        -   Prototypes, Instance Methods, Class Methods
+
+	- Homework 6:  TBD
+
+    - Reading: [E-JS Chapter 6](http://eloquentjavascript.net/06_object.html)
+
+-   Wed 10/8
+    - Topics:
+        -   Class methods; Inheritance and Subclassing;
+        -   Underscore.js, __.extend
+
+# Week 7
+
+-   Mon 10/13
     - Topics:
       - Intro to JQuery and the DOM
         -   What is the DOM?
@@ -112,24 +121,11 @@ title: "Syllabus"
         -   Accessing elements in JQuery
         -   Simple event handlers in JQuery
 
-	- Homework 6:  Basic GUIs
-
--   Wed 10/8
-    - Topics:
-       - More JQuery examples;
-       - MVC design pattern
-       - Backbone starts, Backbone Routes, Simple Views, Simple Models
-
-
-# Week 7
-
--   Mon 10/13
-    - Topics:
-    	- Nested Views in Backbone, Backbone Collections
-
 -   Wed 10/15
     - Topics:
-    	- More Backbone examples
+        - More JQuery examples;
+        - MVC design pattern
+        - Backbone starts, Backbone Routes, Simple Views, Simple Models
 
     - Homework 7-8: Simple client-side app mini-project
 
@@ -139,8 +135,13 @@ title: "Syllabus"
 # Week 8
 
 -   Mon 10/20: mini-project
+    - Topics:
+        Nested views in Backbone, Backbone Collections
+
 
 -   Wed 10/22: mini-project
+    - Topics:
+        More Backbone examples
 
 # Week 9
 
