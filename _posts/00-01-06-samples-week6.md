@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 6 Samples
 class: JavaScript Week 6 Samples
-date: 2014-10-6 22:00:00
+date: 2014-10-8 22:00:00
 ---
 
 ##Mon. 10/6
@@ -24,4 +24,22 @@ date: 2014-10-6 22:00:00
 
 ##Wed. 10/8
 
+[animals scratchpad]({{ site.baseurl }}/curriculum/samples/Oct8/Oct8-scratchpad-animals.js)
 
+[deque scratchpad]({{ site.baseurl }}/curriculum/samples/Oct8/Oct8-scratchpad-deque.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Oct8/Oct8-console.md)
+
+###Diagrams
+
+![Prototype review]({{ site.baseurl }}/img/core-js/2014-10-08_0001.jpg)
+
+![Built-in class inheritance]({{ site.baseurl }}/img/core-js/2014-10-08_0002.jpg)
+
+![Built-in class inheritance 2]({{ site.baseurl }}/img/core-js/Inheritance.svg)
+
+![Subclassing]({{ site.baseurl }}/img/core-js/2014-10-08_0003.jpg)
+
+![Animal subclassing]({{ site.baseurl }}/img/core-js/2014-10-08_0004.jpg)
+
+![Deque subclassing]({{ site.baseurl }}/img/core-js/2014-10-08_0005.jpg)
