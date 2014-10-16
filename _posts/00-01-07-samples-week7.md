@@ -19,3 +19,18 @@ date: 2014-10-13 18:00:00
 
 ###Diagrams
 
+![DOM trees]({{ site.baseurl }}/img/DOM+jQuery/2014-10-13_0001.jpg)
+
+![event closures]({{ site.baseurl }}/img/DOM+jQuery/2014-10-13_0002.jpg)
+
+
+##Oct. 10/15
+
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Oct15/scratchpad-initial.js)
+
+[checkerboard.html]({{ site.baseurl }}/curriculum/samples/Oct15/checkerboard.html)
+
+[checkerboard.css]({{ site.baseurl }}/curriculum/samples/Oct15/checkerboard.css)
+
+[checkerboard.js]({{ site.baseurl }}/curriculum/samples/Oct15/checkerboard.js)
+
