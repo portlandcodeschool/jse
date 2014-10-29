@@ -102,7 +102,7 @@ title: "Syllabus"
         -   Constructors, `new`; Wrapper Objects and Converters;
         -   Prototypes, Instance Methods, Class Methods
 
-	- Homework 6:  TBD
+	- [Homework 6: Constructors, Subclassing; Memory Game](https://github.com/portlandcodeschool/jse-fall14-6)
 
     - Reading: [E-JS Chapter 6](http://eloquentjavascript.net/06_object.html)
 
@@ -115,41 +115,50 @@ title: "Syllabus"
 
 -   Mon 10/13
     - Topics:
-      - Intro to JQuery and the DOM
-        -   What is the DOM?
-        -   Introduction to browser events
-        -   Accessing elements in JQuery
-        -   Simple event handlers in JQuery
+        - Intro to the DOM: manipulation, retrieval, events
 
 -   Wed 10/15
     - Topics:
-        - More JQuery examples;
-        - MVC design pattern
-        - Backbone starts, Backbone Routes, Simple Views, Simple Models
+        - Introduction to JQuery
+        - JQuery examples
 
-    - Homework 7-8: Simple client-side app mini-project
+    - [Homework 7: Client-side GUI with DOM + jQuery](https://github.com/portlandcodeschool/jse-fall14-7)
 
 -   Sat 10/18
-    - Job readiness practices; TBD
+    - Job readiness practices; jQuery practice
 
 # Week 8
 
--   Mon 10/20: mini-project
+-   Mon 10/20
     - Topics:
-        Nested views in Backbone, Backbone Collections
+        - MVC design pattern
+        - Intro to Backbone; Simple Views and Models
+        - Underscore.js and _.extend
 
 
 -   Wed 10/22: mini-project
     - Topics:
-        More Backbone examples
+        - Nested views in Backbone, Backbone Collections
 
 # Week 9
 
 - Midterm conferences
 
 -   Mon 10/27
-	- Mini-project due
+    - Topics:
+        - Backbone examples
 
+    - [Homework 8: Backbone GUI](https://github.com/portlandcodeschool/jse-fall14-8)
+
+-   Wed 10/29
+    - Topics:
+        - JSON
+        - Templates
+        - Backbone Routes
+
+# Week 10
+
+-   Mon 11/3 
     - Topics:
         -   internet concepts (http, server, client)
         -   introduction to requests and how request types map to actions in web pages
@@ -158,18 +167,26 @@ title: "Syllabus"
         -   Node modules
         -   Class time to get started on learn you node exercises
 
-    - Homework 9: Node Servers
+	- Homework 9: Node Servers with Express
 
--   Wed 10/29
+    - Lightning Talks:
+        - Node.js and Modules
+        - HTTP and REST
+
+-   Wed 11/5 
     - Topics:
         -   Express.js intro
         -   Making basic servers
         -   Routing in Express
         -   Serving up Backbone app as static web page
 
-# Week 10
+    - Lightning Talks:
+        - Node module fs (file system)
+        - Node module url (URL/query parsing)
 
--   Mon 11/3 
+# Week 11
+
+-   Mon 11/10
     - Topics:
         -   Integrating Backbone with servers
         -   syncing models with servers by url mapping
@@ -177,27 +194,29 @@ title: "Syllabus"
         -   Ajax calls with jQuery
         -   Cross-domain calls with jsonp
 
-	- Homework 10: Express Servers
+    - Lightning Talks:
+        - Ajax w. jQuery
+        - TBD
 
--   Wed 11/5 
+	- Homework 10: TBD
+
+-   Wed 11/12
     - Topics:
         -   The need for persistence
         -   Key-value stores
         -   Orchestrate.io
         -   Integrating Orchestrate into applications
 
-# Week 11
+    - Lightning Talks:
+        - Database variants; SQL vs noSQL
+        - TBD
 
--   Mon 11/10
-    - Topics:
-        -   Introduction to testing
-        -   Examples demonstrating the *importance* of testing
-        -   Mocha library
-        -   Adding tests to prior examples
+- Sat 11/15
+    - Job readiness activities
 
-	- Homework 11: Testing and TBD
+# Week 12
 
--   Wed 11/12
+-   Mon 11/17
     - Topics:
         -   Introduction to using APIs
         -   Adding functionality to your app by using another web app
@@ -208,19 +227,14 @@ title: "Syllabus"
             -   Flickr
             -   Instagram
 
-- Sat 11/15
-    - Job readiness activities
-
-# Week 12
-
--   Mon 11/17
-    - Topics:
-    	- Advanced Topics (Node, Backbone, and programming skills), group projects underway
     - Capstone begins; group formation; brainstorming
 
 -   Wed 11/19
     - Topics:
-        - Advanced Topics
+        -   Introduction to testing
+        -   Examples demonstrating the *importance* of testing
+        -   Mocha library
+        -   Adding tests to prior examples
 
 # Week 13
 
@@ -228,7 +242,7 @@ title: "Syllabus"
     - Topics:
     	- Advanced Topics
     - Capstone waypoint 1:
-    	- initial design conception, exploration of feature space;
+    	- initial design conception, commit to domain; explore feature space;
     	- some exploratory code; clear division of labor
 
 -   Wed 11/26
@@ -244,6 +258,7 @@ title: "Syllabus"
     	- Advanced Topics
 	- Capstone waypoint 2:
     	- final design proposal; identify MVP and variants;
+        - project synopsis due;
     	- code in progress for all components from all team members
 
 -   Wed 12/3
@@ -273,4 +288,8 @@ title: "Syllabus"
     	- alpha-level integration complete; unit-test suite working
 
 -   Wed 12/17
+    - Fix All the Bugs!
+
+-   Thurs 12/18
     - Capstone Night and Graduation!
+
