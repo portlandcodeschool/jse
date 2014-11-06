@@ -170,19 +170,18 @@ title: "Syllabus"
 	- Homework 9: Node Servers with Express
 
     - Lightning Talks:
-        - Node.js and Modules
-        - HTTP and REST
+        - Node.js and Modules: _Greg_
+        - HTTP and REST: _Stacey_
 
 -   Wed 11/5 
     - Topics:
-        -   Express.js intro
         -   Making basic servers
-        -   Routing in Express
+        -   File servers & streamers
+        -   Simple Routing
         -   Serving up Backbone app as static web page
 
     - Lightning Talks:
-        - Node module fs (file system)
-        - Node module url (URL/query parsing)
+        - Node module fs (file system): _Dallas_
 
 # Week 11
 
@@ -195,8 +194,9 @@ title: "Syllabus"
         -   Cross-domain calls with jsonp
 
     - Lightning Talks:
-        - Ajax w. jQuery
-        - TBD
+        - Node module url (URL/query parsing): _Jack_
+        - Ajax w. jQuery: _Natalie_
+        - Promises: _Adam_
 
 	- Homework 10: TBD
 
