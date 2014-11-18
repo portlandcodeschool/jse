@@ -171,7 +171,7 @@ title: "Syllabus"
 
     - Lightning Talks:
         - Node.js and Modules: _Greg_
-        - HTTP and REST: _Stacey_
+        - HTTP and REST: _Stacy_
 
 -   Wed 11/5 
     - Topics:
@@ -194,9 +194,7 @@ title: "Syllabus"
         -   Cross-domain calls with jsonp
 
     - Lightning Talks:
-        - Node module url (URL/query parsing): _Jack_
         - Ajax w. jQuery: _Natalie_
-        - Promises: _Adam_
 
 	- Homework 10: TBD
 
@@ -208,8 +206,8 @@ title: "Syllabus"
         -   Integrating Orchestrate into applications
 
     - Lightning Talks:
-        - Database variants; SQL vs noSQL
-        - TBD
+        - Database variants; SQL vs noSQL: _Jack_
+        - Promises: _Adam_
 
 - Sat 11/15
     - Job readiness activities
@@ -235,6 +233,13 @@ title: "Syllabus"
         -   Examples demonstrating the *importance* of testing
         -   Mocha library
         -   Adding tests to prior examples
+
+    - Lightning Talks:
+        - Google maps API
+        - JSONP and "same-origin policy"
+        - sessions & npm 'generic-session' module
+        - user authentication: password salting & hashing; npm 'pwd' module
+        - Unit testing with Mocha
 
 # Week 13
 
