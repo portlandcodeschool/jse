@@ -229,17 +229,14 @@ title: "Syllabus"
 
 -   Wed 11/19
     - Topics:
-        -   Introduction to testing
-        -   Examples demonstrating the *importance* of testing
-        -   Mocha library
-        -   Adding tests to prior examples
+        - Authentication basics; 'pwd' module
+        - Ajax examples: Foursquare API
 
     - Lightning Talks:
-        - Google maps API
-        - JSONP and "same-origin policy"
+        - Google maps API: _Sara_
+        - JSONP and "same-origin policy": _Mike_
         - sessions & npm 'generic-session' module
-        - user authentication: password salting & hashing; npm 'pwd' module
-        - Unit testing with Mocha
+        - user authentication: password salting & hashing: _Tristan_
 
 # Week 13
 
@@ -251,8 +248,7 @@ title: "Syllabus"
     	- some exploratory code; clear division of labor
 
 -   Wed 11/26
-    - Topics:
-        - Advanced Topics
+    - Group time
 
 -   Thanksgiving Weekend!
 
@@ -260,41 +256,46 @@ title: "Syllabus"
 
 -   Mon 12/1
     - Topics:
-    	- Advanced Topics
+    	- Queries within Routes
+        - Intro to Heroku
 	- Capstone waypoint 2:
     	- final design proposal; identify MVP and variants;
         - project synopsis due;
     	- code in progress for all components from all team members
 
 -   Wed 12/3
-    - Topics:
-    	- Advanced Topics
+    - Group time
+
+-   Sat 12/6: Whiteboarding Part I
 
 # Week 15
 
 -   Mon 12/8
     - Topics:
-    	- Advanced Topics
+    	- Heroku config variables
+        - Exceptions: throw, try, catch
 	- Capstone waypoint 3:
 		- working alpha-level code for all components, integration in progress;
 		- initial unit testing (Mocha) modules
 
 -   Wed 12/10
+    - Lightning Talks:
+        - Unit Testing with Mocha: _Joel_
     - Topics:
-        - Advanced Topics
+        - Mocha
 
--   Sat 12/13
-    - Capstone group tech talks; Job readiness supplement
+-   Sat 12/13 (9:00-12:00)
+    - Capstone group tech talks
 
 # Week 16
 
--   Mon 12/15:
+-   Mon 12/15
     - Capstone waypoint 4:
     	- alpha-level integration complete; unit-test suite working
 
 -   Wed 12/17
-    - Fix All the Bugs!
+    - Capstone Night and Graduation!
 
 -   Thurs 12/18
-    - Capstone Night and Graduation!
+    - Whiteboarding Part II
 
