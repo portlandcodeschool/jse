@@ -1,82 +1,90 @@
 ---
 layout: page
-title: "Syllabus"
+title: "Syllabus, Winter 2015"
 ---
 
 # Week 1
 
-- Wed 9/3
+- Mon 1/5
     - Topics:
-        - Git: Overview, Installation, Homework workflow
-        - JS Console; Expressions, Operators;
-        - Variables, Assignment; Equality; Boolean expressions;
+        - JS Console/REPL;
+        - Operators, Expressions, & Statements;
+        - Variables, Assignment & Equality; Boolean expressions;
         - Primitive types; String concatenation; Auto-conversion
-
-    - [Homework 1: Expressions and Types](https://github.com/portlandcodeschool/jse-fall14-1) 
 
     - Reading: [Eloquent Javascript](http://eloquentjavascript.net/index.html)
         - Introduction
         - Chapter 1
         - Chapter 2
-        - Chapter 3 start (up through ["Nested Scope"](http://eloquentjavascript.net/03_functions.html#p_uliI/PmHtG))
+
+- Wed 1/7
+    - Topics:
+        - Git: Overview, Installation, Homework workflow
+        - Array basics, indexing
+        - Conditionals & Branching; Truthiness; Ternary Conditional Operator; Boolean/Branching Operators (`&&`, `||`);
+
+    - Homework 1: Expressions and Types 
 
 
 # Week 2
 
-- Mon 9/8
+- Mon 1/12
     - Topics:
-        - Array basics, indexing
-        - Conditionals & Branching; Truthiness; Ternary Conditional Operator; Boolean/Branching Operators (`&&`, `||`);
-        - ScratchPad; Blocks; Loops (`while`, `for`); Debugging with `console.log`
-
-    - [Homework 2: Arrays, Functions, and Loops](https://github.com/portlandcodeschool/jse-fall14-2)
-
-- Wed 9/10
-    - Topics:
+        - ScratchPad;
+        - Blocks; Loops (`while`, `for`); Debugging with `console.log`
         - Function basics: parameters, local variables, scope, shadowing; return values, definition vs. call;
-        -   Defensive Programming; Basic Testing with Assertions
 
-    - Reading: [Eloquent Javascript](http://eloquentjavascript.net/index.html)
-        - [Chapter 3 (finish)](http://eloquentjavascript.net/03_functions.html)
+    - Reading: [Eloquent Javascript, Chapter 3](http://eloquentjavascript.net/03_functions.html)
+
+    - Homework 2: Arrays, Functions, and Loops
+
+- Wed 1/14
+    - Topics:
+        -   Defensive Programming; Parameter checking;
+        -   Basic Testing with Assertions
+        -   Introduction to Unit Testing; Mocha
+
 
 # Week 3
 
-- Mon 9/15
+- Mon 1/19
     - Topics:
-        -   JS within HTML
-        -   Objects: incremental creation, literal notation, nesting; Properties, membership operators (`[]` and `.`), reference chains;
+        -   JS within HTML; Codepen
+        -   Objects: incremental creation, literal notation, nesting;
+        -   Properties, membership operators (`[]` and `.`), reference chains;
         -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
         
-    - [Homework 3: Objects](https://github.com/portlandcodeschool/jse-fall14-3)
+    - Homework 3: Objects
 
     - Reading: [E-JS Chapter 4](http://eloquentjavascript.net/04_data.html) through [mutability](http://eloquentjavascript.net/04_data.html#p_S6PAaKQoFH)
 
--  Wed 9/17
+-  Wed 1/21
     - Topics:
         -   References; Object linking and sharing, shallow copy and compare, `null`, reference arguments
         -   Arrays as Objects; Array methods
-        -   _String methods; String wrapper objects_
-        -   Custom methods, `this` keyword; example roles of objects
+        -   String methods; String wrapper objects
+        -   Custom methods, `this` keyword & dynamic scoping;
+        -   Example roles of objects
 
 
--   Sat 9/20
-    - Topics:
-        -   Pseudo-coding practice
+-   Sat 1/24
+    - Job Readiness (Morning)
+    - JS Topics (Afternoon):
         -   Functions as Objects; aliasing methods
-        -   Function details: Evaluation Phases, Call Objects/Scopes, Lexical Scoping, preview of closures; 
+        -   Function details: Evaluation Phases, Call Objects/Scopes, Lexical Scoping, preview of closures;
 
  
 # Week 4
 
--   Mon 9/22
+-   Mon 1/26
     - Topics:
-        -   Functions as Arguments, Callbacks;
-        -   Call operator, parentheses types; Self-Executing Anonymous Functions;
-        -   `this`; Global Object; Global variables vs. properties
+        -   Functions as Arguments, Callbacks; Anonymous Functions;
+        -   Call operator, parentheses types;
+        -   `this` as Global Object; Global variables vs. properties
 
-    - [Homework 4: Callbacks and Factories](https://github.com/portlandcodeschool/jse-fall14-4)
+    - Homework 4: Callbacks and Factories
 
--   Wed 9/24
+-   Wed 1/28
     - Topics:
         -   Factory Functions; Duplicate vs. Shared Methods
 
@@ -84,218 +92,191 @@ title: "Syllabus"
 
 # Week 5
 
--   Mon 9/29
+-   Mon 2/2
     - Topics:
         - Access control with Closures; Private variables and functions
 
-    - [Homework 5: Closures and modules](https://github.com/portlandcodeschool/jse-fall14-5)
+    - Homework 5: Closures and modules
 
--   Wed 10/1
+-   Wed 2/4
     - Topics:
         - Closure Modules (IIFEs); More closure examples
-    - Retrospective
+
+    - Retrospective #1
 
 # Week 6
 
--   Mon 10/6
+-   Mon 2/9
     - Topics:
         -   Constructors, `new`; Wrapper Objects and Converters;
         -   Prototypes, Instance Methods, Class Methods
 
-	- [Homework 6: Constructors, Subclassing; Memory Game](https://github.com/portlandcodeschool/jse-fall14-6)
+	- Homework 6: Constructors, Subclassing; Memory Game
 
     - Reading: [E-JS Chapter 6](http://eloquentjavascript.net/06_object.html)
 
--   Wed 10/8
+-   Wed 2/11
     - Topics:
         -   Class methods; Inheritance and Subclassing;
-        -   Underscore.js, __.extend
+        -   Underscore.js, _.extend
 
 # Week 7
 
--   Mon 10/13
+-   Mon 2/16
     - Topics:
         - Intro to the DOM: manipulation, retrieval, events
 
--   Wed 10/15
+    - Homework 7: Client-side GUI with DOM + jQuery
+
+-   Wed 2/18
     - Topics:
         - Introduction to JQuery
         - JQuery examples
 
-    - [Homework 7: Client-side GUI with DOM + jQuery](https://github.com/portlandcodeschool/jse-fall14-7)
 
--   Sat 10/18
-    - Job readiness practices; jQuery practice
+-   Sat 2/21
+    - Job readiness: Soft skills, behavioral interviewing
 
 # Week 8
 
--   Mon 10/20
+-   Mon 2/23
     - Topics:
         - MVC design pattern
         - Intro to Backbone; Simple Views and Models
-        - Underscore.js and _.extend
 
+    - Homework 8-9 (mini-project): Backbone Apps
 
--   Wed 10/22: mini-project
+-   Wed 2/25:
     - Topics:
         - Nested views in Backbone, Backbone Collections
 
-# Week 9
+# Week 9 (Interlude)
 
-- Midterm conferences
+-   Midterm conferences
 
--   Mon 10/27
-    - Topics:
-        - Backbone examples
+-   Mon 3/2
+    - Topics: TBD
 
-    - [Homework 8: Backbone GUI](https://github.com/portlandcodeschool/jse-fall14-8)
-
--   Wed 10/29
-    - Topics:
-        - JSON
-        - Templates
-        - Backbone Routes
+-   Wed 3/4
+    - Topics: TBD
 
 # Week 10
 
--   Mon 11/3 
+-   Mon 3/9 
     - Topics:
-        -   internet concepts (http, server, client)
-        -   introduction to requests and how request types map to actions in web pages
-        -   REST/CRUD
-        -   conceptual introduction to Node
+        - Backbone recap: client-side routes; more examples
+        - JSON
+        - Templates
+
+-   Homework 10: LearnYouNode
+
+-   Wed 3/11 
+    - Topics:
+        -   internet concepts (http, server, client);
+        -   Request types; REST/CRUD;
+        -   curl & REST clients;
+        -   Introduction to Node
         -   Node modules
-        -   Class time to get started on learn you node exercises
 
-	- Homework 9: Node Servers with Express
-
-    - Lightning Talks:
-        - Node.js and Modules: _Greg_
-        - HTTP and REST: _Stacy_
-
--   Wed 11/5 
-    - Topics:
-        -   Making basic servers
-        -   File servers & streamers
-        -   Simple Routing
-        -   Serving up Backbone app as static web page
-
-    - Lightning Talks:
-        - Node module fs (file system): _Dallas_
 
 # Week 11
 
--   Mon 11/10
+-   Mon 3/16
     - Topics:
-        -   Integrating Backbone with servers
-        -   syncing models with servers by url mapping
-        -   In-class exercises building small backbone applications
-        -   Ajax calls with jQuery
-        -   Cross-domain calls with jsonp
+        -   Basic Node servers;
+        -   File servers & streamers;
+        -   Server-side Routing; Queries;
+ 
+	- Homework 11: Basic server with Backbone
 
-    - Lightning Talks:
-        - Ajax w. jQuery: _Natalie_
+-   Wed 3/18
+    - Topics:
+        -   Serving up Backbone app as static web page
+        -   Integrating Backbone with Server API    
 
-	- Homework 10: TBD
+- Sat 3/21
+    - Job readiness: whiteboarding and tech interviews
 
--   Wed 11/12
+# Week 12
+
+-   Mon 3/23
+    - Topics:
+        -   Introduction to using APIs
+        -   Ajax calls with jQuery;
+        -   Cross-domain calls & jsonp
+
+    - Homework 12: Ajax & APIs
+
+-   Wed 3/25
     - Topics:
         -   The need for persistence
         -   Key-value stores
         -   Orchestrate.io
         -   Integrating Orchestrate into applications
 
-    - Lightning Talks:
-        - Database variants; SQL vs noSQL: _Jack_
-        - Promises: _Adam_
-
-- Sat 11/15
-    - Job readiness activities
-
-# Week 12
-
--   Mon 11/17
-    - Topics:
-        -   Introduction to using APIs
-        -   Adding functionality to your app by using another web app
-        -   Examples:
-            -   Forecast.io
-            -   Yelp
-            -   Discogs
-            -   Flickr
-            -   Instagram
-
-    - Capstone begins; group formation; brainstorming
-
--   Wed 11/19
-    - Topics:
-        - Authentication basics; 'pwd' module
-        - Ajax examples: Foursquare API
-
-    - Lightning Talks:
-        - Google maps API: _Sara_
-        - JSONP and "same-origin policy": _Mike_
-        - sessions & npm 'generic-session' module
-        - user authentication: password salting & hashing: _Tristan_
-
 # Week 13
 
--   Mon 11/24
+-   Mon 3/30
+
+    - Capstone begins; group formation; brainstorming; git workflow
+
+-   Wed 4/1
     - Topics:
-    	- Advanced Topics
+        - Authentication basics; 'pwd' module
+        - Server sessions
+        - Authentication server example
+
+# Week 14
+
+-   Mon 4/6
+
     - Capstone waypoint 1:
     	- initial design conception, commit to domain; explore feature space;
     	- some exploratory code; clear division of labor
 
--   Wed 11/26
-    - Group time
+-   Wed 4/8
 
--   Thanksgiving Weekend!
+    - Topics: TBD
 
-# Week 14
+# Week 15
 
--   Mon 12/1
-    - Topics:
-    	- Queries within Routes
-        - Intro to Heroku
+-   Mon 4/13
+
 	- Capstone waypoint 2:
     	- final design proposal; identify MVP and variants;
         - project synopsis due;
     	- code in progress for all components from all team members
+        - initial unit testing modules
 
--   Wed 12/3
-    - Group time
+-   Wed 4/15
 
--   Sat 12/6: Whiteboarding Part I
-
-# Week 15
-
--   Mon 12/8
     - Topics:
-    	- Heroku config variables
-        - Exceptions: throw, try, catch
-	- Capstone waypoint 3:
-		- working alpha-level code for all components, integration in progress;
-		- initial unit testing (Mocha) modules
+        - Intro to Heroku
+        - Heroku config variables    
 
--   Wed 12/10
-    - Lightning Talks:
-        - Unit Testing with Mocha: _Joel_
-    - Topics:
-        - Mocha
-
--   Sat 12/13 (9:00-12:00)
-    - Capstone group tech talks
 
 # Week 16
 
--   Mon 12/15
+-   Mon 4/20
+
+	- Capstone waypoint 3:
+		- working alpha-level code for all components, MVP integration in progress;
+        - unit-test suite working
+
+-   Wed 4/22
+    - Topics: TBD
+
+-   Sat 4/25 (morning)
+    - Capstone group tech talks
+
+# Week 17
+
+-   Mon 4/27
+
     - Capstone waypoint 4:
-    	- alpha-level integration complete; unit-test suite working
+    	- Polished MVP complete
+        - Bonus feature integration
 
--   Wed 12/17
+-   Wed 4/29
     - Capstone Night and Graduation!
-
--   Thurs 12/18
-    - Whiteboarding Part II
 
