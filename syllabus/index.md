@@ -3,7 +3,7 @@ layout: page
 title: "Syllabus"
 ---
 
-Winter 2015
+# Winter 2015
 
 # Week 1
 

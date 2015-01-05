@@ -2,7 +2,7 @@
 layout: page
 title: "Expectations"
 ---
-version 1.0
+version 1.1
 
 # Course Description
 
@@ -23,10 +23,6 @@ PCS Classroom, 1771 NW Pettygrove Street, Suite 140
 **Dan Bauer**
 - Email: dbauer@portlandcodeschool.com
 - Office Hours: Sundays 3:00 - 6:00PM, or as needed.
-
-
-**Ben Verble**
-- Email: bverble@portlandcodeschool.com
 
 
 # Prerequisites
@@ -108,7 +104,6 @@ When you hear an explanation, can you:
 
 
 ### Career Skills
- * Steal various points here
 
 
 # Educational Expectations
@@ -213,11 +208,11 @@ Students who observe or experience any behavior on the part of instructors, staf
 
 ## General Schedule
 
- - Weeks 1-5: Core Javascript
- - Weeks 6-8: DOM and Client Apps
- - Weeks 9-11: HTTP and Servers
- - Weeks 12-16: Advanced Topics, Capstone Projects
+ - Weeks 1-6: Core Javascript
+ - Weeks 7-9: DOM and Client Apps
+ - Weeks 10-12: HTTP and Servers
+ - Weeks 13-17: Advanced Topics, Capstone Projects
 
 ## Calendar
 
-This term's calendar of topics and assignments (subject to minor revision) is [here](index.md).
+This term's calendar of topics and assignments (subject to minor revision) is [here](../index.md).
