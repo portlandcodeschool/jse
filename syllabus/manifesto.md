@@ -215,4 +215,4 @@ Students who observe or experience any behavior on the part of instructors, staf
 
 ## Calendar
 
-This term's calendar of topics and assignments (subject to minor revision) is [here](../index.md).
+This term's calendar of topics and assignments (subject to minor revision) is [here](../).
