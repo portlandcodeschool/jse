@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 1 Samples
 class: JavaScript Week 1 Samples
-date: 2015-01-07 16:00:00
+date: 2015-01-07 16:00:01
 ---
 
 ##Mon. 1/5
@@ -19,9 +19,7 @@ date: 2015-01-07 16:00:00
 ##Wed. 1/7
 
 
-[scratchpad1]({{ site.baseurl }}/curriculum/samples/Jan7/Jan7-initial.js)
-
-[scratchpad2]({{ site.baseurl }}/curriculum/samples/Sept10/Sept10-scratchpad2.js)
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan7/Jan7-initial.js)
 
 ###Diagrams
 
