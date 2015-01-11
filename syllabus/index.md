@@ -25,7 +25,7 @@ title: "Syllabus"
         - Array basics, indexing
         - Conditionals & Branching; Truthiness; Ternary Conditional Operator; Boolean/Branching Operators (`&&`, `||`);
 
-    - Homework 1: Expressions and Types 
+    - [Homework 1: Expressions, Types, & Simple Computations](http://github.com/portlandcodeschool/jse-win15-1)
 
 
 # Week 2

@@ -141,7 +141,7 @@ The homework problems will often be difficult; they are meant to exercise you un
 
 #### Exploration
 
-Although the homework probelms are important and demanding, don't become fixated on solving them to the exclusion of making discoveries.  Some of your time each week should be spent in active play:
+Although the homework problems are important and demanding, don't become fixated on solving them to the exclusion of making discoveries.  Some of your time each week should be spent in active play:
 
 - changing a problem in way you find interesting;
 - discovering a new function or feature of JS and testing out how it works;
