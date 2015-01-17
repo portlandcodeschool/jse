@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: calendar
 title: "About the JS Evening Class"
 ---
 ### What is this course?
@@ -14,3 +14,8 @@ title: "About the JS Evening Class"
 - Hack always. Hack means to "throw some code together", rather than "illegally break into things with code". You should be playing with code even when you are done with homework. Have fun. Find a side-project.
 - Be social. Go to meetups. Get together with classmates. Come to office hours for help. 
 - Learn to love frustration and problem-solving. Keep your head up and your attitude positive. If you are stuck for too long, "phone a friend".
+
+### Getting Help
+
+The calendar below lists the times and locations of office-hours held by the current TAs and Instructor.  Drop in and we'll be happy to help!
+
