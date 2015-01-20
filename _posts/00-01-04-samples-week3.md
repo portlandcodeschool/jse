@@ -1,7 +1,7 @@
 ---
 layout: post
-title: JavaScript Week 2 Samples
-class: JavaScript Week 2 Samples
+title: JavaScript Week 3 Samples
+class: JavaScript Week 3 Samples
 date: 2015-01-19 18:00:00
 ---
 

@@ -24,7 +24,7 @@ date: 2015-01-14 18:00:00
 
 [exercise answers]({{ site.baseurl }}/curriculum/samples/Jan14/Jan14-answers.js)
 
-[final console]({{ site.baseurl }}/curriculum/samples/Jan12/Jan14-console.md)
+[final console]({{ site.baseurl }}/curriculum/samples/Jan14/Jan14-console.md)
 
 ###Diagrams
 

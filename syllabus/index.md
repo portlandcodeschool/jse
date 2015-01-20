@@ -38,7 +38,7 @@ title: "Syllabus"
 
     - Reading: [Eloquent Javascript, Chapter 3](http://eloquentjavascript.net/03_functions.html)
 
-    - Homework 2: Arrays, Functions, and Loops
+    - [Homework 2: Arrays, Functions, and Loops](http://github.com/portlandcodeschool/jse-win15-2)
 
 - Wed 1/14
     - Topics:
