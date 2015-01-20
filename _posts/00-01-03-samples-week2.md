@@ -20,5 +20,11 @@ date: 2015-01-14 18:00:00
 
 [initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan14/Jan14-initial.js)
 
+[final scratchpad]({{ site.baseurl }}/curriculum/samples/Jan14/Jan14-edited.js)
+
+[exercise answers]({{ site.baseurl }}/curriculum/samples/Jan14/Jan14-answers.js)
+
+[final console]({{ site.baseurl }}/curriculum/samples/Jan12/Jan14-console.md)
+
 ###Diagrams
 
