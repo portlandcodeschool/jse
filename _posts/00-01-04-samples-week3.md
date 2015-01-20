@@ -13,6 +13,8 @@ date: 2015-01-19 18:00:00
 
 [final console]({{ site.baseurl }}/curriculum/samples/Jan19/Jan19-console.md)
 
+[html demo]({{ site.baseurl }}/curriculum/samples/Jan19/html-demo.html)
+
 ###Diagrams
 
 
