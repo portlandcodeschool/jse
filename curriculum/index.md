@@ -24,4 +24,5 @@ environment facilitates collaboration and learning. Please keep the
 [code of conduct][conduct] in mind and be friendly and accepting with everyone.
 
 
-[conduct]: https://rightsignature.com/forms/PCS-Classroom-Cod-e612a8/token/518763a2f96
+[conduct_form]: https://rightsignature.com/forms/PCS-Classroom-Cod-e612a8/token/518763a2f96
+[conduct]: https://www.portlandcodeschool.com/codeofconduct/
