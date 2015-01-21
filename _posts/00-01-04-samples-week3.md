@@ -17,6 +17,11 @@ date: 2015-01-19 18:00:00
 
 ###Diagrams
 
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan19/2015-01-19_0002.jpg)
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan19/2015-01-19_0003.jpg)
+
+![reference puzzle]({{ site.baseurl }}/curriculum/samples/Jan19/2015-01-19_0004.jpg)
 
 ##Wed. 1/21
 
