@@ -15,6 +15,12 @@ date: 2015-01-14 18:00:00
 
 ###Diagrams
 
+![arrays 1]({{ site.baseurl }}/curriculum/samples/Jan12/2015-01-12_0001.jpg)
+
+![arrays 2]({{ site.baseurl }}/curriculum/samples/Jan12/2015-01-12_0002.jpg)
+
+![scope]({{ site.baseurl }}/curriculum/samples/Jan12/2015-01-12_0003.jpg)
+
 
 ##Wed. 1/14
 
@@ -28,3 +34,4 @@ date: 2015-01-14 18:00:00
 
 ###Diagrams
 
+![primes map]({{ site.baseurl }}/curriculum/samples/Jan14/2015-01-14_0001.jpg)
