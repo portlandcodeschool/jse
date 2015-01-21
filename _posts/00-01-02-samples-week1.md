@@ -18,8 +18,12 @@ date: 2015-01-07 16:00:01
 
 ##Wed. 1/7
 
-
 [initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan7/Jan7-initial.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Jan7/Jan7-console.md)
 
 ###Diagrams
 
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan7/2015-01-07_0003.jpg)
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan7/2015-01-07_0004.jpg)

@@ -56,7 +56,7 @@ title: "Syllabus"
         -   Properties, membership operators (`[]` and `.`), reference chains;
         -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
         
-    - Homework 3: Objects
+    - [Homework 3: Objects](http://github.com/portlandcodeschool/jse-win15-3)
 
     - Reading: [E-JS Chapter 4](http://eloquentjavascript.net/04_data.html) through [mutability](http://eloquentjavascript.net/04_data.html#p_S6PAaKQoFH)
 
