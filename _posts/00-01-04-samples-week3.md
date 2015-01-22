@@ -27,9 +27,9 @@ date: 2015-01-21 21:00:00
 
 [initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan21/Jan21-initial.js)
 
-[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan21/Jan21-edited.js)
+[edited scratchpad]({{ site.baseurl }}/curriculum/samples/Jan21/Jan21-edited.js)
 
-[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan21/Jan21-console.md)
+[console]({{ site.baseurl }}/curriculum/samples/Jan21/Jan21-console.md)
 
 ###Diagrams
 ![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan21/2015-01-21_0001.jpg)
