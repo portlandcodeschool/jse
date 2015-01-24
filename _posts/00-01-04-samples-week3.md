@@ -40,3 +40,10 @@ date: 2015-01-21 21:00:01
 
 ![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan21/2015-01-21_0004.jpg)
 
+##Sat. 1/24
+
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan24/Jan24-initial.js)
+
+[edited scratchpad]({{ site.baseurl }}/curriculum/samples/Jan24/Jan24-edited.js)
+
+
