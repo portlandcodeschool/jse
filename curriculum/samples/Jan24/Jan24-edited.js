@@ -15,28 +15,66 @@ Obtain dictionary/word list
    API MW...
   *Object whose keys are words (values?)
 
-Break up string into words:
+Break up string into words: (F?)
   string.split(delim)
 
 Loop: with each word...
-  Given some word, is it valid?
+  Given some word, is it valid? (F!)
     Break word into letters
   
   If a word fails, mark(?) it
    Replace with alternative?
   I.e. if word ok, then use same
-  else replace with #+word+#
+  else replace with #+word+# (F?)
   
-Reassemble string
+Reassemble string (F)
 
 Return result
 */
 // The dog #rhn# #fust#.
 
+var dict = {dog:1, cat:1, the:1, run:1, fast:1};
+
+function isWord(word) { //boolean
+  //defense here
+  //assert(typeof word === 'string')
+  return (word.toLowerCase() in dict);
+  //return dict[word]? true : false;
+}
+
+function tagWord(word) {
+  return '#'+word+'#'; 
+}
+
+function checkSpelling(str) {
+  //str = str.toLowerCase();
+  var words = str.split(' ');
+  
+  for (var i=0; i<words.length; ++i) {
+    var word = words[i];
+    if (!isWord(word)) {
+      words[i] = tagWord(word);
+    }
+  }
+  
+  return words.join(' ');
+}
 
 
+checkSpelling("The doG rhan vwEry fast");
 
-
+/*
+The doG #rhan# #vwEry# fast
+*/
+/*
+the dog #rhan# #vwery# fast
+*/
+/*
+the dog #rhan# #vwery# fast
+*/
+/*
+the dog #rhan# #vwery# fast
+*/
 
 
 
@@ -88,13 +126,23 @@ f(f)  // What about this?
 
 
 //EXERCISE: predict the outcome of:
-var Z = function (f) {
-  return f(f);
+var Z = function (verb) {
+  return verb(verb);
+  return id;
 } 
 var id = function (x) {
   return x;
 }
 Z(id)(3); // <<equals what?
+id(3)
+
+Z(id) === id
+/*
+true
+*/
+/*
+3
+*/
 
 
 
@@ -103,7 +151,7 @@ Z(id)(3); // <<equals what?
 
 
 
-
+f(f)
 
 function f(obj) {  // f --> paintObjBlue
   obj.color = 'blue';
@@ -137,17 +185,18 @@ function someFn() {
 	blahblahblah;
 	yap+yiddle+fiddle+faddle;
 	oogity(boogity);
+  return boo;
 }
 //[Fig0]
 someFn; //OK
 typeof someFn; //OK
 var alias = someFn; //ok
 
+alias
 
 
 
-
-
+someFn()
 
 
 
@@ -162,7 +211,7 @@ sum = plus(3,4); //[FIG 1c]
 
 
 // Closure/ Lexical Context:
-//   Scope where function was born
+//   Scope where function was born (defined)
 // [Fig 2]
 
 
@@ -181,7 +230,7 @@ function plusX(y) { // y is local
 } //[FIG3a]
 x = plusX(1); //[FIG3b]
 x = plusX(5); //[FIG3c]
-
+x
 
 
 
@@ -226,9 +275,8 @@ function outerA() {
   var x = 2;
   return outerB();
 }
-function outerB() {
-  return x;
-}  //[FIG5a]
+
+//[FIG5a]
 outerB() //1 [FIG5b]
 outerA() //1 [FIG5c]
 
@@ -247,7 +295,7 @@ outerA() //1 [FIG5c]
 // Defining a nested function:
 
 function outer() {
-  function inner() {}
+  function inner() {sdfgklgdfsjk}
 } //[Fig6a]
 // So far, only outer is built
 outer(); //[Fig6b]
@@ -282,8 +330,14 @@ outer(); // [Fig7b]
 // Nested function with shadowing:
 
 
+function inner() {
+  return x;
+}
+
+
 var x = 1;
 function outer() {
+  //
   var x = 2;
   function inner() {
     return x;

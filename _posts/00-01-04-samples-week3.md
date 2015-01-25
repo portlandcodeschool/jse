@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 3 Samples
 class: JavaScript Week 3 Samples
-date: 2015-01-21 21:00:01
+date: 2015-01-24 21:00:01
 ---
 
 ##Mon. 1/19
@@ -46,4 +46,12 @@ date: 2015-01-21 21:00:01
 
 [edited scratchpad]({{ site.baseurl }}/curriculum/samples/Jan24/Jan24-edited.js)
 
+###Diagrams
 
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan24/2015-01-24_0001.jpg)
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan24/2015-01-24_0002.jpg)
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan24/2015-01-24_0003.jpg)
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan24/2015-01-24_0004.jpg)
