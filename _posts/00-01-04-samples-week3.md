@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 3 Samples
 class: JavaScript Week 3 Samples
-date: 2015-01-24 21:00:01
+date: 2015-01-25 21:00:01
 ---
 
 ##Mon. 1/19
@@ -55,3 +55,15 @@ date: 2015-01-24 21:00:01
 ![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan24/2015-01-24_0003.jpg)
 
 ![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan24/2015-01-24_0004.jpg)
+
+##Sun. 1/25 (Office Hours)
+
+[sample solutions]({{ site.baseurl }}/curriculum/samples/Jan25/homework-demos.js)
+
+###Diagrams
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan25/2015-01-25_0002.jpg)
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan25/2015-01-25_0003.jpg)
+
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Jan25/2015-01-25_0001.jpg)
