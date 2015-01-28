@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 4 Samples
 class: JavaScript Week 4 Samples
-date: 2015-01-26 21:00:00
+date: 2015-01-28 13:00:00
 ---
 
 ##Mon. 1/26
@@ -28,6 +28,7 @@ date: 2015-01-26 21:00:00
 
 ##Wed. 1/28
 
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Jan28/Jan28-initial.js)
 
 
 ###Diagrams
