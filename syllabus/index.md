@@ -100,6 +100,10 @@ title: "Syllabus"
 
     - Homework 5: Closures and modules
 
+    - Reading:
+        - [E-JS Chapter 3, "Closures"](http://eloquentjavascript.net/03_functions.html#p_Y88pfbKskW)
+        - [E-JS Chapter 10](http://eloquentjavascript.net/10_modules.html) through ["Require"](http://eloquentjavascript.net/10_modules.html#p_rvZ9T+1c9y)
+
 -   Wed 2/4
     - Topics:
         - Closure Modules (IIFEs); More closure examples
