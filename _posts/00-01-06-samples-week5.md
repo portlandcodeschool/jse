@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 5 Samples
 class: JavaScript Week 5 Samples
-date: 2015-02-03 21:00:00
+date: 2015-02-04 17:00:00
 ---
 
 ##Mon. 2/2
@@ -30,3 +30,8 @@ date: 2015-02-03 21:00:00
 
 ![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb2/2015-02-03_0004.jpg)
 
+##Wed. 2/4
+
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Feb4/Feb4-initial.js)
+
+###Diagrams
