@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 3 Samples
 class: JavaScript Week 3 Samples
-date: 2015-01-25 21:00:01
+date: 2015-01-25 21:00:02
 ---
 
 ##Mon. 1/19
