@@ -1,37 +1,27 @@
 ---
 layout: post
-title: JavaScript Week 5 Samples
-class: JavaScript Week 5 Samples
-date: 2015-02-04 17:00:00
+title: JavaScript Week 6 Samples
+class: JavaScript Week 6 Samples
+date: 2015-02-11 11:30:00
 ---
 
-##Mon. 2/2
+##Mon. 2/9
 
-[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Feb2/Feb2-initial.js)
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Feb9/Feb9-initial.js)
 
-[edited scratchpad]({{ site.baseurl }}/curriculum/samples/Feb2/Feb2-edited.js)
+[edited scratchpad]({{ site.baseurl }}/curriculum/samples/Feb9/Feb9-edited.js)
 
-
-###Diagrams
-
-![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb2/2015-02-02_0001.jpg)
-
-![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb2/2015-02-02_0002.jpg)
-
-![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb2/2015-02-03_0001.jpg)
-
-![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb2/2015-02-03_0002.jpg)
-
-##Tues. 2/3
 
 ###Diagrams
 
-![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb2/2015-02-03_0003.jpg)
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb9/2015-02-09_0001.jpg)
 
-![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb2/2015-02-03_0004.jpg)
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb9/2015-02-09_0002.jpg)
 
-##Wed. 2/4
+![sample sample image]({{ site.baseurl }}/curriculum/samples/Feb9/2015-02-09_0003.jpg)
 
-[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Feb4/Feb4-initial.js)
+
+##Wed. 2/11
+
 
 ###Diagrams
