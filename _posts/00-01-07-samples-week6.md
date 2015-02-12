@@ -23,5 +23,6 @@ date: 2015-02-11 11:30:00
 
 ##Wed. 2/11
 
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Feb11/Feb11-initial.js)
 
 ###Diagrams
