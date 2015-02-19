@@ -136,12 +136,17 @@ title: "Syllabus"
 
 -   Wed 2/18
     - Topics:
+        - Event Handlers
+        - Overloading and Chaining
         - Introduction to JQuery
-        - JQuery examples
+
+    - Reading: [JQuery Fundamentals](http://jqfundamentals.com/chapter/jquery-basics) and [Traversing & Manipulating](http://jqfundamentals.com/chapter/traversing-manipulating)
 
 
 -   Sat 2/21
-    - Job readiness: Soft skills, behavioral interviewing
+    - Job readiness (Morning)
+    - JS topics (Afternoon):
+        - More JQuery examples
 
 # Week 8
 

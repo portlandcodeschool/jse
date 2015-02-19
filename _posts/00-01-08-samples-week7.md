@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript Week 7 Samples
 class: JavaScript Week 7 Samples
-date: 2015-02-17 17:45:00
+date: 2015-02-18 17:45:00
 ---
 
 ##Mon. 2/16
@@ -22,4 +22,12 @@ date: 2015-02-17 17:45:00
 
 
 ##Wed. 2/18
+
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Feb18/Feb18-initial.js)
+
+[checkerboard.js]({{ site.baseurl }}/curriculum/samples/Feb18/checkerboard.js)
+
+[checkerboard.css]({{ site.baseurl }}/curriculum/samples/Feb18/checkerboard.css)
+
+[checkerboard.html]({{ site.baseurl }}/curriculum/samples/Feb18/checkerboard.html)
 
