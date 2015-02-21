@@ -31,3 +31,12 @@ date: 2015-02-18 17:45:00
 
 [checkerboard.html]({{ site.baseurl }}/curriculum/samples/Feb18/checkerboard.html)
 
+##Sat. 2/21
+
+[initial scratchpad]({{ site.baseurl }}/curriculum/samples/Feb21/Feb21-initial.js)
+
+[checkerboard.js]({{ site.baseurl }}/curriculum/samples/Feb21/checkerboard.js)
+
+[checkerboard.css]({{ site.baseurl }}/curriculum/samples/Feb21/checkerboard.css)
+
+[checkerboard.html]({{ site.baseurl }}/curriculum/samples/Feb21/checkerboard.html)
