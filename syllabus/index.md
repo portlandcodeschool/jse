@@ -166,33 +166,47 @@ title: "Syllabus"
 -   Midterm conferences
 
 -   Mon 3/2
-    - Topics: TBD
+    - Topics: Backbone Models, Collections, and Events
 
 -   Wed 3/4
-    - Topics: TBD
+    - Topics: Backbone Templates; more Backbone Examples
 
 # Week 10
 
 -   Mon 3/9 
+    - Lightning Talks:
+        - Backbone Routes
+        - HTTP requests, REST, and RESTful APIs
+        - NodeJS, NPM, and Node modules    
+        - Template Engines: Mustache, Handlebars, Hogan
+
     - Topics:
-        - Backbone recap: client-side routes; more examples
+        - Backbone routes; Collection persistence
         - JSON
-        - Templates
+        - Internet concepts (http, server, client);
+        - Request types; REST/CRUD;
+        - curl & REST clients;
+
 
 -   Homework 10: LearnYouNode
 
--   Wed 3/11 
+-   Wed 3/11
+    - Lightning Talks:
+        - Module systems overview: CommonJS, AMD, RequireJS
+        - Browserify
+        - Bower
+
     - Topics:
-        -   internet concepts (http, server, client);
-        -   Request types; REST/CRUD;
-        -   curl & REST clients;
         -   Introduction to Node
         -   Node modules
+        -   Asynchronous callbacks
 
 
 # Week 11
 
 -   Mon 3/16
+    - Lightning Talks:
+        -   TBD
     - Topics:
         -   Basic Node servers;
         -   File servers & streamers;
