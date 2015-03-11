@@ -4,6 +4,8 @@ Mon:
 
 - Backbone Routes
 
+- HTTP and REST
+
 - NodeJS and NPM
 	npm install
 	package.json
@@ -18,7 +20,10 @@ Module systems:
 - Browserify
 
 ---- Week 11 ----
-- HTTP and REST
+
+- Regular expressions
+
+- Exception handling: try, catch, throw
 
 - Ajax w. jQuery
 - JSONP and "same-origin policy"

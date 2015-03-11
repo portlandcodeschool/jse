@@ -161,9 +161,9 @@ title: "Syllabus"
     - Topics:
         - Nested views in Backbone, Backbone Collections
 
-# Week 9 (Interlude)
+# Week 9
 
--   Midterm conferences
+-   Midterm conferences?
 
 -   Mon 3/2
     - Topics: Backbone Models, Collections, and Events
@@ -175,10 +175,9 @@ title: "Syllabus"
 
 -   Mon 3/9 
     - Lightning Talks:
-        - Backbone Routes
+        - (Backbone Routes)
         - HTTP requests, REST, and RESTful APIs
         - NodeJS, NPM, and Node modules    
-        - Template Engines: Mustache, Handlebars, Hogan
 
     - Topics:
         - Backbone routes; Collection persistence
@@ -188,56 +187,74 @@ title: "Syllabus"
         - curl & REST clients;
 
 
--   Homework 10: LearnYouNode
+-   Homework 10: LearnYouNode 1-5
 
 -   Wed 3/11
     - Lightning Talks:
         - Module systems overview: CommonJS, AMD, RequireJS
         - Browserify
         - Bower
+        - Template Engines: Mustache, Handlebars, Hogan
 
     - Topics:
         -   Introduction to Node
         -   Node modules
         -   Asynchronous callbacks
+        -   Basic Node servers
+        -   File servers and streamers
 
 
 # Week 11
 
 -   Mon 3/16
     - Lightning Talks:
-        -   TBD
+        - Regular expressions
+        - Exception handling: try, catch, throw
+        - XHRs, Ajax using jQuery
+
     - Topics:
-        -   Basic Node servers;
-        -   File servers & streamers;
-        -   Server-side Routing; Queries;
+        -   Static site servers
+        -   Serving up Backbone app as static web page
  
-	- Homework 11: Basic server with Backbone
+	- Homework 11: Basic server with Backbone; Ajax & APIs
 
 -   Wed 3/18
-    - Topics:
-        -   Serving up Backbone app as static web page
-        -   Integrating Backbone with Server API    
+    - Lightning Talks:
+        - JSONP and "same-origin policy"
+        - Google maps API
 
+    - Topics:
+        -   Introduction to using APIs
+        -   Ajax calls with jQuery;
+        -   Cross-domain calls & jsonp
+ 
 - Sat 3/21
     - Job readiness: whiteboarding and tech interviews
 
 # Week 12
 
 -   Mon 3/23
-    - Topics:
-        -   Introduction to using APIs
-        -   Ajax calls with jQuery;
-        -   Cross-domain calls & jsonp
+    - Lightning Talks:
+        - Promises
+        - NPM module "url"
 
-    - Homework 12: Ajax & APIs
+    - Topics:
+        -   Server-side Routing; Queries;
+        -   Server routes, REST apis
+        -   Integrating Backbone with Server APIs
+
+
+    - Homework 12: Full Backbone App w. Server
 
 -   Wed 3/25
+    - Lightning Talks:
+        -   Database Alternatives; SQL vs. noSQL
+        -   Orchestrate.io
     - Topics:
         -   The need for persistence
         -   Key-value stores
-        -   Orchestrate.io
         -   Integrating Orchestrate into applications
+        -   Orchestrate <-> Server <-> Backbone transactions
 
 # Week 13
 
@@ -246,10 +263,11 @@ title: "Syllabus"
     - Capstone begins; group formation; brainstorming; git workflow
 
 -   Wed 4/1
+    - Lightning Talks:
+        - TDD, BDD, Mocha, & Chai
     - Topics:
-        - Authentication basics; 'pwd' module
-        - Server sessions
-        - Authentication server example
+        -   Testing with Mocha
+        
 
 # Week 14
 
@@ -260,8 +278,12 @@ title: "Syllabus"
     	- some exploratory code; clear division of labor
 
 -   Wed 4/8
-
-    - Topics: TBD
+    - Lightning Talks:
+        - Password salting and hashing
+    - Topics:
+        - Authentication basics; 'pwd' module
+        - Server sessions
+        - Authentication server example
 
 # Week 15
 
