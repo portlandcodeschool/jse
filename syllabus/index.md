@@ -176,8 +176,8 @@ title: "Syllabus"
 -   Mon 3/9 
     - Lightning Talks:
         - (Backbone Routes)
-        - HTTP requests, REST, and RESTful APIs
-        - NodeJS, NPM, and Node modules    
+        - HTTP requests, REST, and RESTful APIs _(Greg)_
+        - NodeJS, NPM, and Node modules _(John)_
 
     - Topics:
         - Backbone routes; Collection persistence
@@ -191,10 +191,10 @@ title: "Syllabus"
 
 -   Wed 3/11
     - Lightning Talks:
-        - Module systems overview: CommonJS, AMD, RequireJS
-        - Browserify
-        - Bower
-        - Template Engines: Mustache, Handlebars, Hogan
+        - Module systems overview: CommonJS, AMD, RequireJS _(Brigitta)_
+        - Browserify _(Jahsie)_
+        - Bower _(Michael)_
+        - Template Engines: Mustache, Handlebars, Hogan _(Kris)_
 
     - Topics:
         -   Introduction to Node
@@ -208,9 +208,9 @@ title: "Syllabus"
 
 -   Mon 3/16
     - Lightning Talks:
-        - Regular expressions
-        - Exception handling: try, catch, throw
-        - XHRs, Ajax using jQuery
+        - Regular expressions _(Eric)_
+        - Exception handling: try, catch, throw _(Todd)_
+        - XHRs, Ajax using jQuery _(Anton)_
 
     - Topics:
         -   Static site servers
@@ -221,7 +221,7 @@ title: "Syllabus"
 -   Wed 3/18
     - Lightning Talks:
         - JSONP and "same-origin policy"
-        - Google maps API
+        - Google maps API _(Tal)_
 
     - Topics:
         -   Introduction to using APIs
@@ -235,7 +235,7 @@ title: "Syllabus"
 
 -   Mon 3/23
     - Lightning Talks:
-        - Promises
+        - Promises _(Ian)_
         - NPM module "url"
 
     - Topics:

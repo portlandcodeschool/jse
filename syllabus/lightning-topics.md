@@ -1,3 +1,12 @@
+Undeclared speakers:
+Peter
+Bob
+Kyle
+Danniel
+Ondine
+Alan
+
+
 ---- Week 10 -----
 
 Mon:
@@ -5,30 +14,39 @@ Mon:
 - Backbone Routes
 
 - HTTP and REST
+(Greg)
 
 - NodeJS and NPM
 	npm install
 	package.json
+(John)
 	
 - Template Engines: Mustache, Handlebars, Hogan
+(Kris)
 
 Wed:
 
 Module systems:
 - CommonJS, AMD, & Require.js
+(Brigitta)
 - Bower
+(Michael)
 - Browserify
+(Jahsie)
 
 ---- Week 11 ----
 
 - Regular expressions
+(Eric)
 
 - Exception handling: try, catch, throw
+(Todd)
 
 - Ajax w. jQuery
+(Anton)
 - JSONP and "same-origin policy"
 - Google maps API
-
+(Tal)
 
 Node modules:
 - fs (file system)
@@ -45,6 +63,7 @@ Node modules:
 	- K-nex, mySQL
 	- Mongo
 - Promises
+(Ian)
 
 - sessions & npm 'generic-session' module
 - user authentication: password salting & hashing;
