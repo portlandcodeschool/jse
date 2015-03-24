@@ -220,7 +220,6 @@ title: "Syllabus"
 
 -   Wed 3/18
     - Lightning Talks:
-        - JSONP and "same-origin policy"
         - Google maps API _(Tal)_
 
     - Topics:
@@ -235,8 +234,8 @@ title: "Syllabus"
 
 -   Mon 3/23
     - Lightning Talks:
-        - Promises _(Ian)_
-        - NPM module "url"
+        - JSONP and "same-origin policy" _(Alan)_
+        - NPM module "url" _(Bob)_
 
     - Topics:
         -   Server-side Routing; Queries;
@@ -248,8 +247,9 @@ title: "Syllabus"
 
 -   Wed 3/25
     - Lightning Talks:
-        -   Database Alternatives; SQL vs. noSQL
-        -   Orchestrate.io
+        -   Promises _(Ian)_
+        -   Database Alternatives; SQL vs. noSQL _(Ondine)_
+        -   Orchestrate.io _(Peter)_
     - Topics:
         -   The need for persistence
         -   Key-value stores
