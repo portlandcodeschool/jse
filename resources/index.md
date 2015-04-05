@@ -34,6 +34,12 @@ learning JavaScript.
 * [How browsers work][browsers]
 * [Impostor Syndrome][impostor]
 
+## Presentations
+
+Here is some advice on finding jobs in the Portland tech industry and shaping your resume from Brad Goettemoeller, a recruiter with VanderHouwen & Associates:
+
+- [Resumes 101]({{ site.baseurl }}/resources/PortlandCodeSchool2-resumes101.pdf)
+
 ## Tools
 
 - [Node.js][node]  
