@@ -6,7 +6,7 @@ Course Site for Evening Javascript Class at Portland Code School
 ### Installation
 - Linux: See https://help.github.com/articles/using-jekyll-with-pages
 - OSX: See Jekyll Docs
-- Windows: good luck
+- Windows: good luck (See http://jekyll-windows.juthilo.com/)
 
 ### Development
 * Jekyll Development Commands
