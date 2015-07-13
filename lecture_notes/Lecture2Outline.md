@@ -1,0 +1,30 @@
+-   Booleans
+    -   `true`
+    -   `false`
+    -   `!`
+    -   short-circuiting &ldquo;and&rdquo; and &ldquo;or&rdquo;
+    -   truthy and falsy values
+-   Do in-class exercise 1
+-   If-statements
+    -   Choosing between two different things to do
+    -   If you have more than 5$ in your pocket, buy a cappuccino. If you don&rsquo;t, go get free coffee at PCS
+    -   If you haven&rsquo;t gone running this week or are feeling antsy, go running after class
+    -   If you smell like sweat and you have a date tonight, rub onions in your arm pits
+    -   Syntax of if-statements
+-   Do in-class exercise 2
+-   For-loops
+    -   Repeating an action a set number of times
+    -   Crack a half dozen eggs
+    -   Take the next three rights
+    -   Copy &ldquo;I will not snort coffee in class&rdquo; a hundred times
+    -   Show syntax
+-   In-class exercise 3
+-   While-loops
+    -   Keep doing something **while**
+    -   Keep doing something **until**
+    -   While you still have gas, keep driving north
+    -   Until you are hydrated, keep drinking water
+    -   Show syntax
+-   In-class exercise 4
+-   Summarize topics covered
+-   In-class exercise 5, summary exercise

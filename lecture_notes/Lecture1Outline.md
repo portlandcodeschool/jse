@@ -1,0 +1,73 @@
+-   Point of the course: websites in JavaScript
+-   Building websites
+    -   Server
+    -   Client
+-   Client code
+    -   runs in the browser
+    -   tells the browser what to display
+-   Server code
+    -   runs on the host
+        -   define host!
+    -   server handles data
+    -   server gives client code and html
+    -   persistence
+-   Database <&#x2013;> Server code <&#x2013;> Client code <&#x2013;> User interface
+-   Course outline
+    -   Basic JavaScript
+    -   Client
+        -   jQuery
+        -   Backbone
+    -   Server
+        -   Node
+    -   Persistence
+        -   Databases
+-   What is JavaScript
+    -   Programming language
+    -   A program is like a recipe or directions
+    -   Computers need every detail spelled out
+    -   A programming language is
+        -   A way to give instructions to a computer
+            -   Pre-defined instructions to give the computer
+                -   Like &ldquo;chop finely&rdquo; or &ldquo;turn left at the next light&rdquo;
+            -   A way to **execute** those instructions on a computer
+-   What makes Javascript special?
+    -   It was essentially **designed** for interacting with the browser
+        -   Only more recently has it become useful for server-side programming
+    -   All browsers have settle on Javascript as the language that they use for dynamic web pages
+        -   In order for a programming language to be used in client side programming, the browser has to support it
+-   Demonstrate console
+-   Numbers
+    -   Numbers can be entered into the console
+    -   Numbers &ldquo;evaluate&rdquo; to numbers
+    -   Operations on numbers
+        -   addition
+        -   subtraction
+        -   division
+        -   multiplication
+-   Strings
+    -   Text between "" or &lsquo;&rsquo;
+    -   Demonstrate good and bad strings
+    -   Why are strings necessary?
+        -   Communicating with programs
+        -   Storing textual data
+    -   String concatenation
+-   `undefined`
+    -   evaluates to itself
+    -   signifies that something **doesn&rsquo;t** have a value
+-   `typeof` operator
+-   Do in-class exercise 1
+-   Do in-class exercise 2
+-   Running whole programs in Scratchpad
+-   Sequencing code with `;`
+-   `console.log`
+-   Statements vs. expressions
+    -   expressions return values
+    -   statements don&rsquo;t
+        -   statements generally handle flow of program
+-   What&rsquo;s a variable?
+    -   A **container** for data
+    -   Variable declaration statement
+    -   Variable assignment expression
+-   Do in-class exercise 3
+-   Summarize what&rsquo;s been covered
+-   Do in-class exercise 4: summary
