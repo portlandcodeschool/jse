@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Syllabus"
+date: 2015-07-13 00:00:01
 ---
 
 ## (Fall 2015)
