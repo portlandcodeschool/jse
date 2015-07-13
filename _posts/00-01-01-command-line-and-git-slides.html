@@ -1,0 +1,199 @@
+---
+layout: slides
+title: Command Line and Git
+class: Command Line and Git
+date: 2015-01-07 15:00:00
+---
+
+<section>
+  <h3> What is git? </h3>
+  <a href="http://www.git-scm.com/">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. </a>
+</section>
+
+<section>
+  <h3>In English:</h3>
+  <ul>
+     <li>A great collaboration tool</li>
+     <li>A system that does not rely upon a central storage location for a project. Every person's copy of the project is a full copy.</li>
+  </ul>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/distributed.png" data-background-size="500px">
+  <a href="http://www.git-scm.com/book/en/Getting-Started-About-Version-Control">source: git site</a>
+</section>
+    
+<section>
+  <h3> Why Git? </h3>
+	<p>Because it is the best tool, not because it is perfect or easy.</p>
+  <p>(it won)</p>
+</section>
+
+<section>
+  <h3>How PCS classes use Git</h3>
+  <p>We teach you a few commands, just enough to get started. We teach you simple workflows that will teach you to effectively use git. Git has tons of commands. Don't try to learn them all. Learn them as you need them. We will show you which ones to get started with.</p>
+</section>
+
+<section>
+  <h3>How PCS classes use Git</h3>
+  <p>We do not recommend, nor do we teach you how to use graphical interfaces/ apps for git. They are handy for some people, especially those who already understand git. But please do not use one during this class. Use the command line only.</p>
+</section>
+
+<section>
+  <h3>Vocabulary</h3>
+  <p>Repo/ Repository: a place to put your stuff where git can keep track of it.</p>
+</section>
+
+<section>
+  <h3>Installation</h3>
+  <p>...if you haven't already</p>
+  <a href="http://git-scm.com/downloads">git install page</a>
+  <p>...and if you don't have Mac OS 10.9 or 10.10 .... this might get complicated</p>
+</section>
+
+<section>
+  <h3>Basic Configuration for Class Workflows: Your Name</h3>
+  <em><code>git config --global user.name "your name"</code></em>
+</section>
+
+<section>
+  <h3>Basic Configuration for Class Workflows: Your Email</h3>
+  <em><code>git config --global user.email email@provider.com</code></em>
+</section>
+
+<section>
+  <h3>Basic Configuration for Class Workflows: Check Your Configuration</h3>
+  <em><code>git config --global -l </code></em>
+</section>
+
+<section>
+  <h4>Basic Configuration for Class Workflows: Push from Local Branch to Same-Named</h4>
+  <em><code>git config --global push.default current </code></em>
+</section>
+
+<section>
+  <h4>Basic Configuration for Class Workflows: A Friendly Configuration Setting For Development... no time to explain... just do it! ;-)</h4>
+  <em><code>git config --global merge.defaulttoupstream true</code></em>
+</section>
+
+<section>
+  <a href="https://help.github.com/articles/generating-ssh-keys">SSH Setup Instructions, courtesy of github (click here)</a>
+  <p>*For greatest convenience, do not create a passphrase with your ssh key. It is an extra and arguably unnecessary layer of security.</p>
+</section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>This repo is designed for you to be able to turn in your assignments. It will also set you up to be able to collaborate with classmates and future coworkers.</p>
+</section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>clone the repo from github (in your case, a homework assignment or activity repo)</p>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/1-workflow.jpg" data-background-size="960px"></section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>Change directories to the directory you want to put your work in.</p>
+  <em><code>cd dev</code></em>
+  <p>Optionally, make a pcs or dev directory into which you will put all of your assignment repos.</p>
+  <em><code>mkdir pcs</code></em>
+  <p>don't forget to change directories into that directory</p>
+  <em><code>cd pcs</code></em>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/2-workflow.jpg" data-background-size="960px"></section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>Clone the repository from github (the one in which you clicked the little button)</p>
+  <em><code>git clone git@github.com:portlandcodeschool/jse-fall15-1.git</code></em>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/3-workflow.jpg" data-background-size="960px"></section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>Change directories into the repo you just cloned:</p>
+  <p><em><code>cd some-directory</code></em></p>
+  <p>If you are not sure which directory you are in, type:</p>
+  <p><em><code>pwd</code></em></p>
+  <p>To see what is in your current directory, type: </p>
+  <p><em><code>ls</code></em></p>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/4-workflow.jpg" data-background-size="960px"></section>
+
+
+<section>
+  <h3>Class Workflow</h3>
+  <p><em>Before you do anything else: make a new repo branch with your name!</em></p>
+  <p><em><code>git checkout -b yourNameHere</code></em></p>
+  <p>This keeps any changes you make out of the master branch until it's time to merge them.</p>
+</section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>In addition, so we're protected by both belt and suspenders, put all of your changes in a subdirectory with your name:</p>
+  <p><em><code>mkdir yourNameHere</code></em></p>
+  <p>Then move to that directory:</p>
+  <p><em><code>cd yourNameHere</code></em></p>
+</section>
+
+<section>
+  <h3>Additional Workflow Safety:</h3>
+  <p>Don't modify the original assignment files or README.md</p>
+  <p>If you need to modify them, copy them somewhere else first.</p>
+</section>
+
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>Now you can safely create and edit files.  You can create files with the touch command, like this: </p>
+  <p><em><code>touch file-1.js</code></em></p>
+  <p><em><code>touch index.html</code></em></p>
+  <p><em><code>touch instructions.md</code></em></p>
+</section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>You can check the status of your git repository like this: </p>
+  <p><em><code>git status</code></em></p>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/5-workflow.jpg" data-background-size="960px"></section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>You can add files for git to track like this: </p>
+  <p><em><code>git add name-of-file.js</code></em></p>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/6-workflow.jpg" data-background-size="960px"></section>
+
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>You will need to make commits so that git will "save" your code</p>
+  <p><em><code>git commit -m "make changes to all the things"</code></em></p>
+  <p>Don't forget the -m .... you'll be sorry ;-)</p>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/7-workflow.jpg" data-background-size="960px"></section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>Next, we need to get our code "saved" to github, our remote repository: </p>
+  <p><em><code>git push</code></em></p>
+</section>
+<section data-background="{{ site.baseurl }}/img/git/8-workflow.jpg" data-background-size="960px"></section>
+
+<section>
+  <h3>Class Workflow</h3>
+  <p>Head back over to github</p>
+</section>
+
+<section data-background="{{ site.baseurl }}/img/git/9-workflow.jpg" data-background-size="960px"></section>
+<section data-background="{{ site.baseurl }}/img/git/10-workflow.jpg" data-background-size="960px"></section>
+<section data-background="{{ site.baseurl }}/img/git/11-workflow.jpg" data-background-size="960px"></section>
+
