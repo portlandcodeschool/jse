@@ -1,6 +1,7 @@
 ---
 layout: calendar
 title: "About the JS Evening Class"
+date: 2015-07-13 00:00:01
 ---
 ### What is this course?
 - [description on PCS site](http://www.portlandcodeschool.com/javascript/)

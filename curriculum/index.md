@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Curriculum"
+date: 2015-07-13 00:00:01
 ---
 
 Welcome to PCS. This site will host the course curriculum and links to various
