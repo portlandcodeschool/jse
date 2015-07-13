@@ -10,7 +10,7 @@ resources that we'll use throughout the course.
 Throughout the course, this site will continue to be updated. If you notice
 any problems, please point them out so they can be fixed.
 
-## Classes
+## Topics
 
 {% include classes.html %}
 
