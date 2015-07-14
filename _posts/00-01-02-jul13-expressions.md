@@ -170,6 +170,7 @@ Then share them with the rest of your group and discuss your answers.
 
 ##Diagrams
 
-<!--![sample sample image]({{ site.baseurl }}/curriculum/samples/Jul13/2015-01-05_0001.jpg)-->
-
+![big picture]({{ site.baseurl }}/curriculum/samples/Jul13/2015-07-13_0001.jpg)
+![operator merging]({{ site.baseurl }}/curriculum/samples/Jul13/2015-07-13_0002.jpg)
+![parse tree]({{ site.baseurl }}/curriculum/samples/Jul13/2015-07-13_0003.jpg)
 
