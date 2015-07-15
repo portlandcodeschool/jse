@@ -23,8 +23,10 @@ date: 2015-07-13 00:00:01
 - Wed 7/15
     - Topics:
         - Git: Overview, Installation, Homework workflow
-        - Array basics, indexing
-        - Conditionals & Branching; Truthiness; Ternary Conditional Operator; Boolean/Branching Operators (`&&`, `||`);
+        - ScratchPad;
+        - Debugging with `console.log`
+        - Conditionals & Branching; Truthiness;
+        - Boolean/Branching Operators (`&&`, `||`);
 
     - [Homework 1: Expressions, Types, & Simple Computations](http://github.com/portlandcodeschool/jse-fall15-1)
 
@@ -35,8 +37,8 @@ date: 2015-07-13 00:00:01
 
 - Mon 7/20
     - Topics:
-        - ScratchPad;
-        - Blocks; Loops (`while`, `for`); Debugging with `console.log`
+        - Blocks; Loops (`while`, `for`);
+        - Array basics, indexing
         - Function basics: parameters, local variables, scope, shadowing; return values, definition vs. call;
 
     - Reading: [Eloquent Javascript, Chapter 3](http://eloquentjavascript.net/03_functions.html)
