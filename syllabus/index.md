@@ -151,8 +151,9 @@ date: 2015-07-13 00:00:01
 
 
 -   Sat 8/29
-    - JS topics (Afternoon):
-        - More JQuery examples
+    - DOM mini-project;
+    - Whiteboarding, tech interview practice
+
 
 # Week 8
 
@@ -202,6 +203,9 @@ date: 2015-07-13 00:00:01
     - Topics:
         - Backbone routes; Collection persistence
 
+-   Sat 9/26
+    - Backbone mini-project
+
 
 # Week 12
 
@@ -218,9 +222,6 @@ date: 2015-07-13 00:00:01
         -   Static site servers
         -   Serving up Backbone app as static web page
  
--   Sat 10/3
-    - Whiteboarding, tech interview practice
-
 # Week 13
 
 -   Mon 10/5
@@ -288,7 +289,7 @@ date: 2015-07-13 00:00:01
 -   Wed 11/4
     - Topics: TBD
 
--   Sat 11/7 (morning)
+-   Sat 11/7
     - Capstone group tech talks
 
 # Week 18
