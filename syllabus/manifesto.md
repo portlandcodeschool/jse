@@ -6,7 +6,7 @@ version 1.1
 
 # Course Description
 
-This fast-paced 16-week evening course offers a solid foundation in Javascript programming and a sample of experience developing every layer of a web application. 
+This fast-paced 17-week evening course offers a solid foundation in Javascript programming and a sample of experience developing every layer of a web application. 
 
 **Not a contract**
 
@@ -17,7 +17,7 @@ Monday & Wednesday evenings (6:00 PM - 9:00 PM)
 and one Saturday each month (9:00 AM - 4:00 PM).
 
 ### Location:
-PCS Classroom, 1771 NW Pettygrove Street, Suite 140
+PCS Classroom, 735 SW 20th Place, Suite 230
 
 ### Instructors:
 **Dan Bauer**
@@ -70,7 +70,7 @@ It's possible to succeed with either limited availability or limited experience,
 * git, github, and repository management
 * npm
 * jsHint
-* Unit testing (Mocha? QUnit?)
+* Unit testing (with Mocha and Chai)
 
 ### Problem Solving Skills
   * Pre-coding with diagrams, examples, and pseudo-code
@@ -202,7 +202,7 @@ In a related vein, this class requires work in close proximity to others as we c
 
 ### Grievances Procedure
 
-Students who observe or experience any behavior on the part of instructors, staff, or students at Portland Code School that does not meet the school's Code of Conduct should take action. If you experience or perceive a problem, attempt to work it out on your own, if possible, but do not hesitate to bring it privately to the attention of your instructor. If this is unsatisfactory, bring it to the attention of the school Director (Cris Kelly) or Assistant Director (Shawna Scott).
+Students who observe or experience any behavior on the part of instructors, staff, or students at Portland Code School that does not meet the school's Code of Conduct should take action. If you experience or perceive a problem, attempt to work it out on your own, if possible, but do not hesitate to bring it privately to the attention of your instructor. If this is unsatisfactory, bring it to the attention of the school Director (Cris Kelly) or Director of Curriculum (Al Zimmerman).
 
 
 # Curriculum Overview

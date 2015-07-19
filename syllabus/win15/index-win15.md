@@ -1,7 +1,5 @@
 ---
-layout: page
 title: "Syllabus"
-date: 2015-07-13 00:00:01
 ---
 
 ## (Fall 2015)
@@ -10,7 +8,7 @@ date: 2015-07-13 00:00:01
 
 - Mon 7/13
     - Topics:
-        - JS Console, Node REPL;
+        - JS Console/REPL;
         - Operators, Expressions, & Statements;
         - Variables, Assignment & Equality; Boolean expressions;
         - Primitive types; String concatenation; Auto-conversion
@@ -23,34 +21,29 @@ date: 2015-07-13 00:00:01
 - Wed 7/15
     - Topics:
         - Git: Overview, Installation, Homework workflow
-        - ScratchPad;
-        - Debugging with `console.log`
-        - Conditionals & Branching; Truthiness;
-        - Boolean/Branching Operators (`&&`, `||`);
+        - Array basics, indexing
+        - Conditionals & Branching; Truthiness; Ternary Conditional Operator; Boolean/Branching Operators (`&&`, `||`);
 
-    - [Homework 1: Expressions, Types, & Simple Computations](http://github.com/portlandcodeschool/jse-fall15-1)
+    - [Homework 1: Expressions, Types, & Simple Computations](http://github.com/portlandcodeschool/jse-win15-1)
 
-- Sat 7/18
-    - Challenge Day!
 
 # Week 2
 
 - Mon 7/20
     - Topics:
-        - Blocks; Loops (`while`, `for`);
-        - Array basics, indexing
+        - ScratchPad;
+        - Blocks; Loops (`while`, `for`); Debugging with `console.log`
         - Function basics: parameters, local variables, scope, shadowing; return values, definition vs. call;
 
     - Reading: [Eloquent Javascript, Chapter 3](http://eloquentjavascript.net/03_functions.html)
 
-    - [Homework 2: Arrays, Functions, and Loops](http://github.com/portlandcodeschool/jse-fall15-2)
+    - [Homework 2: Arrays, Functions, and Loops](http://github.com/portlandcodeschool/jse-win15-2)
 
 - Wed 7/22
     - Topics:
         -   Defensive Programming; Parameter checking;
         -   Basic Testing with Assertions
         -   Introduction to Unit Testing; Mocha
-        -   Codewars
 
 
 # Week 3
@@ -62,7 +55,7 @@ date: 2015-07-13 00:00:01
         -   Properties, membership operators (`[]` and `.`), reference chains;
         -   Property creation, deletion, enumeration (`in` operator, `for...in` loops); Properties vs. Variables
         
-    - [Homework 3: Objects](http://github.com/portlandcodeschool/jse-fall15-3)
+    - [Homework 3: Objects](http://github.com/portlandcodeschool/jse-win15-3)
 
     - Reading: [E-JS Chapter 4](http://eloquentjavascript.net/04_data.html) through [mutability](http://eloquentjavascript.net/04_data.html#p_S6PAaKQoFH)
 
@@ -76,6 +69,7 @@ date: 2015-07-13 00:00:01
 
 
 -   Sat 8/1
+    - Job Readiness (Morning)
     - JS Topics (Afternoon):
         -   Functions as Objects; aliasing methods
         -   Function details: Evaluation Phases, Call Objects/Scopes, Lexical Scoping, preview of closures;
@@ -119,9 +113,8 @@ date: 2015-07-13 00:00:01
 
 -   Mon 8/17
     - Topics:
-        -   Constructors, `new`;
-        -   Wrapper Objects and Converters;
-        -   Prototypes
+        -   Constructors, `new`; Wrapper Objects and Converters;
+        -   Prototypes, Instance Methods, Class Methods
 
 	- Homework 6: Constructors, Subclassing; Memory Game
 
@@ -129,8 +122,7 @@ date: 2015-07-13 00:00:01
 
 -   Wed 8/19
     - Topics:
-        -   Inheritance and Subclassing;
-        -   Instance vs. Class Methods
+        -   Class methods; Inheritance and Subclassing;
         -   Underscore.js, _.extend
 
 # Week 7
@@ -151,65 +143,58 @@ date: 2015-07-13 00:00:01
 
 
 -   Sat 8/29
-    - DOM mini-project;
-    - Whiteboarding, tech interview practice
-
+    - Job readiness (Morning)
+    - JS topics (Afternoon):
+        - More JQuery examples
 
 # Week 8
 
 -   Mon 8/31
     - Topics:
-        -   TDD/BDD
-        -   Testing with _Mocha_
-        -   _Chai_ Assertion libraries
+        - MVC design pattern
+        - Intro to Backbone; Simple Views and Models
 
+    - Homework 8-9 (mini-project): Backbone Apps
 
 -   Wed 9/2
     - Topics:
-        -   Introduction to using APIs
-        -   JSON
-        -   Ajax calls with jQuery;
-        -   Cross-domain calls & jsonp
+        - Nested views in Backbone, Backbone Collections
 
 # Week 9
 
-- Mon 9/7
-    - Labor Day Break!
+-   Midterm conferences?
 
-- Wed 9/9
-    - More Break!
+-   Mon 9/7
+    - Topics: Backbone Models, Collections, and Events
+
+-   Wed 9/9
+    - Topics: Backbone Templates; more Backbone Examples
 
 # Week 10
 
 -   Mon 9/14
-    - MVC design pattern
-    - Intro to Backbone; Simple Views and Models
-    - Nested views in Backbone, Backbone Collections
+    - Lightning Talks:
+        - (Backbone Routes)
+        - HTTP requests, REST, and RESTful APIs _(Greg)_
+        - NodeJS, NPM, and Node modules _(John)_
 
-
--   Wed 9/16
-    - Backbone Models, Collections, and Events
-    - Backbone Templates; more Backbone Examples
-
-# Week 11
-
--   Mon 9/21
     - Topics:
+        - Backbone routes; Collection persistence
+        - JSON
         - Internet concepts (http, server, client);
         - Request types; REST/CRUD;
         - curl & REST clients;
 
--   Wed 9/23
-    - Topics:
-        - Backbone routes; Collection persistence
 
--   Sat 9/26
-    - Backbone mini-project
+-   Homework 10: LearnYouNode 1-5
 
+-   Wed 9/16
+    - Lightning Talks:
+        - Module systems overview: CommonJS, AMD, RequireJS _(Brigitta)_
+        - Browserify _(Jahsie)_
+        - Bower _(Michael)_
+        - Template Engines: Mustache, Handlebars, Hogan _(Kris)_
 
-# Week 12
-
--   Mon 9/28
     - Topics:
         -   Introduction to Node
         -   Node modules
@@ -217,53 +202,91 @@ date: 2015-07-13 00:00:01
         -   Basic Node servers
         -   File servers and streamers
 
--   Wed 9/30
+
+# Week 11
+
+-   Mon 9/21
+    - Lightning Talks:
+        - Regular expressions _(Eric)_
+        - Exception handling: try, catch, throw _(Todd)_
+        - XHRs, Ajax using jQuery _(Anton)_
+
     - Topics:
         -   Static site servers
         -   Serving up Backbone app as static web page
  
-# Week 13
+	- Homework 11: Basic server with Backbone; Ajax & APIs
 
--   Mon 10/5
+-   Wed 9/23
+    - Lightning Talks:
+        - Google maps API _(Tal)_
+
+    - Topics:
+        -   Introduction to using APIs
+        -   Ajax calls with jQuery;
+        -   Cross-domain calls & jsonp
+ 
+- Sat 9/26
+    - Job readiness: whiteboarding and tech interviews
+
+# Week 12
+
+-   Mon 9/28
+    - Lightning Talks:
+        - JSONP and "same-origin policy" _(Alan)_
+        - NPM module "url" _(Bob)_
+
     - Topics:
         -   Server-side Routing; Queries;
         -   Server routes, REST apis
         -   Integrating Backbone with Server APIs
 
--   Wed 10/7
-    - Topics:
 
-# Week 14
+    - Homework 12: Full Backbone App w. Server
 
--   Mon 10/12
-    - Capstone begins; group formation; brainstorming; API research
-    - Git workflow review
-
--   Wed 10/14
+-   Wed 9/30
+    - Lightning Talks:
+        -   Promises _(Ian)_
+        -   Database Alternatives; SQL vs. noSQL _(Ondine)_
+        -   Orchestrate.io _(Peter)_
     - Topics:
         -   The need for persistence
         -   Key-value stores
         -   Integrating Orchestrate into applications
         -   Orchestrate <-> Server <-> Backbone transactions
+
+# Week 13
+
+-   Mon 10/5
+
+    - Capstone begins; group formation; brainstorming; git workflow
+
+-   Wed 10/7
+    - Lightning Talks:
+        - TDD, BDD, Mocha, & Chai
+    - Topics:
+        -   Testing with Mocha
         
 
-# Week 15
+# Week 14
 
--   Mon 10/19
+-   Mon 10/12
+
     - Capstone waypoint 1:
     	- initial design conception, commit to domain; explore feature space;
     	- some exploratory code; clear division of labor
 
--   Wed 10/21
+-   Wed 10/14
+    - Lightning Talks:
+        - Password salting and hashing
     - Topics:
-        - Authentication basics
-        - Password salting and hashing; 'pwd' module
-        - Server sessions, cookies
+        - Authentication basics; 'pwd' module
+        - Server sessions
         - Authentication server example
 
-# Week 16
+# Week 15
 
--   Mon 10/26
+-   Mon 10/19
 
 	- Capstone waypoint 2:
     	- final design proposal; identify MVP and variants;
@@ -271,38 +294,35 @@ date: 2015-07-13 00:00:01
     	- code in progress for all components from all team members
         - initial unit testing modules
 
--   Wed 10/28
+-   Wed 10/21
 
     - Topics:
         - Intro to Heroku
         - Heroku config variables    
 
 
-# Week 17
+# Week 16
 
--   Mon 11/2
+-   Mon 10/26
 
 	- Capstone waypoint 3:
 		- working alpha-level code for all components, MVP integration in progress;
         - unit-test suite working
 
--   Wed 11/4
+-   Wed 10/28
     - Topics: TBD
 
--   Sat 11/7
+-   Sat 4/25 (morning)
     - Capstone group tech talks
 
-# Week 18
+# Week 17
 
--   Mon 11/9
+-   Mon 11/2
 
     - Capstone waypoint 4:
     	- Polished MVP complete
         - Bonus feature integration
 
--   Wed 11/11
-    - Finish those projects!
-
--   Thurs 11/12
+-   Wed 11/4
     - Capstone Night and Graduation!
 
