@@ -78,7 +78,7 @@ The short-circuiting operators `&&` and `||` have special rules. `exp1 && exp2` 
 
 `exp1 || exp2` is evaluated by first evaluating `exp1`. If it is truthy then return the value of `exp1`. If it is falsy then evaluate `exp2` and return its value.
 
-As a reminder, falsy values are `NaN`, `null`, `undefined`, `0`, "", and `false`. Everything else is truthy.
+As a reminder, falsy values are `NaN`, `null`, `undefined`, `0`, ~""~, and `false`. Everything else is truthy.
 
 Assignment
 ----------
@@ -103,6 +103,31 @@ The `typeof` operator takes an *expression* as an argument. Evaluate this expres
 -   undefined returns &ldquo;undefined&rdquo;
 -   objects return &ldquo;object&rdquo;
 -   booleans return &ldquo;boolean&rdquo;
+
+Variables resolution
+--------------------
+
+To evaluate a variable, you have to first consider where the variable&rsquo;s `var` statement is and you then you examine the corresponding table that you made. If there is an overlap in names between two tables that are both visible from a point in the code, precedence goes to the more recently created table.
+
+Function calls
+--------------
+
+A function is called when it is passed zero or more arguments. For example, `fun()`, `fun(1)`, `fun(1,2)`, etc. are all valid function calls.
+
+A function call is evaluated by:
+
+1.  substituting the passed in values for the arguments of the function, which means everywhere the formal argument was seen in the function body, rewrite it to be the corresponding value
+2.  evaluate the body like you would a new program
+    1.  make a variable table
+    2.  evaluate each statement sequentially
+    3.  if there is a return statement, then **stop** executing the function, go back to the point of where the function was called and hand back the value of the expression passed to the `return`
+    4.  if there is no return statement by the end of the function, return `undefined`
+
+1.  A caveat on variable tables for functions
+
+    After exiting the function, if there is nothing else that can reference the function&rsquo;s local variable table, then you may erase the table.
+    
+    If, on the other hand, that table is still visible to some entity in the program, you may **not** erase it and must keep the variable table in play.
 
 For loops
 =========
@@ -175,3 +200,34 @@ The other form of if-statement is to leave out the `else` branch. In this case, 
 1.  evaluate the condition
     1.  if it is truthy, perform the statements listed between the braces of the &ldquo;if&rdquo;
     2.  if it is falsy, do nothing
+
+Function declarations
+=====================
+
+There are two function declarations. There is the **expression** form which has the following syntax 
+
+    function (arg1, arg2, ...) {
+        statement1;
+        statement2;
+        statement3;
+    }
+
+This evaluates to a function value, which in our pen and paper we&rsquo;ll represent as a box that
+
+-   contains the list of arguments to the function
+-   the lines of code for the body of the function
+-   an arrow pointing to the variable table within which the function was defined (this is important for calling functions!)
+
+The second kind of function declaration, which is a **statement**, is the named function declaration, which has the following syntax.
+
+    function name (arg1,arg2,arg3) {
+        statement1;
+        statement2;
+        statement3;
+    }
+
+You evaluate this by treating it as equivalent to 
+
+    var name = function (...){
+       ...
+    };
