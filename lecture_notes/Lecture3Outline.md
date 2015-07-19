@@ -1,0 +1,63 @@
+-   Arrays
+    -   Arrays are for storing variable amounts of data
+    -   Lists-of-things
+        -   grocery lists
+        -   to-do lists
+        -   lists of addresses
+        -   lists of all tweets
+    -   Creating arrays
+        -   Just show [] syntax, no need to actually show `new Array()` except possibly as a cutesy example later
+        -   Emphasize that not all elements need to be the same
+    -   `.length`, useful for performing operations on arrays
+        -   ask them to suspend disbelief on `.` for a bit longer
+    -   operations on arrays
+        -   push
+        -   pop
+        -   shift
+        -   unshift
+        -   concat
+        -   slice
+-   Exercise 1
+-   Iterating over arrays
+    -   Do **something** for each element
+        -   Show example programs using traditional for-loop
+        -   Not doing for-in since it&rsquo;s considered non-idiomatic for arrays
+            -   Apparently it&rsquo;s not required to traverse indexes in numerically consistent order
+-   Exercise 2
+-   Functions
+    -   A function is the internalization of &ldquo;program&rdquo;
+        -   Code that can be packaged up and run at any time
+        -   Code that you can pass to other parts of your code
+            -   Lego blocks
+            -   Things fitting together in a modular way
+    -   Creating functions
+        -   Function creation through expression
+        -   Function declaration as a statement
+    -   Applying functions
+    -   Evaluating function application
+        -   Functions create their own scope
+        -   Substitution of arguments
+            -   `undefined` is substituted for any argument that doesn&rsquo;t have a value provided
+            -   more arguments can be substituted without causing an error
+    -   Functions can be passed to other functions
+        -   Higher-order functions are very modular
+            -   Allow greater code reuse and composition
+        -   Include examples of higher-order functions 
+            -   A function that repeats its first argument n-times
+-   Exercise 3
+-   Iteration over arrays **again**
+    -   forEach
+        -   show how different sets of arguments for the function have different semantics
+            -   `function (currVal) ...`
+            -   `function (currVal,ix) ...`
+            -   `function (currVal, ix, parentArray) ...`
+    -   filter
+        -   lets us return a new array that has **only** the valid items in it
+    -   map
+        -   a common pattern
+            -   do **something** for every item in the array and return a new array
+                -   capitalize words
+                -   strip out the part that comes after the @ in every email address
+                -   send an email to every email address and return confirmation that it was sent
+    -   Patterns of iteration that all demonstrate higher-order functions as modular programming
+-   Exercise 4
