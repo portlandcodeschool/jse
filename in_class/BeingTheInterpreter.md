@@ -129,6 +129,52 @@ A function call is evaluated by:
     
     If, on the other hand, that table is still visible to some entity in the program, you may **not** erase it and must keep the variable table in play.
 
+Object specific expressions
+===========================
+
+General object layout
+---------------------
+
+An object is represented as a table a list of pairs of 
+
+-   a property name
+-   the value corresponding to the property
+
+Object creation with new
+------------------------
+
+Objects can be created using the `new Constr()` syntax. This is evaluated by
+
+1.  creating a new object
+2.  setting the `.constructor` property to the constructor function
+3.  running the constructor function with `this` bound to the new object
+4.  returning the new object after the constructor function finishes running
+
+An object created with the `{}` or `{ prop : val, prop : val, ...}` syntax is equivalent to an object created using `new Object()` that then has the corresponding properties, if any, set.
+
+Object property access and assignment
+-------------------------------------
+
+An object&rsquo;s properties can be accessed through two methods: the &ldquo;dot&rdquo; syntax `obj.prop` or the &ldquo;array&rdquo; syntax `obj["prop"]`. These are evaluated identically, the only distinction is the names that are allowed to be used for the properties: the array syntax is far more permissive with allowed names. 
+
+You evaluate property access by looking up the value of the property in the object and returning it. If the property isn&rsquo;t in the table corresponding to the object, first check the prototype of the constructor of the object. If the property isn&rsquo;t in the prototype or the prototype&rsquo;s prototype etc., then return undefined. When searching for a property, the first place you find it takes precedence and you return with **that value** immediately and do not continue searching up the prototype tree.
+
+You evaluate property **assignment** by first evaluating the expression to the right of the `=` and putting that value into the table corresponding to the object, making a new space for the property if there isn&rsquo;t already one in the object.
+
+this
+----
+
+The statement `this` acts like a variable with special evaluation rules. There&rsquo;s two different ways in which `this` can be used
+
+1.  in the constructor of an object
+2.  in a function to be called **by** an object
+
+In the first case, when `new Cons()` is called to make a new object using the constructor `Cons`, `this` is a reference to the fresh object that is being constructed. See also the section on object creation.
+
+In the second case, when a function is called **as a method**, `this` points to the parent object. 
+
+If `this` is encountered outside of these two cases, then it resolves to the &ldquo;global object&rdquo; of the program.
+
 For loops
 =========
 
