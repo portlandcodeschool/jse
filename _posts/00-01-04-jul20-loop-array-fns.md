@@ -165,3 +165,12 @@ Explain, in your own words, the following programming constructs and concepts:
 -	return values
 
 After you're done, share your answers within your group and discuss them.
+
+##Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Jul20/Jul20-scratchpad.md)
+[console]({{ site.baseurl }}/curriculum/samples/Jul20/Jul20-console.md)
+
+##Diagrams
+
+![misc]({{ site.baseurl }}/curriculum/samples/Jul20/2015-07-20_0001.jpg)
