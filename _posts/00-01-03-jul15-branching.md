@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CoreJS: Booleans, Conditionals, and Loops"
+title: "CoreJS: Booleans, Truthiness, and Conditionals"
 class: W July 15
 date: 2015-07-15 00:00:00
 ---
@@ -81,71 +81,22 @@ Consider the following fragments of code and try to follow the logic of their ex
 6.  practice() && win() && celebrate()
 
 
-### While-loops
-
-
-Consider the following fragments of code: execute them by hand, as shown in class, and then compare your answers to what you get from running the examples in scratchpad. The second is *almost* the same as the first. Do you understand why they behave differently?
-
-Be sure you understand the examples before you run them!
-
-1.
-
-```
-var x;
-var i = 0;
-while (!x) {
-	i = i + 1;
-	if (i == 5) {
-		x = true;
-	}
-	console.log("running");
-}
-```
-
-2.
-
-```
-var y;
-var i;
-while (!y) {
-	i = i + 1;
-	if (i == 5) {
-		y = true;
-	}
-	console.log("running");
-}
-```
-
-### For-loops
-
-Consider the following fragment of code: execute it by hand, as shown in class, and then compare your answer to what you get from running the examples in scratchpad.
-
-```
-var i;
-    
-for (i = 0; i < 8; i=i+1){
-    if(i == 5){
-        console.log("It's five!");
-        i = i+1;
-    }
-    console.log(i);
-}
-```
-
-What numbers are printed out by this code?
 
 ### Summary
 
 
-Explain, in your own words, the following programming constructs:
-
--   while loops
--   for loops
--   if-statements
-
 Summarize the following ideas in your own words:
 
+-	if-statements
+-	branching
 -   booleans
+-	truthiness
 -   short-circuiting
 
-After you're done, share your answers within your group and discuss them
+After you're done, share your answers within your group and discuss them.
+
+##Samples
+
+[console]({{ site.baseurl }}/curriculum/samples/Jul15/Jul15-console.md)
+
+
