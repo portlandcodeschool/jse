@@ -39,17 +39,17 @@ date: 2015-07-13 00:00:01
     - Topics:
         - Blocks; Loops (`while`, `for`);
         - Array basics, indexing
-        - Function basics: parameters, local variables, scope, shadowing; return values, definition vs. call;
-
+        
     - Reading: [Eloquent Javascript, Chapter 3](http://eloquentjavascript.net/03_functions.html)
 
     - [Homework 2: Arrays, Functions, and Loops](http://github.com/portlandcodeschool/jse-fall15-2)
 
 - Wed 7/22
     - Topics:
+        -   Function basics: parameters, return values, definition vs. call;
+        -   Local variables, scope, and shadowing
         -   Defensive Programming; Parameter checking;
         -   Basic Testing with Assertions
-        -   Introduction to Unit Testing; Mocha
         -   Codewars
 
 
