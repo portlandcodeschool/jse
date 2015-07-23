@@ -168,7 +168,7 @@ After you're done, share your answers within your group and discuss them.
 
 ##Samples
 
-[scratchpad]({{ site.baseurl }}/curriculum/samples/Jul20/Jul20-scratchpad.md)
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Jul20/Jul20-scratchpad.js)
 [console]({{ site.baseurl }}/curriculum/samples/Jul20/Jul20-console.md)
 
 ##Diagrams

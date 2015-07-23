@@ -132,3 +132,7 @@ Predict what will happen in each of the following programs:
 	fun(2);
 	showXY();
 ```
+
+##Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Jul22/Jul22-scratchpad.js)
