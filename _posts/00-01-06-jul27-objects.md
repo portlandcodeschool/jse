@@ -70,3 +70,8 @@ loop1.link.link
 
 2.  Modify the code to produce two mutually-linked objects.
 
+# Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Jul27/Jul27-scratchpad.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Jul27/Jul27-console.js)
