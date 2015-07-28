@@ -7,7 +7,7 @@ date: 2015-07-27 00:00:01
 
 ## Codewars
 
-We're going to use community of [Codewars](www.codewars.com/r/sqAU2Q) as a supplementary resource for collaboratively-filtered coding puzzles ("Kata").  Please make yourself an account, list 'PCS' as your clan, and try the first two Kata!
+We're going to use community of [Codewars](http://www.codewars.com/r/sqAU2Q) as a supplementary resource for collaboratively-filtered coding puzzles ("Kata").  Please make yourself an account, list 'PCS' as your clan, and try the first two Kata!
 
 ## Objects and Properties
 
