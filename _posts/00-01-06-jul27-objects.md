@@ -23,9 +23,9 @@ We're going to use community of [Codewars](http://www.codewars.com/r/sqAU2Q) as 
 
 5. Write a function `personIsAt(name,tableObj)` which returns a Boolean: `true` if a person named `name` is at table `tableObj`, otherwise `false`.
 
-6. Write a function `peopleAt(tableObj)` which returns a string listing all the names of people at your table `tableObj`.  Separate each name with a newline ('\n');
+6. Write a function `peopleAt(tableObj)` which returns a string listing all the names of people at your table `tableObj`.  Separate each name with a newline ('\n').
 
-7. Write a function `whoHasKey(tableObj,key)` to return the name of any person at your table (parameter `tableObj`) who has a key matching parameter `key`
+7. Write a function `whoHasKey(tableObj,key)` to return the name of any person at your table (parameter `tableObj`) who has a key matching parameter `key`.
 
 8. Write a function `whoHasVal(tableObj,val)` to return the name of any person at your table who has a property with value `val`.
 

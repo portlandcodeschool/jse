@@ -90,10 +90,11 @@ var dollarsPer = {
 	dollar: 1,
 	euro: 1.10,
 	pound: 1.56,
-	yen: 123.98,
-	yuan: 6.21
+	yen: 0.01, //NOT 123.98,
+	yuan: 0.16 //NOT 6.21
 }
 ```
+
 
 ### Toolkit Exercise
 
@@ -111,4 +112,20 @@ exchange.convertTo(20,"yen");
 exchange.convertFrom(5,"euro");
 ```
 
+## Samples
 
+[exchange-solution]({{ site.baseurl }}/curriculum/samples/Jul29/exchange.js)
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Jul29/Jul29-scratchpad.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Jul29/Jul29-console.js)
+
+##Diagrams
+
+![properties-vs-vars]({{ site.baseurl }}/curriculum/samples/Jul29/2015-07-29_0001.jpg)
+
+![references1]({{ site.baseurl }}/curriculum/samples/Jul29/2015-07-29_0002.jpg)
+
+![references2]({{ site.baseurl }}/curriculum/samples/Jul29/2015-07-29_0003.jpg)
+
+![toolkit-example]({{ site.baseurl }}/curriculum/samples/Jul29/2015-07-29_0004.jpg)
