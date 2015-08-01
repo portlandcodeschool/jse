@@ -316,3 +316,30 @@ recommendJobsFor(mom) //--> [{job:dry, score:.83},{job:cook, score:.33}]
 
 Now that we've explored the general patterns of the data structure, we're ready for the real thing!
 
+To download treehouse user data, we'll need two files, one HTML and one javascript:
+
+```HTML
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript" src="mycode.js"></script>
+</body>
+</html>
+```
+
+
+```
+// mycode.js
+var usernames = [ /*list of treehouse names*/ ];
+
+usernames.forEach(function(name) {
+	$.get('http:/teamtreehouse.com/'+name+'.json').
+		done(importUser);
+})
+
+function importUser(user) {
+	// your code
+}
+```
