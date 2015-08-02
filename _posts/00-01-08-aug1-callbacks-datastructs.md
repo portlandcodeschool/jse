@@ -343,3 +343,14 @@ function importUser(user) {
 	// your code
 }
 ```
+
+
+## Samples
+
+[scratchpad1]({{ site.baseurl }}/curriculum/samples/Aug1/Aug1-scratchpad1.js)
+
+[scratchpad2]({{ site.baseurl }}/curriculum/samples/Aug1/Aug1-scratchpad2.js)
+
+## Drawings
+
+![chores-matrix]({{ site.baseurl }}/curriculum/samples/Aug1/2015-08-01_0001.jpg)
