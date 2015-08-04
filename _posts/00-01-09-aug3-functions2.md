@@ -117,3 +117,17 @@ Write two versions of a factory which makes animal instances which all share a s
 1. First implement `talk` as a global function.
 
 2. Instead of using a global function, attach `talk` as a property of the factory itself, but expect it to be called through individual animals.
+
+## Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Aug3/Aug3-scratchpad.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Aug3/Aug3-console.js)
+
+##Diagrams
+
+![paint method]({{ site.baseurl }}/curriculum/samples/Aug3/2015-08-03_0001.jpg)
+
+![shared talk method]({{ site.baseurl }}/curriculum/samples/Aug3/2015-08-03_0002.jpg)
+
+![animal factory]({{ site.baseurl }}/curriculum/samples/Aug3/2015-08-03_0003.jpg)
