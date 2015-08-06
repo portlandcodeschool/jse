@@ -63,4 +63,10 @@ Next, you'll implement an abstract data structure for a bag, which contains mult
 
 3. Make another bag which holds the names of everyone in the class.  Serialize it in *reverse* alphabetical order.
 
+## Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Aug5/Aug5-scratchpad.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Aug5/Aug5-console.js)
+
 
