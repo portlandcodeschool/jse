@@ -211,4 +211,27 @@ sequence1.reset(5); //=> void
 sequence1.next(); //=> 5
 ```
 
+## Hoisting
+
+Here is an excellent article on [_hoisting_][hoisting].
+
+## Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Aug5/Aug5-scratchpad.js)
+
+## Diagrams
+
+![scope examples 1-3]({{ site.baseurl }}/curriculum/samples/Aug10/2015-08-10_0001.jpg)
+
+![scope examples 4-6]({{ site.baseurl }}/curriculum/samples/Aug10/2015-08-10_0002.jpg)
+
+![scope example 7; makeObject]({{ site.baseurl }}/curriculum/samples/Aug10/2015-08-10_0003.jpg)
+
+![makeFunction; makeGetter; makeSetter]({{ site.baseurl }}/curriculum/samples/Aug10/2015-08-10_0004.jpg)
+
+![factory w. closures, personal methods]({{ site.baseurl }}/curriculum/samples/Aug10/2015-08-10_0005.jpg)
+
+![factory w. shared methods]({{ site.baseurl }}/curriculum/samples/Aug10/2015-08-10_0006.jpg)
+
+[hoisting]: http://www.adequatelygood.com/JavaScript-Scoping-and-Hoisting.html
 
