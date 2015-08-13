@@ -217,7 +217,7 @@ Here is an excellent article on [_hoisting_][hoisting].
 
 ## Samples
 
-[scratchpad]({{ site.baseurl }}/curriculum/samples/Aug5/Aug5-scratchpad.js)
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Aug10/Aug10-scratchpad.js)
 
 ## Diagrams
 

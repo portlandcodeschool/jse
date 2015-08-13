@@ -160,4 +160,13 @@ marble.isBigger = function (other) {
   return this.size > other.size;
 }
 ```
+## Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Aug12/Aug12-scratchpad.js)
+
+## Diagrams
+
+![loan manager]({{ site.baseurl }}/curriculum/samples/Aug12/2015-08-12_0001.jpg)
+
+![counting factory in IIFE]({{ site.baseurl }}/curriculum/samples/Aug12/2015-08-12_0002.jpg)
 
