@@ -95,7 +95,7 @@ date: 2015-07-13 00:00:01
     - Topics:
         -   Factory Functions; Duplicate vs. Shared Methods
 
-    - Reading: [E-JS Chapter 5](http://eloquentjavascript.net/04_data.html) through ["Transforming with Map"](http://http://eloquentjavascript.net/05_higher_order.html#p_kz8fxQbtBm)
+    - Reading: [E-JS Chapter 5](http://eloquentjavascript.net/05_higher_order.html) through ["Transforming with Map"](http://eloquentjavascript.net/05_higher_order.html#p_kz8fxQbtBm)
 
 # Week 5
 
