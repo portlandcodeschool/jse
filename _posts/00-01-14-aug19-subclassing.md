@@ -203,3 +203,18 @@ duck.hasOwnProperty('feet'); //false
 duck.noise; // 'quack'
 duck.hasOwnProperty('noise'); //false
 ```
+
+## Samples
+
+[scratchpad]({{ site.baseurl }}/curriculum/samples/Aug19/scratchpad1.js)
+
+[console]({{ site.baseurl }}/curriculum/samples/Aug19/console1.js)
+
+## Diagrams
+
+![Object, Array, and Function Ctors]({{ site.baseurl }}/curriculum/samples/Aug19/2015-08-19_0001.jpg)
+
+![Rect IIFE; subclassing]({{ site.baseurl }}/curriculum/samples/Aug19/2015-08-19_0002.jpg)
+
+![Rect and Square]({{ site.baseurl }}/curriculum/samples/Aug19/2015-08-19_0003.jpg)
+
