@@ -171,7 +171,7 @@ date: 2015-07-13 00:00:01
         -   Ajax calls with jQuery;
         -   Cross-domain calls & jsonp
 
-# Week 9
+# Intermission
 
 - Mon 9/7
     - Labor Day Break!
@@ -179,19 +179,23 @@ date: 2015-07-13 00:00:01
 - Wed 9/9
     - More Break!
 
-# Week 10
+# Week 9
 
 -   Mon 9/14
-    - MVC design pattern
-    - Intro to Backbone; Simple Views and Models
-    - Nested views in Backbone, Backbone Collections
+    - Topics
+        - MVC design pattern
+        - Intro to Backbone; Simple Views and Models
+        - Backbone Events
+        - Nested views in Backbone, Backbone Collections
 
+    - Homework 9: Backbone Issue Tracker (Stage 1)
 
 -   Wed 9/16
-    - Backbone Models, Collections, and Events
+    - Git workflow & project management
+    - Git merge conflicts
     - Backbone Templates; more Backbone Examples
 
-# Week 11
+# Week 10
 
 -   Mon 9/21
     - Topics:
@@ -199,15 +203,17 @@ date: 2015-07-13 00:00:01
         - Request types; REST/CRUD;
         - curl & REST clients;
 
+    - Homework 10: Backbone Issue Tracker (Stage 2)
+
 -   Wed 9/23
     - Topics:
         - Backbone routes; Collection persistence
 
 -   Sat 9/26
-    - Backbone mini-project
+    - Backbone project development
 
 
-# Week 12
+# Week 11
 
 -   Mon 9/28
     - Topics:
@@ -222,7 +228,7 @@ date: 2015-07-13 00:00:01
         -   Static site servers
         -   Serving up Backbone app as static web page
  
-# Week 13
+# Week 12
 
 -   Mon 10/5
     - Topics:
@@ -233,7 +239,7 @@ date: 2015-07-13 00:00:01
 -   Wed 10/7
     - Topics:
 
-# Week 14
+# Week 13
 
 -   Mon 10/12
     - Capstone begins; group formation; brainstorming; API research
@@ -247,7 +253,7 @@ date: 2015-07-13 00:00:01
         -   Orchestrate <-> Server <-> Backbone transactions
         
 
-# Week 15
+# Week 14
 
 -   Mon 10/19
     - Capstone waypoint 1:
@@ -261,7 +267,7 @@ date: 2015-07-13 00:00:01
         - Server sessions, cookies
         - Authentication server example
 
-# Week 16
+# Week 15
 
 -   Mon 10/26
 
@@ -278,7 +284,7 @@ date: 2015-07-13 00:00:01
         - Heroku config variables    
 
 
-# Week 17
+# Week 16
 
 -   Mon 11/2
 
@@ -292,7 +298,7 @@ date: 2015-07-13 00:00:01
 -   Sat 11/7
     - Capstone group tech talks
 
-# Week 18
+# Week 17
 
 -   Mon 11/9
 
