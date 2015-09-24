@@ -80,13 +80,14 @@ function showData() {
 	console.log('Data store is now: ', texts);
 }
 
-/*
+
 app.get('/texts/:id', function (req, res) {
     var id = req.params.id;
     console.log('Sending text #%s...',id);
     res.send({value : texts[id]});
 });
 
+/*
 app.put('/texts/:id', function (req, res) {
 	var id = req.params.id;
 	console.log('Receiving text #%s...',id);
@@ -176,7 +177,7 @@ var textCollection = new TextCollection();
 Starting it with `node modelServer.js` runs the server with no initial data.
 Starting it with `node modelServer.js N` for some digit N will give the server a few test models to work with.
 
-2. Start the server with N=6, direct your browser to `localhost:3000/model.html` and open the console.
+2. Start the server with `node modelServer.js 6`, direct your browser to `localhost:3000/model.html` and open the console.
 
 3. Test out models' built-in `fetch()` method.  In the browser console, make a `new TextModel({})`.  You'll get a 404 error.  Can you explain why?
 
@@ -198,6 +199,7 @@ Uncomment TextModel's save method and implement it using a variant of `$.ajax(ur
 
 11.  Finally, uncomment the last server route and the client's TextCollection code.  What happens when you reload your browser page?
 
+A possible solution for the `fetch()` and `save()` in 5,8,and 10 is [here]({{ site.baseurl }}/curriculum/samples/Sep23/model-fetch-save.js).
 
 ## Backbone Part 4: Backbone collection with server
 
