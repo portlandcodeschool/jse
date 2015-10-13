@@ -257,8 +257,12 @@ date: 2015-07-13 00:00:01
 
 -   Mon 10/19
     - Capstone waypoint 1:
-    	- initial design conception, commit to domain; explore feature space;
-    	- some exploratory code; clear division of labor
+    	- Initial design conception, commit to domain; explore feature space;
+        - At least 3 user stories ("As a `role`, I want `feature` so that `reason`");
+        - Wireframes and/or mockups of your site's pages;
+        - Details about which APIs you plan to use;
+    	- Some exploratory code;
+        - Clear division of labor
 
 -   Wed 10/21
     - Topics:
@@ -272,10 +276,12 @@ date: 2015-07-13 00:00:01
 -   Mon 10/26
 
 	- Capstone waypoint 2:
-    	- final design proposal; identify MVP and variants;
+    	- Final design proposal; identify MVP and variants;
         - project synopsis due;
     	- code in progress for all components from all team members
-        - initial unit testing modules
+        - Clear data structure design; models and collections created;
+        - Orchestrate app and keys set up
+        - BDD descriptions under way
 
 -   Wed 10/28
 
@@ -290,7 +296,7 @@ date: 2015-07-13 00:00:01
 
 	- Capstone waypoint 3:
 		- working alpha-level code for all components, MVP integration in progress;
-        - unit-test suite working
+        - BDD descriptions finished; unit-tests in progress
 
 -   Wed 11/4
     - Topics: TBD
@@ -303,12 +309,13 @@ date: 2015-07-13 00:00:01
 -   Mon 11/9
 
     - Capstone waypoint 4:
-    	- Polished MVP complete
+    	- Functional MVP complete
+        - Unit tests complete
         - Bonus feature integration
 
 -   Wed 11/11
     - Finish those projects!
 
--   Thurs 11/12
-    - Capstone Night and Graduation!
+-   Mon 11/16 - Wed 11/18
+    - Date range for final Capstone event
 
